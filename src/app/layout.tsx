@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Albert_Sans } from "next/font/google";
+import { Poppins, Raleway } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
-import "./styles/main.scss";
+import "./style/globals.css";
 
-// Google font: Albert Sans
-const albertSans = Albert_Sans({
-  variable: "--font-albert-sans",
+// Google font: Poppins
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+// Google font: raleway
+const raleway = Raleway({
+  variable: "--font-raleway",
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
@@ -17,7 +24,46 @@ const neueMontreal = localFont({
   variable: "--font-neue-montreal",
   display: "swap",
   src: [
-
+    {
+      path: "../../public/fonts/neue-montreal/NeueMontreal-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-LightItalic.otf",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-Italic.otf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-MediumItalic.otf",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/neue-montreal/NeueMontreal-BoldItalic.otf",
+      weight: "700",
+      style: "italic",
+    },
   ],
 });
 
@@ -34,7 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={${.variable} ${.variable} antialiased}
+        className={`${poppins.variable} ${raleway.variable} ${neueMontreal.variable} antialiased`}
       >
         {children}
       </body>
