@@ -35,7 +35,7 @@ const Navbar = () => {
     <>
       <nav className="navbar absolute w-full px-80">
         <div className="w-full container-fluid nav-container">
-          <div className="bg-navbar flex justify-between items-center">
+          <div className="bg-navbar flex lg:justify-between items-center justify-end">
             <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
               <Link className="fs-12 nav-link font-poppins font-bold!" href="">
                 About
