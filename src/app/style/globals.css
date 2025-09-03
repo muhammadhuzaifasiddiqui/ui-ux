@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 body {
-  font-size: ;
-  font-weight: ;
-  /* font-family: var(); */
-  color: ;
-  background: url(/images/Noise-&-Texture.png) no-repeat 50%, #fffcf9;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-raleway);
+  color: #3C3C3C;
+  background: #F6FAFF;
   background-size: cover;
 }
 
@@ -15,56 +15,92 @@ img {
   max-width: 100%;
 }
 
-.font-one {
-  font-family: var(--font-behind-nineties);
+.font-poppins {
+  font-family: var(--font-poppins);
 }
 
-.font-two {
-  font-family: var(--font-montserrat);
+.font-montreal {
+  font-family: var(--font-neue-montreal);
 }
 
-.font-three {
-  font-family: var(--font-inter);
+.text-primary {
+  color: #4A26FF;
 }
 
-.text-one {
-  color: #C38A3E;
+.text-gray {
+  color: #333B45;
 }
 
-.text-two {
-  color: #911E3D;
+.text-blue {
+  color: #0085FF;
 }
 
-.text-three {
-  color: #1F1F1FCC;
+.text-dark {
+  color: #0E0E0E;
 }
 
-.text-four {
-  color: #3A3A3A;
+.text-black {
+  color: #000;
 }
 
-.text-five {
-  color: #1F1F1F;
+.text-dark {
+  color: #E1D4F8;
+}
+
+.bg-blue {
+  background-color: #0085FF;
+}
+
+.bg-pink {
+  background-color: #DFE2FF;
+}
+
+.bg-offwhite {
+  background-color: #F6FAFF;
+}
+
+.bg-gray {
+  background-color: #FFFFFF4D;
+}
+
+.bg-light-gray {
+  background-color: #F0F7FF;
+}
+
+.bg-dark-gray {
+  background-color: #85A7D0;
+}
+
+.bg-light-black {
+  background-color: #242424;
+}
+
+.shadow-primary {
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 120px;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 h3 {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 h4 {
   font-size: 24px;
 }
 
-.fs-14 {
+.fs-12 {
   font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
 }
 
 .fs-16 {
@@ -79,7 +115,7 @@ h4 {
   font-size: 20px;
 }
 
-.fs-35 {
+/* .fs-35 {
   font-size: 35px;
 }
 
@@ -89,14 +125,32 @@ h4 {
 
 .fs-80 {
   font-size: 80px;
+} */
+
+.px-80 {
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
-.py-40 {
-  padding-top: 40px;
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-40 {
   padding-bottom: 40px;
 }
 
-.mt-25 {
+/* .mt-25 {
   margin-top: 25px;
 }
 
@@ -111,13 +165,9 @@ h4 {
 
 .pt-40 {
   padding-top: 40px;
-}
+} */
 
-.pt-50 {
-  padding-top: 50px;
-}
-
-.pt-20 {
+/* .pt-20 {
   padding-top: 20px;
 }
 
@@ -125,42 +175,48 @@ h4 {
   padding: 20px;
 }
 
-.py-80 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
 .pt-80 {
   padding-top: 80px;
 }
-
-.px-40 {
-  padding-left: 40px;
-  padding-right: 40px;
-}
+*/
 
 .btn {
-  padding: 10px 24px;
-  font-size: 18px;
+  padding: 15px 20px;
+  font-size: 12px;
   border-radius: 12px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .btn-primary {
-  color: white;
-  background-color: #911e3d;
+  color: #FFF;
+  background-color: #4A26FF;
 }
 
-.btn-lg {
-  padding: 14px 24px;
-  border-radius: 10px;
+.btn-xsm {
+  padding: 8px 12px;
+  font-size: 12px;
 }
 
 .btn-sm {
-  padding: 10px 27px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 6px 20px;
+  font-size: 12px;
 }
+
+.btn-md {
+  padding: 9px 22px;
+  font-size: 12px;
+}
+
+.btn-lg {
+  padding: 15px 35px;
+  font-size: 12px;
+}
+
+.btn-xl{
+  padding: 19px 41px;
+  font-size: 24px; 
+}
+
 
 .btn-circle {
   padding: 15px;
@@ -168,7 +224,6 @@ h4 {
   background: rgba(255, 255, 255, 0.50);
   transition: all 0.3s ease-in-out;
 }
-
 
 .form-control {
   border-radius: 8px;
@@ -181,23 +236,65 @@ h4 {
   color: ;
 }
 
+.border-radius-30 {
+  border-radius: 30px;
+}
+
 .border-radius-20 {
   border-radius: 20px;
 }
 
-/* navbar */
 .logo-wrapper {
-  height: ;
-  width: ;
+  height: 50px;
+  width: 120px;
 }
 
-.navbar {}
 
-.navbar.scroll-down {}
+/* navbar */
+.navbar {
+  z-index: 100;
+  width: calc(100% - 100px);
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
 
-.navbar.scroll-down .nav-container {}
+.navbar.scroll-down {
+  z-index: 100;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #f4ede480;
+  box-shadow: 0 0 24px #00000026;
+}
 
-.navbar .nav-container {}
+.navbar.scroll-down .nav-container {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: none;
+  border-radius: none;
+  max-width: 1140px;
+  padding: 8px 20px;
+  box-shadow: none;
+}
+
+.navbar .nav-container {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #f4ede480;
+  border-radius: 10px;
+  max-width: 1140px;
+  padding: 8px 20px;
+  box-shadow: 0 0 24px #00000026;
+}
 
 .navbar .nav-link {
   padding: 10px 6px;
@@ -205,54 +302,38 @@ h4 {
   font-weight: 400;
 }
 
-.nav-icon {}
-
-.nav-toggle-btn {
-  padding: ;
+.nav-icon {
+  background: rgba(255, 255, 255, 0.5);
 }
 
+.nav-toggle-btn {
+  padding: 8px;
+}
+
+
 /* hero-section */
-
 /* service-section */
-
-
 /* product-section */
-
-
 /* trusted-section */
-
 /* blog-section */
-
 /* marquee-section */
-
 /* book-now-section */
-
 /* contact-section */
-
 /* footer-section */
 
-
 @media screen and (min-width: 1279.97px) {
-  .container {
-    max-width: 1280px;
-  }
 }
 
 @media screen and (max-width: 1279.97px) {
-  .px-40 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
 }
 
 @media screen and (max-width: 1023.97px) {
   body {
-    font-size: ;
+    font-size: 18px;
   }
 
   h1 {
-    font-size: 70px;
+    font-size: 120px;
   }
 
   h2 {
@@ -260,11 +341,11 @@ h4 {
   }
 
   h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   h4 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .fs-14 {
@@ -283,7 +364,7 @@ h4 {
     font-size: 18px;
   }
 
-  .fs-35 {
+  /* .fs-35 {
     font-size: 31px;
   }
 
@@ -293,11 +374,19 @@ h4 {
 
   .fs-80 {
     font-size: 70px;
+  } */
+
+  .py-30 {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
-  .py-40 {
-    padding-top: 36px;
-    padding-bottom: 36px;
+  .pt-50 {
+    padding-top: 44px;
+  }
+
+  .pb-40 {
+    padding-bottom: 34px;
   }
 
   .pt-20 {
@@ -316,12 +405,12 @@ h4 {
     padding-top: 45px;
   }
 
-  .py-80 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  .px-80 {
+    padding-right: 70px;
+    padding-left: 70px;
   }
 
-  .pt-80 {
+  /* .pt-80 {
     padding-top: 70px;
   }
 
@@ -332,7 +421,7 @@ h4 {
   .my-35 {
     margin-top: 31px;
     margin-bottom: 31px;
-  }
+  } */
 
   .px-40 {
     padding-left: 20px;
@@ -360,97 +449,34 @@ h4 {
     padding: 14px;
   }
 
+  .border-radius-30 {
+    border-radius: 26px;
+  }
+
   .border-radius-20 {
     border-radius: 18px;
-  }
-
-  .navbar {
-    width: calc(100% - 80px);
-    top: 35px;
-  }
-
-  .logo-wrapper {
-    width: 100px;
-    height: 42px;
-  }
-
-  .navbar .nav-container {
-    border-radius: 9px;
-    padding: 7px 16px;
-  }
-
-  .hero-section .background-wrapper {
-    padding-top: 130px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  .book-appointment {
-    padding: 16px 25px;
-  }
-
-  .book-appointment:before {
-    border-radius: 18px;
-  }
-
-  .product-card .img-wrapper,
-  .service-card .img-wrapper {
-    height: 440px;
-    width: 100%;
-  }
-
-  .marquee-section .img-wrapper,
-  Image {
-    width: 180px;
-    height: 75px;
-    border-radius: 10px;
-  }
-
-  .marquee-section h3 {
-    font-size: 60px;
-    border-radius: 10px;
-  }
-
-  .book-now-section .background-wrapper {
-    padding: 58px 45px 0;
-  }
-
-  .contact-section .item:nth-child(3) {
-    padding-left: 0;
-    border-color: transparent;
-  }
-
-  .custom-bullet {
-    width: 85px !important;
-    height: 7px !important;
-    border-radius: 18px !important;
-  }
-
-  .contact-section .item {
-    padding: 24px 30px;
-    border-left: 1px solid #dfdfdf;
   }
 }
 
 @media screen and (max-width: 767.97px) {
   body {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 120px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 36px;
+    font-size: 35px;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .fs-14 {
@@ -481,11 +507,20 @@ h4 {
     font-size: 60px;
   }
 
-  .py-40 {
-    padding-top: 33px;
-    padding-bottom: 33px;
+  .py-30 {
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
+  .pt-50 {
+    padding-top: 40px;
+  }
+
+  .pb-40 {
+    padding-bottom: 30px;
+  }
+
+  /* 
   .pt-20 {
     padding-top: 16px;
   }
@@ -509,16 +544,16 @@ h4 {
   .my-35 {
     margin-top: 28px;
     margin-bottom: 28px;
+  } */
+
+  .px-80 {
+    padding-right: 62px;
+    padding-left: 62px;
   }
 
-  .py-80 {
+  /* .pt-80 {
     padding-top: 62px;
-    padding-bottom: 62px;
-  }
-
-  .pt-80 {
-    padding-top: 62px;
-  }
+  } */
 
   .px-40 {
     padding-left: 14px;
@@ -546,96 +581,34 @@ h4 {
     padding: 13px;
   }
 
+  .border-radius-30 {
+    border-radius: 24px;
+  }
+
   .border-radius-20 {
-    border-radius: 16px;
-  }
-
-  .navbar {
-    width: calc(100% - 60px);
-    top: 31px;
-  }
-
-  .navbar .nav-container {
-    border-radius: 9px;
-    padding: 7px 14px;
-  }
-
-  .logo-wrapper {
-    width: 85px;
-    height: 35px;
-  }
-
-  .hero-section .background-wrapper {
-    padding-top: 115px;
-    padding-left: 31px;
-    padding-right: 31px;
-  }
-
-  .book-appointment {
-    padding: 13px 21px;
-  }
-
-  .book-appointment:before {
-    border-radius: 16px;
-  }
-
-  .product-card .img-wrapper,
-  .service-card .img-wrapper {
-    height: 435px;
-    width: 100%;
-  }
-
-  .marquee-section .img-wrapper,
-  Image {
-    width: 160px;
-    height: 65px;
-    border-radius: 10px;
-  }
-
-  .marquee-section h3 {
-    font-size: 50px;
-    border-radius: 10px;
-  }
-
-  .book-now-section .background-wrapper {
-    padding: 55px 30px 0;
-  }
-
-  .contact-section .item:nth-child(3) {
-    padding-left: 0;
-    border-color: transparent;
-  }
-
-  .custom-bullet {
-    width: 75px !important;
-    height: 7px !important;
-    border-radius: 16px !important;
-  }
-
-  .contact-section .item {
-    padding: 20px 24px;
+    border-radius: 17px;
   }
 }
 
 @media screen and (max-width: 575.97px) {
   body {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 120px;
   }
 
   h2 {
-    font-size: 42px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 33px;
+    font-size: 35px;
   }
 
   h4 {
-    font-size: 19px;
+    font-size: 24px;
   }
 
   .fs-14 {
@@ -654,6 +627,7 @@ h4 {
     font-size: 16px;
   }
 
+  /* 
   .fs-35 {
     font-size: 26px;
   }
@@ -666,11 +640,20 @@ h4 {
     font-size: 55px;
   }
 
-  .py-40 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .py-30 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } */
+
+  .pt-50 {
+    padding-top: 36px;
   }
 
+  .pb-40 {
+    padding-bottom: 27px;
+  }
+
+  /* 
   .pt-20 {
     padding-top: 14px;
   }
@@ -698,17 +681,17 @@ h4 {
   .my-35 {
     margin-top: 26px;
     margin-bottom: 26px;
+  } */
+
+  .px-80 {
+    padding-right: 56px;
+    padding-left: 56px;
   }
 
-  .py-80 {
+  /* .py-80 {
     padding-top: 56px;
     padding-bottom: 56px;
-  }
-
-  .py-80 {
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
+  } */
 
   .px-40 {
     padding-left: 12px;
@@ -736,96 +719,34 @@ h4 {
     padding: 12px;
   }
 
+  .border-radius-30 {
+    border-radius: 23px;
+  }
+
   .border-radius-20 {
-    border-radius: 15px;
-  }
-
-  .navbar {
-    width: calc(100% - 40px);
-    top: 28px;
-  }
-
-  .navbar .nav-container {
-    border-radius: 8px;
-    padding: 6px 13px;
-  }
-
-  .logo-wrapper {
-    width: 70px;
-    height: 29px;
-  }
-
-  .hero-section .background-wrapper {
-    padding-top: 105px;
-    padding-left: 28px;
-    padding-right: 28px;
-  }
-
-  .book-appointment {
-    padding: 11px 18px;
-  }
-
-  .book-appointment:before {
-    border-radius: 15px;
-  }
-
-  .product-card .img-wrapper,
-  .service-card .img-wrapper {
-    height: 430px;
-    width: 100%;
-  }
-
-  .marquee-section .img-wrapper,
-  Image {
-    width: 140px;
-    height: 65px;
-    border-radius: 10px;
-  }
-
-  .marquee-section h3 {
-    font-size: 45px;
-    border-radius: 10px;
-  }
-
-  .book-now-section .background-wrapper {
-    padding: 52px 20px 0;
-  }
-
-  .contact-section .item:nth-child(3) {
-    padding-left: 0;
-    border-color: transparent;
-  }
-
-  .custom-bullet {
-    width: 65px !important;
-    height: 6px !important;
-    border-radius: 15px !important;
-  }
-
-  .contact-section .item {
-    padding: 18px 22px;
+    border-radius: 16px;
   }
 }
 
 @media screen and (max-width: 399.97) {
   body {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 120px;
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .fs-14 {
@@ -844,7 +765,7 @@ h4 {
     font-size: 14px;
   }
 
-  .fs-35 {
+  /* .fs-35 {
     font-size: 25px;
   }
 
@@ -856,11 +777,20 @@ h4 {
     font-size: 40px;
   }
 
-  .py-40 {
-    padding-top: 27px;
-    padding-bottom: 27px;
+  .py-30 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } */
+
+  .pt-50 {
+    padding-top: 32px;
   }
 
+  .pb-40 {
+    padding-bottom: 25px;
+  }
+
+  /* 
   .pt-20 {
     padding-top: 12px;
   }
@@ -884,17 +814,17 @@ h4 {
   .my-35 {
     margin-top: 25px;
     margin-bottom: 25px;
+  } */
+
+  .px-80 {
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
-  .py-80 {
+  /* .py-80 {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .py-80 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  } */
 
   .px-40 {
     padding-left: 12px;
@@ -922,73 +852,11 @@ h4 {
     padding: 11px;
   }
 
+  .border-radius-30 {
+    border-radius: 22px;
+  }
+
   .border-radius-20 {
-    border-radius: 14px;
-  }
-
-  .navbar {
-    width: calc(100% - 30px);
-    top: 25px;
-  }
-
-  .logo-wrapper {
-    width: 70px;
-    height: 29px;
-  }
-
-  .navbar .nav-container {
-    border-radius: 8px;
-    padding: 6px 12px;
-  }
-
-  .hero-section .background-wrapper {
-    padding-top: 95px;
-    padding-left: 26px;
-    padding-right: 26px;
-  }
-
-  .book-appointment {
-    padding: 10px 15px;
-  }
-
-  .book-appointment:before {
-    border-radius: 14px;
-  }
-
-  .product-card .img-wrapper,
-  .service-card .img-wrapper {
-    height: 400px;
-    width: 100%;
-  }
-
-  .marquee-section .img-wrapper,
-  Image {
-    width: 130px;
-    height: 55px;
-    border-radius: 10px;
-  }
-
-  .marquee-section h3 {
-    font-size: 35px;
-    border-radius: 10px;
-  }
-
-  .book-now-section .background-wrapper {
-    padding: 50px 15px 0;
-  }
-
-  .contact-section .item:nth-child(3) {
-    padding-left: 0;
-    border-color: transparent;
-  }
-
-  .custom-bullet {
-    width: 60px !important;
-    height: 6px !important;
-    border-radius: 14px !important;
-  }
-
-  .contact-section .item {
-    padding: 16px 20px;
+    border-radius: 15px;
   }
 }
