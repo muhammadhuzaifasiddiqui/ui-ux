@@ -33,26 +33,26 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar absolute w-full left-0 px-3 md:px-3.5 lg:px-5">
-        <div className="w-full container nav-container mx-auto relative left-0">
-          <div className="bg-navbar flex justify-between items-center rounded-[30px]">
-            <div className="lg:flex hidden navbar-menu items-center justify-center gap-2 xl:gap-8">
-              <Link className="fs-16 nav-link fw-normal" href="">
+      <nav className="navbar absolute w-full px-80 left-0">
+        <div className="w-full container-fluid nav-container relative left-0">
+          <div className="bg-navbar flex justify-between items-center">
+            <div className="lg:flex hidden items-center justify-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
+              <Link className="fs-12 nav-link font-poppins active" href="">
                 About
               </Link>
-              <Link className="fs-16 nav-link" href="">
+              <Link className="fs-12 nav-link font-poppins" href="">
                 Work
               </Link>
-              <Link className="fs-16 nav-link" href="">
+              <Link className="fs-12 nav-link font-poppins" href="">
                 Service
               </Link>
-              <Link className="fs-16 nav-link" href="">
+              <Link className="fs-12 nav-link font-poppins" href="">
                 Blog
               </Link>
             </div>
 
             <div className="lg:flex hidden navbar-button gap-2">
-              <Link href="#" className="btn btn-primary btn-sm fs-14">
+              <Link href="#" className="btn btn-primary border-radius-30 fs-12 font-poppins">
                 Get in touch
               </Link>
             </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden absolute mt-2 left-0 right-0 z-10 overflow-hidden px-3 md:px-3.5 lg:px-5"
             >
-              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6] rounded-[12px]">
+              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6]">
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={""}
