@@ -36,60 +36,24 @@ const Navbar = () => {
       <nav className="navbar absolute w-full left-0 px-3 md:px-3.5 lg:px-5">
         <div className="w-full container nav-container mx-auto relative left-0">
           <div className="bg-navbar flex justify-between items-center rounded-[30px]">
-            <div className="logo-wrapper cursor-pointer">
-              <Image
-                src={"/images/logo.svg"}
-                width={151}
-                height={23}
-                alt="logo"
-                unoptimized={true}
-                className="w-full! h-full! object-contain"
-              />
-            </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-2 xl:gap-8">
               <Link className="fs-16 nav-link fw-normal" href="">
-                Home
-              </Link>
-              <Link className="fs-16 nav-link" href="">
                 About
               </Link>
               <Link className="fs-16 nav-link" href="">
-                Services
+                Work
               </Link>
               <Link className="fs-16 nav-link" href="">
-                Products
+                Service
               </Link>
               <Link className="fs-16 nav-link" href="">
-                Locations
-              </Link>
-              <Link className="fs-16 nav-link" href="">
-                Articles
+                Blog
               </Link>
             </div>
 
             <div className="lg:flex hidden navbar-button gap-2">
-              <div className="nav-icon p-[10px] rounded-full">
-                <Image
-                  src={"/images/bag-2.svg"}
-                  width={20}
-                  height={20}
-                  alt="cart"
-                  unoptimized={true}
-                  className="w-full! h-full! object-cover cursor-pointer"
-                />
-              </div>
-              <div className="nav-icon p-[10px] rounded-full">
-                <Image
-                  src={"/images/profile.svg"}
-                  width={20}
-                  height={20}
-                  alt="cart"
-                  unoptimized={true}
-                  className="w-full! h-full! object-cover cursor-pointer"
-                />
-              </div>
               <Link href="#" className="btn btn-primary btn-sm fs-14">
-                Login
+                Get in touch
               </Link>
             </div>
 
