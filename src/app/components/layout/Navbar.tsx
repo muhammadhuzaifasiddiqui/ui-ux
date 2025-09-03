@@ -36,8 +36,8 @@ const Navbar = () => {
       <nav className="navbar absolute w-full px-80 left-0">
         <div className="w-full container-fluid nav-container relative left-0">
           <div className="bg-navbar flex justify-between items-center">
-            <div className="lg:flex hidden items-center justify-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
-              <Link className="fs-12 nav-link font-poppins active" href="">
+            <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
+              <Link className="fs-12 nav-link font-poppins font-bold!" href="">
                 About
               </Link>
               <Link className="fs-12 nav-link font-poppins" href="">
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
 
             <div className="lg:flex hidden navbar-button gap-2">
-              <Link href="#" className="btn btn-primary border-radius-30 fs-12 font-poppins">
+              <Link href="#" className="btn btn-primary border-radius-30 font-poppins">
                 Get in touch
               </Link>
             </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden absolute mt-2 left-0 right-0 z-10 overflow-hidden px-3 md:px-3.5 lg:px-5"
             >
-              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6]">
+              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden">
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={""}
