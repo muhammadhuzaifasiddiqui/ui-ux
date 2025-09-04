@@ -14,7 +14,7 @@ const page = () => {
               Hi.... <br /> My name is <span className="font-bold">Taha Khanzada</span>
             </p>
             <h1 className="font-bold text-gray">UI/UX</h1>
-            <Link href="#" className="btn btn-gray-right btn-md">
+            <Link href="#" className="btn btn-gray-right btn-md gap-2.5">
               {" "}
               Design
             </Link>
@@ -23,10 +23,10 @@ const page = () => {
               ensuring that every interaction is intuitive, efficient, and
               visually pleasing.
             </p>
-            <div className="flex items-center">
+            <div className="charges-box flex items-center border-radius-30 bg-dark-gray">
               <div className="w-[45%]">
                 <p>35$
-                  <span>/hr</span>
+                  <span className="text-[46.341px]">/</span><span className="text-[25.951px] font-semibold">hr</span>
                 </p>
               </div>
               <div className="w-[35%] flex flex-col">

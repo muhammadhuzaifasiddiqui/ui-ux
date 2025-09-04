@@ -169,7 +169,7 @@ h4 {
 }
 
 .bg-dark-gray {
-  background-color: #85A7D0;
+  background-color: #85A7D04D;
 }
 
 .bg-light-black {
@@ -196,6 +196,7 @@ h4 {
 }
 
 .btn-xsm {
+  border-radius: 100px;
   padding: 8px 12px;
   font-size: 12px;
 }
@@ -207,7 +208,14 @@ h4 {
 
 .btn-md {
   padding: 9px 22px;
-  font-size: 12px;
+}
+
+.border-right {
+  border-radius: 30px 0 30px 30px;
+}
+
+.border-left {
+  border-radius: 0 30px 30px 30px;
 }
 
 .btn-lg {
@@ -227,7 +235,6 @@ h4 {
 
 .btn-black {
   color: #FFF;
-  border-radius: 30px;
   border: 1px solid #3E3E3E;
   background-color: #242424;
 }
@@ -244,49 +251,43 @@ h4 {
 }
 
 .btn-blue {
-  border-radius: 30px;
   border: 1px solid rgba(133, 167, 208, 0.33);
   background-color: #0085FF;
 }
 
 .btn-pink {
-  border-radius: 30px;
   background: #E1D4F8;
   color: #000;
 }
 
 .btn-lightGray {
-  border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: #F6FAFF;
   color: #000;
 }
 
 .btn-lilac {
-  border-radius: 100px;
   background: #CBD0FF;
   color: rgba(0, 0, 0, 0.60);
 }
 
 .btn-white {
-  border-radius: 30px;
   border: 0.5px solid #DAEBFF;
   background: #FFF;
   color: #333B45;
 }
 
 .btn-offWhite {
-  border-radius: 30px;
   border: 1px solid rgba(133, 167, 208, 0.33);
   color: #3C3C3C;
 }
 
-.btn-circle {
+/* .btn-circle {
   padding: 15px;
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.50);
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .form-control {
   border-radius: 8px;
@@ -354,6 +355,12 @@ h4 {
 } */
 
 /* hero-section */
+.hero-section .charges-box p {
+  color: #30373E;
+  font-size: 64.878px;
+  font-weight: 700;
+}
+
 /* service-section */
 /* product-section */
 /* trusted-section */
