@@ -190,16 +190,31 @@ const page = () => {
                   </div>
                   <div className="flex-col gap-6">
                     <div className="flex items-center gap-5">
-                      <p className="fs-14 font-medium text-gray">Success <br/>project</p>
-                      <p className="font-medium text-[36px] text-primary">250<span className="text-blue">+</span></p>
+                      <p className="fs-14 font-medium text-gray">
+                        Success <br />
+                        project
+                      </p>
+                      <p className="font-medium text-[36px] text-primary">
+                        250<span className="text-blue">+</span>
+                      </p>
                     </div>
                     <div className="flex items-center gap-5">
-                      <p className="font-medium text-[36px] text-primary">160<span className="text-blue">+</span></p>
-                      <p className="fs-14 font-normal text-gray">Recent <br/>clients</p>
+                      <p className="font-medium text-[36px] text-primary">
+                        160<span className="text-blue">+</span>
+                      </p>
+                      <p className="fs-14 font-normal text-gray">
+                        Recent <br />
+                        clients
+                      </p>
                     </div>
                     <div className="flex items-center gap-5">
-                      <p className="fs-14 font-normal text-gray">Happy<br/> Clients</p>
-                      <p className="font-medium text-[36px] text-primary">95<span className="text-blue">+</span></p>
+                      <p className="fs-14 font-normal text-gray">
+                        Happy
+                        <br /> Clients
+                      </p>
+                      <p className="font-medium text-[36px] text-primary">
+                        95<span className="text-blue">+</span>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -209,8 +224,11 @@ const page = () => {
         </div>
       </section>
       <section className="services-section">
-        <div className="">
-          <div className=""></div>
+        <div className="services-wrapper">
+          <div className="flex flex-row gap-2.5">
+            <div className="w-1/2"></div>
+            <div className="w-1/2"></div>
+          </div>
         </div>
       </section>
     </>
