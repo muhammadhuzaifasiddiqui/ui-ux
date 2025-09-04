@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className="hero-section">
+      <section className="hero-section shadow-primary">
         <div className="hero-wrapper border-radius-20 bg-cover bg-center">
           <div className="flex flex-row justify-between px-80">
             <div className="w-[25%]">
@@ -60,8 +60,8 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[70%]">
-              <div className="flex flex-row items-end gap-23">
+            <div className="w-[65%] pt-[113px]">
+              <div className="flex flex-row items-end gap-23 pb">
                 <div className="bg-laptop">
                   <div className="img-wrapper">
                     <Image
@@ -80,11 +80,11 @@ const page = () => {
                     className="btn btn-md btn-gray btn-border-left"
                   >
                     {" "}
-                    Design
+                    Innovation
                   </Link>
                 </div>
               </div>
-              <div className="relative pt-11 pb-10">
+              <div className="relative pt-11 pb-9 pl-[75px]">
                 <Image
                   src={"/img/Rectangle 2.png"}
                   width={652}
@@ -93,6 +93,94 @@ const page = () => {
                   unoptimized={true}
                   className="object-contain"
                 />
+                <h1 className="font-bold text-blue rotate-[-3deg] absolute top-12 left-26">
+                  DESIGNER
+                </h1>
+                <Image
+                  src={"/img/Rectangle 3.png"}
+                  width={18}
+                  height={18}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain absolute top-[62px] left-[57px]"
+                />
+                <Image
+                  src={"/img/Rectangle 4.png"}
+                  width={18}
+                  height={18}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain absolute top-[196px] left-[734px]"
+                />
+                <Image
+                  src={"/img/Rectangle 5.png"}
+                  width={18}
+                  height={18}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain absolute top-[230px] left-[65px]"
+                />
+                <Image
+                  src={"/img/Rectangle 6.png"}
+                  width={18}
+                  height={18}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain absolute top-[26px] left-[726px]"
+                />
+              </div>
+              <div className="flex justify-between">
+                <div className="portfolio-box border-radius-30 p-[17px] flex flex-row bg-light-gray gap-2.5">
+                  <div className="flex-col">
+                    <div>
+                      <Image
+                        src={"/img/portfolio 1.png"}
+                        width={158}
+                        height={177}
+                        alt="Laptop"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                    <div className="pl-4 pt-[33px] leading-[70%]">
+                      <p className="fs-14 font-normal">Best Project on <br/> the years</p>
+                    </div>
+                  </div>
+                  <div className="flex-col">
+                    <Image
+                      src={"/img/portfolio 2.png"}
+                      width={100}
+                      height={100}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="flex-col">
+                    <div className="flex">
+                      <p className="underline">View all</p>
+                      <Image
+                        src={"/img/arrow.png"}
+                        width={100}
+                        height={100}
+                        alt="Laptop"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <Image
+                        src={"/img/portfolio 3.png"}
+                        width={100}
+                        height={100}
+                        alt="Laptop"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className=""></div>
               </div>
             </div>
           </div>
