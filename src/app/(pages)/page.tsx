@@ -9,7 +9,7 @@ const page = () => {
       <Navbar />
       <section className="hero-section shadow-primary">
         <div className="hero-wrapper border-radius-20 bg-cover bg-center">
-          <div className="container mx-auto ">
+          <div className="w-full lg:container mx-auto ">
             <div className="flex flex-row justify-between px-80">
               <div className="w-[25%]">
                 <p className="text-gray font-normal">
@@ -135,7 +135,7 @@ const page = () => {
                     className="object-contain absolute top-[26px] left-[726px]"
                   />
                 </div>
-                <div className="flex justify-between">
+                <div className="flex items-center gap-20">
                   <div className="portfolio-box border-radius-30 p-[17px] flex flex-row bg-light-gray gap-2.5">
                     <div className="flex-col">
                       <div>
@@ -188,7 +188,20 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=""></div>
+                  <div className="flex-col gap-6">
+                    <div className="flex items-center gap-5">
+                      <p className="fs-14 font-medium text-gray">Success <br/>project</p>
+                      <p className="font-medium text-[36px] text-primary">250<span className="text-blue">+</span></p>
+                    </div>
+                    <div className="flex items-center gap-5">
+                      <p className="font-medium text-[36px] text-primary">160<span className="text-blue">+</span></p>
+                      <p className="fs-14 font-normal text-gray">Recent <br/>clients</p>
+                    </div>
+                    <div className="flex items-center gap-5">
+                      <p className="fs-14 font-normal text-gray">Happy<br/> Clients</p>
+                      <p className="font-medium text-[36px] text-primary">95<span className="text-blue">+</span></p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
