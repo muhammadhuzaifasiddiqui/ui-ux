@@ -192,6 +192,15 @@ h4 {
   padding: 15px 20px;
   font-size: 12px;
   font-weight: 600;
+  border-radius: 30px;
+}
+
+.btn-border-right {
+  border-radius: 30px 0 30px 30px;
+}
+
+.btn-border-left {
+  border-radius: 0 30px 30px 30px;
 }
 
 .btn-xsm {
@@ -208,14 +217,6 @@ h4 {
   padding: 9px 22px;
 }
 
-.border-right {
-  border-radius: 30px 0 30px 30px;
-}
-
-.border-left {
-  border-radius: 0 30px 30px 30px;
-}
-
 .btn-lg {
   padding: 12px 33px;
   font-weight: 500 !important;
@@ -223,6 +224,10 @@ h4 {
 }
 
 .btn-xl {
+  padding: 15px 35px;
+}
+
+.btn-xxl {
   padding: 19px 41px;
   font-size: 24px;
   font-weight: 500 !important;
@@ -239,16 +244,11 @@ h4 {
   background-color: #242424;
 }
 
-.btn-gray-right {
+.btn-gray {
   color: #FFF;
-  border-radius: 30px 0 30px 30px;
   background-color: #85A7D0;
 }
 
-.btn-gray-left {
-  border-radius: 0 30px 30px 30px;
-  background-color: #85A7D0;
-}
 
 .btn-blue {
   border: 1px solid rgba(133, 167, 208, 0.33);
@@ -321,7 +321,6 @@ h4 {
 }
 
 .navbar .nav-link {
-  padding: 10px 6px;
   transition: all 0.2s;
   font-weight: 400;
 }
@@ -355,10 +354,29 @@ h4 {
 } */
 
 /* hero-section */
+.hero-section {
+  padding: 20px 20px 10px 20px;
+}
+
+.hero-wrapper {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: url('/img/hero-bg.png') no-repeat center, #fff;
+}
+
 .hero-section .charges-box p {
   color: #30373E;
   font-size: 64.878px;
   font-weight: 700;
+}
+
+.hero-section .charges-box {
+  padding: 15px 28px;
+}
+
+.hero-section .img-wrapper{
+  height: 319px;
+  width: 316px;
 }
 
 /* service-section */
