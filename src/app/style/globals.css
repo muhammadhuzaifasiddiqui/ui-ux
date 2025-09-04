@@ -191,19 +191,17 @@ h4 {
 .btn {
   padding: 15px 20px;
   font-size: 12px;
-  border-radius: 12px;
   font-weight: 600;
 }
 
 .btn-xsm {
   border-radius: 100px;
   padding: 8px 12px;
-  font-size: 12px;
+  font-weight: 400 !important;
 }
 
 .btn-sm {
   padding: 6px 20px;
-  font-size: 12px;
 }
 
 .btn-md {
@@ -219,13 +217,15 @@ h4 {
 }
 
 .btn-lg {
-  padding: 15px 35px;
-  font-size: 12px;
+  padding: 12px 33px;
+  font-weight: 500 !important;
+  font-size: 16px;
 }
 
 .btn-xl {
   padding: 19px 41px;
   font-size: 24px;
+  font-weight: 500 !important;
 }
 
 .btn-primary {
