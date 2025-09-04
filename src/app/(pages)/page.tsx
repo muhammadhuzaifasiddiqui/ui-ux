@@ -30,7 +30,7 @@ const page = () => {
                 visually pleasing.
               </p>
               <div className="shadow-down border-radius-30">
-                <div className="charges-box flex justify-between items-center border-radius-30 bg-dark-gray">
+                <div className="charges-box shadow-primary flex justify-between items-center border-radius-30 bg-dark-gray">
                   <div className="w-[60%]">
                     <p>
                       35$
@@ -61,19 +61,20 @@ const page = () => {
               </div>
             </div>
             <div className="w-[70%]">
-              <div className="flex flex-row items-end">
-                <div className="img-wrapper">
-                  <Image
-                    src={"/img/hero-laptop.jpg"}
-                    width={319}
-                    height={316}
-                    alt=""
-                    unoptimized={true}
-                    className=""
-                  />
+              <div className="flex flex-row items-end gap-23">
+                <div className="bg-laptop">
+                  <div className="img-wrapper">
+                    <Image
+                      src={"/img/hero-laptop.png"}
+                      width={319}
+                      height={316}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
-
-                <div className="pl-23">
+                <div>
                   <Link
                     href="#"
                     className="btn btn-md btn-gray btn-border-left"
@@ -82,6 +83,16 @@ const page = () => {
                     Design
                   </Link>
                 </div>
+              </div>
+              <div className="relative pt-11 pb-10">
+                <Image
+                  src={"/img/Rectangle 2.png"}
+                  width={652}
+                  height={153}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>

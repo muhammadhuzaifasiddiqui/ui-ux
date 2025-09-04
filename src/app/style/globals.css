@@ -374,9 +374,19 @@ h4 {
   padding: 15px 28px;
 }
 
-.hero-section .img-wrapper{
-  height: 319px;
+.hero-section .img-wrapper {
   width: 316px;
+  position: absolute;
+  bottom: 1px;
+  left: 20px;
+}
+
+.bg-laptop {
+  position: relative;
+  height: 85px;
+  width: 400px;
+  border-radius: 60px;
+  background: #DFE2FF;
 }
 
 /* service-section */
