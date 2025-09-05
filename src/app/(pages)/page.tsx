@@ -149,7 +149,7 @@ const cards = () => {
   return (
     <>
       <Navbar />
-      <section className="hero-section">
+      <section className="hero-section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#85A7D054] to-[#F6FAFF]">
         <div className="hero-wrapper shadow-primary border-radius-20 bg-cover bg-center">
           <div className="w-full lg:container mx-auto ">
             <div className="flex flex-row justify-between px-80">
@@ -369,7 +369,7 @@ const cards = () => {
       <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-row gap-2.5">
-            <div className="flex-row services-collection-box pt-7.5 border-radius-20 w-1/2">
+            <div className="flex-row shadow-primary services-collection-box pt-7.5 border-radius-20 w-1/2">
               <div className="w-full flex justify-between relative">
                 <div>
                   <Image
@@ -450,7 +450,7 @@ const cards = () => {
             </div>
             <div className="w-1/2">
               <div className="flex w-full flex-col gap-2.5">
-                <div className="service-card flex flex-col border-radius-20">
+                <div className="service-card shadow-primary flex flex-col border-radius-20">
                   <div className="flex justify-between relative">
                     <h3 className="font-montreal text-black font-normal leading-[110%] uppercase">
                       User Research &
@@ -476,7 +476,7 @@ const cards = () => {
                     </p>
                   </div>
                 </div>
-                <div className="service-card active flex flex-col border-radius-20">
+                <div className="service-card shadow-primary active flex flex-col border-radius-20">
                   <div className="flex justify-between relative">
                     <h3 className="font-montreal text-white font-normal leading-[110%] uppercase">
                       Wireframing &
@@ -503,7 +503,7 @@ const cards = () => {
                     </p>
                   </div>
                 </div>
-                <div className="service-card flex flex-col border-radius-20">
+                <div className="service-card shadow-primary flex flex-col border-radius-20">
                   <div className="flex justify-between relative">
                     <h3 className="font-montreal text-black font-normal leading-[110%] uppercase">
                       Visual Design &
