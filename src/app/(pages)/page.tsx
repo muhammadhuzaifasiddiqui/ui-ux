@@ -1,14 +1,156 @@
-import React from "react";
+"use client";
 import Image from "next/image";
 import Navbar from "../components/layout/Navbar";
 import Link from "next/link";
+import React, { useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
-const page = () => {
+// Define the interface for a card item
+interface CardItem {
+  id: number;
+  text: string;
+  color: string;
+  size: string;
+  rotation?: string;
+  translateX?: string;
+  border?: string;
+}
+
+const initialCards: CardItem[] = [
+  {
+    id: 1,
+    text: "USER EXPERIENCE",
+    color: "bg-blue-600" + " text-[#F6FAFF]",
+    size: "text-2xl",
+    rotation: "rotate-2",
+    translateX: "-translate-x-4",
+  },
+  {
+    id: 2,
+    text: "AGENCY WEBSITE",
+    color: "bg-white",
+    size: "text-xl",
+    rotation: "-rotate-1",
+    translateX: "translate-x-8",
+  },
+  {
+    id: 3,
+    text: "IDEAS",
+    color: "bg-white",
+    size: "text-lg",
+  },
+  {
+    id: 4,
+    text: "BRAND DESIGN",
+    color: "bg-white",
+    size: "text-xl",
+  },
+  {
+    id: 5,
+    text: "WIREFRAMING",
+    color: "bg-white",
+    size: "text-2xl",
+    rotation: "rotate-3",
+  },
+  {
+    id: 6,
+    text: "PROTOTYPING",
+    color: "bg-[#4A26FF]" + " text-[#F6FAFF]",
+    size: "text-3xl",
+    rotation: "rotate-3",
+  },
+  {
+    id: 7,
+    text: "STARTUP",
+    color: "bg-white",
+    size: "text-xl",
+  },
+  {
+    id: 8,
+    text: "MOBILE",
+    color: "bg-white",
+    size: "text-xl",
+  },
+  {
+    id: 9,
+    text: "CREATIVITY",
+    color: "bg-white",
+    size: "text-xl",
+    translateX: "translate-x-4",
+  },
+  {
+    id: 10,
+    text: "WEB APP",
+    color: "bg-white",
+    size: "text-xl",
+  },
+  {
+    id: 11,
+    text: "VISUAL DESIGN",
+    color: "bg-white",
+    size: "text-lg",
+    translateX: "-translate-x-4",
+  },
+  {
+    id: 12,
+    text: "WEB DESIGN",
+    color: "bg-[#F0F7FF]",
+    size: "text-3xl",
+    rotation: "-rotate-2",
+  },
+  {
+    id: 13,
+    text: "USER INTERFACE",
+    color: "bg-white",
+    size: "text-xl",
+  },
+  // {
+  //   id: 14,
+  //   text: "AUTOMATION",
+  //   color: "bg-white",
+  //   size: "text-xl",
+  // },
+  // {
+  //   id: 15,
+  //   text: "3D-ANIMATION",
+  //   color: "bg-white",
+  //   size: "text-xl",
+  // },
+  // {
+  //   id: 16,
+  //   text: "VR-BOX",
+  //   color: "bg-white",
+  //   size: "text-xl",
+  // },
+  // Add more cards as needed
+];
+
+// Define animation variants for the cards
+const cardVariants = {
+  // The state of the card before it's animated
+  initial: {
+    opacity: 0,
+    y: -200, // Start high up, as if falling from above
+    scale: 0.5,
+  },
+  // The state of the card after the animation
+  animate: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+  },
+};
+
+const cards = () => {
+  const [cards] = useState<CardItem[]>(initialCards);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.5 }); // Detect when the container is 50% in view
+
   return (
     <>
       <Navbar />
-      <section className="hero-section shadow-primary">
-        <div className="hero-wrapper border-radius-20 bg-cover bg-center">
+      <section className="hero-section">
+        <div className="hero-wrapper shadow-primary border-radius-20 bg-cover bg-center">
           <div className="w-full lg:container mx-auto ">
             <div className="flex flex-row justify-between px-80">
               <div className="w-[25%]">
@@ -223,11 +365,173 @@ const page = () => {
           </div>
         </div>
       </section>
+
       <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-row gap-2.5">
-            <div className="w-1/2"></div>
-            <div className="w-1/2"></div>
+            <div className="flex-row services-collection-box pt-7.5 border-radius-20 w-1/2">
+              <div className="w-full flex justify-between relative">
+                <div>
+                  <Image
+                    src={"/img/UI UX.png"}
+                    width={246}
+                    height={138}
+                    alt="UI UX"
+                    unoptimized={true}
+                    className="object-contain absolute top-[-20px]"
+                  />
+                </div>
+                <div className="flex flex-col items-end pr-7.5 gap-2.5">
+                  <div className="flex items-center gap-1.5">
+                    <Image
+                      src={"/img/title-dot.png"}
+                      width={5}
+                      height={5}
+                      alt="title-dot"
+                      unoptimized={true}
+                      className="object-contain"
+                    />
+                    <p className="text-blue text-right leading-[80%]">
+                      service
+                    </p>
+                  </div>
+                  <div className="flex items-center">
+                    <h2 className="font-montreal text-black font-light text-right leading-[110%]">
+                      EXPLORE MY
+                      <br />
+                      <span className="font-medium text-primary">SERVICES</span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full mt-23">
+                <div ref={ref} className="w-full overflow-hidden">
+                  <div className="flex flex-wrap items-center justify-evenly gap-4">
+                    {cards.map((card, index) => (
+                      <motion.div
+                        key={card.id}
+                        variants={cardVariants}
+                        initial="initial"
+                        animate={isInView ? "animate" : "initial"} // Animate only when the section is in view
+                        transition={{
+                          type: "spring", // Use a spring transition for a bouncing effect
+                          damping: 10,
+                          stiffness: 100,
+                          delay: index * 0.05, // Stagger the animation of each card
+                        }}
+                        className={`
+              inline-block
+              btn-xxl
+              service-bullets-border
+              border-radius-50 
+              cursor-pointer
+              transition-all
+              duration-100
+              hover:scale-103
+              whitespace-nowrap
+              ${card.color}
+              ${card.size}
+              ${card.rotation || ""}
+              ${card.translateX || ""}
+              ${card.color === "bg-white" ? "text-gray-800" : "text-[#3C3C3C]"}
+            `}
+                        style={{
+                          transform: `${card.rotation ? card.rotation : ""} ${
+                            card.translateX ? card.translateX : ""
+                          }`,
+                        }}
+                      >
+                        {card.text}
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2">
+              <div className="flex w-full flex-col gap-2.5">
+                <div className="service-card flex flex-col border-radius-20">
+                  <div className="flex justify-between relative">
+                    <h3 className="font-montreal text-black font-normal leading-[110%] uppercase">
+                      User Research &
+                      <br />
+                      Analysis
+                    </h3>
+                    <div>
+                      <Image
+                        src={"/img/arrow-right.png"}
+                        width={246}
+                        height={138}
+                        alt="UI UX"
+                        unoptimized={true}
+                        className="object-contain absolute top-[-15px] left-[773px]"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex w-[70%] ml-auto mt-10">
+                    <p className="text-right leading-[100%]">
+                      Conducting research to understand user needs, behaviors,
+                      <br />
+                      and pain points for informed design decisions.
+                    </p>
+                  </div>
+                </div>
+                <div className="service-card active flex flex-col border-radius-20">
+                  <div className="flex justify-between relative">
+                    <h3 className="font-montreal text-white font-normal leading-[110%] uppercase">
+                      Wireframing &
+                      <br />
+                      Prototyping
+                    </h3>
+                    <div>
+                      <Image
+                        src={"/img/white-arrow-right.png"}
+                        width={246}
+                        height={138}
+                        alt="UI UX"
+                        unoptimized={true}
+                        className="object-contain absolute top-[-15px] left-[773px]"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex w-[70%] ml-auto mt-10">
+                    <p className="text-right text-white leading-[100%]">
+                      Creating low-fidelity layouts and interactive prototypes
+                      to
+                      <br />
+                      visualize design concepts and user flows.
+                    </p>
+                  </div>
+                </div>
+                <div className="service-card flex flex-col border-radius-20">
+                  <div className="flex justify-between relative">
+                    <h3 className="font-montreal text-black font-normal leading-[110%] uppercase">
+                      Visual Design &
+                      <br />
+                      Interaction Design
+                    </h3>
+                    <div>
+                      <Image
+                        src={"/img/arrow-right.png"}
+                        width={246}
+                        height={138}
+                        alt="UI UX"
+                        unoptimized={true}
+                        className="object-contain absolute top-[-15px] left-[773px]"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex w-[70%] ml-auto mt-10">
+                    <p className="text-right leading-[100%]">
+                      Crafting aesthetically pleasing and intuitive interfaces
+                      that
+                      <br />
+                      ensure seamless user experiences.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -235,4 +539,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default cards;
