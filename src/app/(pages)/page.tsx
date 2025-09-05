@@ -149,7 +149,7 @@ const cards = () => {
   return (
     <>
       <Navbar />
-      <section className="hero-section bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#85A7D054] to-[#F6FAFF]">
+      <section className="hero-section">
         <div className="hero-wrapper shadow-primary border-radius-20 bg-cover bg-center">
           <div className="w-full lg:container mx-auto ">
             <div className="flex flex-row justify-between px-80">
