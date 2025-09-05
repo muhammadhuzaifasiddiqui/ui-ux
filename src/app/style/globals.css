@@ -305,7 +305,7 @@ h4 {
 .hero-wrapper {
   padding-top: 150px;
   padding-bottom: 50px;
-  background: url('/img/hero-bg.png') no-repeat center, #fff;
+  background: url('/img/hero-bg.png');
 }
 
 .hero-section .charges-box p {
@@ -345,6 +345,7 @@ h4 {
 }
 
 .services-collection-box{
+  background: url('/img/service-bg.png');
   background-color: #fff;
 }
 
