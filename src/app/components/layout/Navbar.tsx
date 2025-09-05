@@ -52,7 +52,10 @@ const Navbar = () => {
             </div>
 
             <div className="lg:flex hidden navbar-button gap-2">
-              <Link href="#" className="btn btn-primary border-radius-30 font-poppins">
+              <Link
+                href="#"
+                className="btn btn-primary border-radius-30 font-poppins"
+              >
                 Get in touch
               </Link>
             </div>

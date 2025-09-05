@@ -141,7 +141,7 @@ const cardVariants = {
   },
 };
 
-const cards = () => {
+const Page = () => {
   const [cards] = useState<CardItem[]>(initialCards);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 }); // Detect when the container is 50% in view
@@ -175,7 +175,7 @@ const cards = () => {
                   ensuring that every interaction is intuitive, efficient, and
                   visually pleasing.
                 </p>
-                <div className="shadow-down border-radius-30">
+                <div className="shadow-down border-radius-30 bg-white">
                   <div className="charges-box shadow-primary flex justify-between items-center border-radius-30 bg-dark-gray">
                     <div className="w-[60%]">
                       <p>
@@ -287,11 +287,11 @@ const cards = () => {
                           height={177}
                           alt="Laptop"
                           unoptimized={true}
-                          className="object-contain"
+                          className="object-contain cursor-pointer"
                         />
                       </div>
                       <div className="pl-4 pt-[33px] leading-[70%]">
-                        <p className="fs-14 font-normal">
+                        <p className="fs-14 font-normal cursor-pointer">
                           Best Project on <br /> the years
                         </p>
                       </div>
@@ -303,19 +303,19 @@ const cards = () => {
                         height={100}
                         alt="Laptop"
                         unoptimized={true}
-                        className="object-contain"
+                        className="object-contain cursor-pointer"
                       />
                     </div>
                     <div className="flex flex-col justify-end">
                       <div className="flex pl-10 items-center gap-2">
-                        <p className="underline fs-14 font-normal">View all</p>
+                        <p className="underline fs-14 cursor-pointer font-normal">View all</p>
                         <Image
                           src={"/img/arrow.png"}
                           width={100}
                           height={100}
                           alt="Laptop"
                           unoptimized={true}
-                          className="object-contain"
+                          className="object-contain cursor-pointer"
                         />
                       </div>
                       <div className="mt-9">
@@ -325,7 +325,7 @@ const cards = () => {
                           height={100}
                           alt="Laptop"
                           unoptimized={true}
-                          className="object-contain"
+                          className="object-contain cursor-pointer"
                         />
                       </div>
                     </div>
@@ -539,4 +539,4 @@ const cards = () => {
   );
 };
 
-export default cards;
+export default Page;
