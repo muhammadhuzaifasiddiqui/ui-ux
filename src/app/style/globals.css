@@ -186,7 +186,7 @@ h4 {
 }
 
 .btn-xl {
-  padding: 15px 35px;
+  padding: 15px 43px;
 }
 
 .btn-xxl {
@@ -382,6 +382,47 @@ h4 {
 .workflow-section .card {
   background-color: #fff;
   padding: 20px 80px;
+}
+
+/* portfolio-section */
+.portfolio-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.portfolio-wrapper {
+  background: url('/img/Noise & Texture.png');
+  background-color: #DADCF9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.portfolio-card {
+  height: 500px;
+  background-color: #fff;
+}
+
+.portfolio-card-footer {
+  padding: 16px 20.241px 7px 21px;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(2px);
+}
+
+/* idea-section */
+.idea-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.idea-wrapper {
+  background: linear-gradient(146deg, rgba(0, 0, 0, 0.00) 75.63%, rgba(0, 0, 0, 0.80) 88.95%), linear-gradient(337deg, rgba(0, 0, 0, 0.00) 70.94%, rgba(0, 0, 0, 0.80) 90.66%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+  background: url('/img/Rectangle 34624266.png');
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* trusted-section */

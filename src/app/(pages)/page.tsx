@@ -820,7 +820,7 @@ const Page = () => {
       </section>
 
       <section className="portfolio-section">
-        <div className="portfolio-wrapper">
+        <div className="portfolio-wrapper shadow-primary border-radius-20 px-80">
           <div className="flex flex-col items-center mb-7.5">
             <div className="flex gap-1.5 mb-2.5">
               <Image
@@ -839,10 +839,156 @@ const Page = () => {
               <span className="font-medium text-primary">Solve Problems</span>
             </h2>
           </div>
-          
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-7 md:pt-9 xl:pt-12">
+            <div className="flex flex-col gap-2.5">
+              <div className="portfolio-card border-radius-20 shadow-primary"></div>
+              <div className="flex flex-col gap-6 portfolio-card-footer border-radius-20 shadow-primary">
+                <div className="flex flex-wrap gap-1">
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Figma
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Webflow
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Wizard
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Weglot
+                  </Link>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-1.5">
+                    <p className="fs-14 text-gray">Bulit to Launch</p>
+                    <p className="fs-16 font-bold">6 Weeks</p>
+                  </div>
+                  <div className="flex gap-1.5">
+                    <p className="fs-14 text-gray">Visit Website</p>
+                    <div>
+                      <Image
+                        src={"/img/Frame.png"}
+                        width={17}
+                        height={17}
+                        alt="right arrow"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2.5">
+              <div className="portfolio-card border-radius-20 shadow-primary"></div>
+              <div className="flex flex-col gap-6 portfolio-card-footer border-radius-20 shadow-primary">
+                <div className="flex flex-wrap gap-1">
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Figma
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Webflow
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Wizard
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Weglot
+                  </Link>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-1.5">
+                    <p className="fs-14 text-gray">Bulit to Launch</p>
+                    <p className="fs-16 font-bold">6 Weeks</p>
+                  </div>
+                  <div className="flex gap-1.5">
+                    <p className="fs-14 text-gray">Visit Website</p>
+                    <div>
+                      <Image
+                        src={"/img/Frame.png"}
+                        width={17}
+                        height={17}
+                        alt="right arrow"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2.5">
+              <div className="portfolio-card border-radius-20 shadow-primary"></div>
+              <div className="flex flex-col gap-6 portfolio-card-footer border-radius-20 shadow-primary">
+                <div className="flex flex-wrap gap-1">
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Figma
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Webflow
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Wizard
+                  </Link>
+                  <Link href="#" className="btn btn-xsm btn-lilac">
+                    Weglot
+                  </Link>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-1.5">
+                    <p className="fs-14 text-gray">Bulit to Launch</p>
+                    <p className="fs-16 font-bold">6 Weeks</p>
+                  </div>
+                  <div className="flex gap-1.5">
+                    <p className="fs-14 text-gray">Visit Website</p>
+                    <div>
+                      <Image
+                        src={"/img/Frame.png"}
+                        width={17}
+                        height={17}
+                        alt="right arrow"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center mt-7.5">
+            <Link href="#" className="fs-14 btn btn-xl btn-primary">
+              View All
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="idea-section mt-2.5 mb-2.5">
+        <div className="idea-wrapper border-radius-20 shadow-primary px-80">
+          <div className="flex flex-col gap-64">
+            <div className="flex items-start">
+              <h2 className="font-light text-white font-montreal leading-[100%] uppercase">
+                Ready to Create Your <br />
+                <span className="text-pink font-medium">Amazing Ideas</span>
+              </h2>
+            </div>
+            <div className="flex flex-col items-end">
+              <p className="mb-6 text-right text-white capitalize">
+                I’m always excited to discuss new
+                <br /> opportunities and collaborations.
+                <br /> Feel free to reach out.
+              </p>
+              <Link href="#" className="fs-12 btn  btn-pink">
+                Get in touch
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>
   );
 };
+
 export default Page;
