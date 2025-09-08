@@ -308,7 +308,9 @@ const Page = () => {
                     </div>
                     <div className="flex flex-col justify-end">
                       <div className="flex pl-10 items-center gap-2">
-                        <p className="underline fs-14 cursor-pointer font-normal">View all</p>
+                        <p className="underline fs-14 cursor-pointer font-normal">
+                          View all
+                        </p>
                         <Image
                           src={"/img/arrow.png"}
                           width={100}
@@ -450,52 +452,91 @@ const Page = () => {
             </div>
             <div className="w-1/2">
               <div className="flex w-full flex-col gap-2.5">
-                <div className="service-card shadow-primary flex flex-col border-radius-20">
+                <div className="service-card shadow-primary flex flex-col border-radius-20 group">
                   <div className="flex justify-between relative">
-                    <h3 className="font-montreal text-black font-normal leading-[110%] uppercase">
+                    <h3 className="font-montreal group-hover:text-white font-normal leading-[110%] uppercase">
                       User Research &
                       <br />
                       Analysis
                     </h3>
                     <div>
-                      <Image
-                        src={"/img/arrow-right.png"}
-                        width={246}
-                        height={138}
-                        alt="UI UX"
-                        unoptimized={true}
-                        className="object-contain absolute top-[-15px] left-[773px]"
-                      />
+                      <svg
+                        className="absolute top-[-15px] left-[773px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
+                        viewBox="0 0 72 72"
+                        fill="none"
+                      >
+                        <path
+                          d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
+                          className="group-hover:stroke-white"
+                          stroke="#4A26FF"
+                          strokeWidth="2.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M23.4786 48.5217L48.2715 23.7288"
+                          className="group-hover:stroke-white"
+                          stroke="#4A26FF"
+                          strokeWidth="2.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                   <div className="flex w-[70%] ml-auto mt-10">
-                    <p className="text-right leading-[100%]">
+                    <p className="text-right group-hover:text-white leading-[100%]">
                       Conducting research to understand user needs, behaviors,
                       <br />
                       and pain points for informed design decisions.
                     </p>
                   </div>
                 </div>
-                <div className="service-card shadow-primary active flex flex-col border-radius-20">
+
+                <div className="service-card shadow-primary active flex flex-col border-radius-20 group">
                   <div className="flex justify-between relative">
-                    <h3 className="font-montreal text-white font-normal leading-[110%] uppercase">
+                    <h3 className="font-montreal group-hover:text-white font-normal leading-[110%] uppercase">
                       Wireframing &
                       <br />
                       Prototyping
                     </h3>
                     <div>
-                      <Image
-                        src={"/img/white-arrow-right.png"}
-                        width={246}
-                        height={138}
-                        alt="UI UX"
-                        unoptimized={true}
-                        className="object-contain absolute top-[-15px] left-[773px]"
-                      />
+                      <svg
+                        className="absolute top-[-15px] left-[773px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
+                        viewBox="0 0 72 72"
+                        fill="none"
+                      >
+                        <path
+                          d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
+                          className="group-hover:stroke-white"
+                          stroke="#4A26FF"
+                          strokeWidth="2.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M23.4786 48.5217L48.2715 23.7288"
+                          className="group-hover:stroke-white"
+                          stroke="#4A26FF"
+                          strokeWidth="2.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                   <div className="flex w-[70%] ml-auto mt-10">
-                    <p className="text-right text-white leading-[100%]">
+                    <p className="text-right group-hover:text-white leading-[100%]">
                       Creating low-fidelity layouts and interactive prototypes
                       to
                       <br />
@@ -503,25 +544,45 @@ const Page = () => {
                     </p>
                   </div>
                 </div>
-                <div className="service-card shadow-primary flex flex-col border-radius-20">
+
+                <div className="service-card shadow-primary flex flex-col border-radius-20 group">
                   <div className="flex justify-between relative">
-                    <h3 className="font-montreal text-black font-normal leading-[110%] uppercase">
+                    <h3 className="font-montreal group-hover:text-white font-normal leading-[110%] uppercase">
                       Visual Design &
                       <br />
                       Interaction Design
                     </h3>
                     <div>
-                      <Image
-                        src={"/img/arrow-right.png"}
-                        width={246}
-                        height={138}
-                        alt="UI UX"
-                        unoptimized={true}
-                        className="object-contain absolute top-[-15px] left-[773px]"
-                      />
+                      <svg
+                        className="absolute top-[-15px] left-[773px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
+                        viewBox="0 0 72 72"
+                        fill="none"
+                      >
+                        <path
+                          d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
+                          className="group-hover:stroke-white"
+                          stroke="#4A26FF"
+                          strokeWidth="2.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M23.4786 48.5217L48.2715 23.7288"
+                          className="group-hover:stroke-white"
+                          stroke="#4A26FF"
+                          strokeWidth="2.5"
+                          strokeMiterlimit="10"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
-                  <div className="flex w-[70%] ml-auto mt-10">
+                  <div className="flex w-[70%] group-hover:text-white ml-auto mt-10">
                     <p className="text-right leading-[100%]">
                       Crafting aesthetically pleasing and intuitive interfaces
                       that
@@ -535,8 +596,43 @@ const Page = () => {
           </div>
         </div>
       </section>
+
+      <section className="about-section">
+        <div className="about-wrapper border-radius-20 shadow-primary">
+          <div className="flex px-80 pt-7.5 pb-22.5">
+            <div className="flex items-center w-full justify-between">
+              <div>
+                <div className="flex items-center gap-1.5 mb-2.5">
+                  <Image
+                    src={"/img/title-dot.png"}
+                    width={5}
+                    height={5}
+                    alt="title-dot"
+                    unoptimized={true}
+                    className="object-contain"
+                  />
+                  <p className="text-blue font-normal fs-20">About Me</p>
+                </div>
+                <h2 className="font-light font-montreal text-white leading-[106%]">
+                  Meet the Mind <br />
+                  <span className="text-pink font-medium">Behind the Work</span>
+                </h2>
+              </div>
+              <div className="figma-icon p-3">
+                <Image
+                  src={"/img/figma-icon.png"}
+                  width={61}
+                  height={61}
+                  alt="Figma"
+                  unoptimized={true}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
-
 export default Page;

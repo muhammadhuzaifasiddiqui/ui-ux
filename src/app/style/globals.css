@@ -31,6 +31,10 @@ img {
   color: #333B45;
 }
 
+.text-light-blue {
+  color: #81C3FF;
+}
+
 .text-blue {
   color: #0085FF;
 }
@@ -43,7 +47,7 @@ img {
   color: #000;
 }
 
-.text-dark {
+.text-pink {
   color: #E1D4F8;
 }
 
@@ -83,18 +87,6 @@ h4 {
   font-size: 20px;
 }
 
-/* .fs-35 {
-  font-size: 35px;
-}
-
-.fs-38 {
-  font-size: 38px;
-}
-
-.fs-80 {
-  font-size: 80px;
-} */
-
 .px-80 {
   padding-right: 80px;
   padding-left: 80px;
@@ -117,7 +109,6 @@ h4 {
 .pb-40 {
   padding-bottom: 40px;
 }
-
 
 .bg-blue {
   background-color: #0085FF;
@@ -218,7 +209,6 @@ h4 {
   color: #FFF;
   background-color: #85A7D0;
 }
-
 
 .btn-blue {
   border: 1px solid rgba(133, 167, 208, 0.33);
@@ -335,7 +325,6 @@ h4 {
 
 .portfolio-box {
   border: 1px solid rgba(133, 167, 208, 0.33);
-
 }
 
 /* service-section */
@@ -358,16 +347,30 @@ h4 {
   padding: 30px 0px 20px 30px;
 }
 
-.service-card {
-  background-color: #fff;
-  padding: 30px 0px 20px 30px;
-}
-
-.services-section .active {
+.service-card:hover {
   background-color: #0085FF;
 }
 
-/* product-section */
+/* about-section */
+.about-section {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about-wrapper {
+  background: url('/img/About-BG.png');
+  background-color: #000;
+}
+
+.figma-icon {
+  border-radius: 18px;
+  border: 1px solid #fff;
+}
+
+
+
 /* trusted-section */
 /* blog-section */
 /* marquee-section */
