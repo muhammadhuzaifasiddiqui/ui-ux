@@ -819,7 +819,28 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="portfolio-section">        
+      <section className="portfolio-section">
+        <div className="portfolio-wrapper">
+          <div className="flex flex-col items-center mb-7.5">
+            <div className="flex gap-1.5 mb-2.5">
+              <Image
+                src={"/img/title-dot.png"}
+                width={5}
+                height={5}
+                alt="title-dot"
+                unoptimized={true}
+                className="object-contain"
+              />
+              <p className="text-blue font-normal fs-20">My Work</p>
+            </div>
+            <h2 className="font-light font-montreal uppercase text-center leading-[100%]">
+              Designs That
+              <br />
+              <span className="font-medium text-primary">Solve Problems</span>
+            </h2>
+          </div>
+          
+        </div>
       </section>
     </>
   );
