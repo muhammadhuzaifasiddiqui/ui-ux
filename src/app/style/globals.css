@@ -369,7 +369,20 @@ h4 {
   border: 1px solid #fff;
 }
 
+.img-about {
+  height: 800px;
+}
 
+/* workflow-section */
+.workflow-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.workflow-section .card {
+  background-color: #fff;
+  padding: 20px 80px;
+}
 
 /* trusted-section */
 /* blog-section */

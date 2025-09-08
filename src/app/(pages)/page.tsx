@@ -598,39 +598,228 @@ const Page = () => {
       </section>
 
       <section className="about-section">
-        <div className="about-wrapper border-radius-20 shadow-primary">
-          <div className="flex px-80 pt-7.5 pb-22.5">
-            <div className="flex items-center w-full justify-between">
-              <div>
-                <div className="flex items-center gap-1.5 mb-2.5">
-                  <Image
-                    src={"/img/title-dot.png"}
-                    width={5}
-                    height={5}
-                    alt="title-dot"
-                    unoptimized={true}
-                    className="object-contain"
-                  />
-                  <p className="text-blue font-normal fs-20">About Me</p>
-                </div>
-                <h2 className="font-light font-montreal text-white leading-[106%]">
-                  Meet the Mind <br />
-                  <span className="text-pink font-medium">Behind the Work</span>
-                </h2>
-              </div>
-              <div className="figma-icon p-3">
+        <div className="about-wrapper border-radius-20 shadow-primary px-80 pt-7.5 pb-22.5">
+          <div className="flex flex-row items-center w-full justify-between">
+            <div>
+              <div className="flex items-center gap-1.5 mb-2.5">
                 <Image
-                  src={"/img/figma-icon.png"}
-                  width={61}
-                  height={61}
-                  alt="Figma"
+                  src={"/img/title-dot.png"}
+                  width={5}
+                  height={5}
+                  alt="title-dot"
                   unoptimized={true}
                   className="object-contain"
                 />
+                <p className="text-blue font-normal fs-20">About Me</p>
+              </div>
+              <h2 className="font-light font-montreal uppercase text-white leading-[106%]">
+                Meet the Mind <br />
+                <span className="text-pink font-medium">Behind the Work</span>
+              </h2>
+            </div>
+            <div className="figma-icon p-3">
+              <Image
+                src={"/img/figma-icon.png"}
+                width={61}
+                height={61}
+                alt="Figma"
+                unoptimized={true}
+                className="object-contain"
+              />
+            </div>
+          </div>
+          <div className="flex">
+            <div className="w-[50%] relative">
+              <Image
+                src={"/img/Profile Pic Taha.png"}
+                width={727}
+                height={727}
+                alt="title-dot"
+                unoptimized={true}
+                className="object-contain absolute top-[-20px]"
+              />
+            </div>
+            <div className="w-[50%]">
+              <p className="text-right fs-20 capitalize mt-4 mb-30">
+                Hi, I’m{" "}
+                <span className="font-bold text-white">Taha Khanzada,</span> a
+                designer who thrives on
+                <br /> transforming ideas into engaging designs. From wireframes
+                <br /> to polished visuals, I focus on blending functionality
+                with
+                <br /> aesthetics to deliver exceptional results.
+              </p>
+              <div className="flex gap-7.5">
+                <div>
+                  <h2 className="text-white font-normal leading-[100%]">
+                    250<span className="text-blue text-[64px]">+</span>
+                  </h2>
+                  <p className="fs-20">Success Project</p>
+                </div>
+                <div>
+                  <h2 className="text-white font-normal leading-[100%]">
+                    160<span className="text-blue text-[64px]">+</span>
+                  </h2>
+                  <p className="fs-20">recent clients</p>
+                </div>
+                <div>
+                  <h2 className="text-white font-normal leading-[100%]">
+                    99<span className="text-blue text-[64px]">%</span>
+                  </h2>
+                  <p className="fs-20">Happy Clients</p>
+                </div>
+              </div>
+              <div className="flex flex-wrap mt-12.5 gap-2.5">
+                <Link href="#" className="btn btn-lg btn-black">
+                  Design
+                </Link>
+                <Link href="#" className="btn btn-lg btn-black">
+                  User Experience
+                </Link>
+                <Link href="#" className="btn btn-lg btn-black">
+                  Insights
+                </Link>
+                <Link href="#" className="btn btn-lg btn-black">
+                  prototypes
+                </Link>
+                <Link href="#" className="btn btn-lg btn-black">
+                  intuitive interfaces
+                </Link>
+                <Link href="#" className="btn btn-lg btn-black">
+                  High-fidelity Design
+                </Link>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="workflow-section">
+        <div className="workflow-wrapper">
+          <div className="flex bg-white shadow-primary justify-between border-radius-20 px-80 p-5 mb-2.5">
+            <div className="w-[60%]">
+              <Image
+                src={"/img/gesture.png"}
+                width={111}
+                height={111}
+                alt="Laptop"
+                unoptimized={true}
+                className="object-contain"
+              />
+              <p>
+                I take a user-focused approach, starting with research to
+                understand needs and goals. Through collaboration, wireframes,
+                and refined designs, I create impactful, functional, and
+                visually engaging solutions.
+              </p>
+            </div>
+            <div className="flex flex-col items-end w-[30%]">
+              <div className="flex items-center gap-1.5 mb-2.5">
+                <Image
+                  src={"/img/title-dot.png"}
+                  width={5}
+                  height={5}
+                  alt="title-dot"
+                  unoptimized={true}
+                  className="object-contain"
+                />
+                <p className="text-blue font-normal fs-20"> How I Work </p>
+              </div>
+              <h2 className="font-light text-right uppercase leading-[100%]">
+                My Excellent{" "}
+                <span className="font-medium font-montreal text-primary">
+                  Approach
+                </span>
+              </h2>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-stretch relative lg:flex-nowrap gap-2.5 mb-2.5">
+            <div className="flex-1 w-[33.33%] card border-radius-20 shadow-primary">
+              <div className="flex flex-col items-center">
+                <Image
+                  src={"/img/Rectangle.png"}
+                  width={288}
+                  height={345}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain"
+                />
+                <h3 className="mb-2.5 font-montreal uppercase leading-[100%] font-normal text-black">
+                  Custom, User-Centered Designs
+                </h3>
+                <p className="line-clamp-2 capitalize fs-16">
+                  I create tailored designs that resonate with your audience and
+                  meet their needs.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 justify-between w-[33.33%] ">
+              <div className="flex items-center gap-2.5 bg-white pl-5 border-radius-20 shadow-primary">
+                <div className="flex flex-col">
+                  <h3 className="font-montreal uppercase leading-[100%] font-normal text-black">
+                    Transparent Process
+                  </h3>
+                  <p className="line-clamp-5 capitalize fs-16">
+                    No surprises—just high-quality work delivered on time. just
+                    high-quality work delivered on time.
+                  </p>
+                </div>
+                <Image
+                  src={"/img/Rectangle (1).png"}
+                  width={236}
+                  height={264}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain rounded-[20px]"
+                />
+              </div>
+              <div className="flex items-center gap-2.5 bg-white pr-5 border-radius-20 shadow-primary">
+                <Image
+                  src={"/img/Rectangle (2).png"}
+                  width={236}
+                  height={264}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain rounded-[20px]"
+                />
+                <div className="flex flex-col">
+                  <h3 className="font-montreal text-right uppercase leading-[100%] font-normal text-black">
+                    Proven Results
+                  </h3>
+                  <p className="line-clamp-5 capitalize text-right fs-16">
+                    Trusted by over{" "}
+                    <span className="fs-18 font-semibold text-black">160+</span>
+                    , just high-quality work delivered on time. just
+                    high-quality work delivered on time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex-1 w-[33.33%] card border-radius-20 shadow-primary">
+              <div className="flex flex-col items-center">
+                <Image
+                  src={"/img/Rectangle (3).png"}
+                  width={288}
+                  height={345}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="object-contain"
+                />
+                <h3 className="mb-2.5 text-right font-montreal uppercase leading-[100%] font-normal text-black">
+                  Affordable Packages
+                </h3>
+                <p className="line-clamp-2 text-right capitalize fs-16">
+                  Offering flexible design solutions starting at just $300 to
+                  fit your budget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="portfolio-section">        
       </section>
     </>
   );
