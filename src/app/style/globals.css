@@ -425,6 +425,18 @@ h4 {
   padding-top: 20px;
 }
 
+/* testimonial-section */
+.testimonial-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.testimonial-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: url('/img/Graphic_Elements.png');
+}
+
 /* trusted-section */
 /* blog-section */
 /* marquee-section */

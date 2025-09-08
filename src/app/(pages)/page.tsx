@@ -987,6 +987,25 @@ const Page = () => {
           </div>
         </div>
       </section>
+
+      <section className="pricing-section mb-2.5"></section>
+
+      <section className="testimonial-section">
+        <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
+          <div className="flex items-center gap-1.5">
+            <Image
+              src={"/img/title-dot.png"}
+              width={5}
+              height={5}
+              alt="title-dot"
+              unoptimized={true}
+              className="object-contain"
+            />
+            <p className="text-blue text-right leading-[80%] mt-2.5">Testimonial</p>
+          </div>
+          <h2 className="font-montreal text-center uppercase font-light leading-[100%]">Some words from <br/><span className="font-medium text-pink">my clients</span></h2>
+        </div>
+      </section>
     </>
   );
 };
