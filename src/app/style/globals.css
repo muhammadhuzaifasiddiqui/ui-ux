@@ -467,6 +467,11 @@ h4 {
 
 .testimonial-card{
   padding: 30px 70px;
+  background-color: #fff;
+}
+
+.img-testimonial{
+  height: 50px;
 }
 
 .custom-bullet {
