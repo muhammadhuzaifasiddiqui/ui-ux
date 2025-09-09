@@ -222,7 +222,7 @@ h4 {
 
 .btn-lightGray {
   border: 1px solid rgba(0, 0, 0, 0.15);
-  background: #F6FAFF;
+  /* background-color: #eff5fd; */
   color: #000;
 }
 
@@ -425,6 +425,34 @@ h4 {
   padding-top: 20px;
 }
 
+/* pricing-section */
+.pricing-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pricing-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pricing-section .price-card .card {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #eff5fd;
+  padding: 40px 50px;
+}
+
+.pricing-section .price-card .card.active {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #DFE2FF;
+  padding: 60px 60px;
+}
+
+.price-card-bullet {
+  border-top: 1.212px solid #FEFEFE;
+  border-bottom: 1.212px solid #FEFEFE;
+}
+
 /* testimonial-section */
 .testimonial-section {
   padding-left: 20px;
@@ -435,6 +463,19 @@ h4 {
   padding-top: 30px;
   padding-bottom: 30px;
   background: url('/img/Graphic_Elements.png');
+}
+
+/* footer-section */
+footer{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-wrapper{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: url('/img/footer_bg.png') #DFE2FF;  
 }
 
 /* trusted-section */
@@ -488,18 +529,6 @@ h4 {
   .fs-20 {
     font-size: 18px;
   }
-
-  /* .fs-35 {
-    font-size: 31px;
-  }
-
-  .fs-38 {
-    font-size: 38px;
-  }
-
-  .fs-80 {
-    font-size: 70px;
-  } */
 
   .py-30 {
     padding-top: 26px;

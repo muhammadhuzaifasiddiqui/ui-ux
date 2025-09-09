@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Navbar from "../components/layout/Navbar";
+import Testimonial from "../components/layout/Testimonial";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -149,6 +150,8 @@ const Page = () => {
   return (
     <>
       <Navbar />
+      <Testimonial />
+
       <section className="hero-section">
         <div className="hero-wrapper shadow-primary border-radius-20 bg-cover bg-center">
           <div className="w-full lg:container mx-auto ">
@@ -988,11 +991,9 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="pricing-section mb-2.5"></section>
-
-      <section className="testimonial-section">
-        <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
-          <div className="flex items-center gap-1.5">
+      <section className="pricing-section mb-2.5">
+        <div className="pricing-wrapper shadow-primary flex flex-col items-center border-radius-20">
+          <div className="flex gap-1.5 mb-2.5">
             <Image
               src={"/img/title-dot.png"}
               width={5}
@@ -1001,11 +1002,298 @@ const Page = () => {
               unoptimized={true}
               className="object-contain"
             />
-            <p className="text-blue text-right leading-[80%] mt-2.5">Testimonial</p>
+            <p className="text-blue">Pricing Table</p>
           </div>
-          <h2 className="font-montreal text-center uppercase font-light leading-[100%]">Some words from <br/><span className="font-medium text-pink">my clients</span></h2>
+          <h2 className="font-montreal text-center uppercase font-light leading-[100%]">
+            Concise and
+            <br />
+            <span className="font-medium text-primary">Authoritative</span>
+          </h2>
+
+          <div className="price-card pt-7.5 pb-7.5 px-80">
+            <div className="flex items-center gap-5">
+              <div className="group hover:bg-[#DFE2FF]! card border-radius-20">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-4">
+                    <p className="text-[24px] text-dark">Starter Package</p>
+                    <p className="text-[48px] text-dark leading-[100%]">$300</p>
+                  </div>
+                  <div className="flex flex-col price-card-bullet gap-3.5 pt-7.5 pb-7.5">
+                    <div className="flex items-center gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Up to 5 Sections</p>
+                    </div>
+                    <div className="flex items-center gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Responsive Design</p>
+                    </div>
+                    <div className="flex items-center opacity-60 gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Basic Interaction Design</p>
+                    </div>
+                    <div className="flex items-center opacity-60 gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">1 Round of Revisions</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col text-center">
+                    <Link
+                      href="#"
+                      className="btn btn-xl btn-lightGray group-hover:bg-[#4A26FF] group-hover:text-[#FFF]! fs-14 font-semibold"
+                    >
+                      Select Plan
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="card active border-radius-20">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-4">
+                    <p className="text-[24px] text-dark">Basic Plan</p>
+                    <p className="text-[48px] text-dark leading-[100%]">$490</p>
+                  </div>
+                  <div className="flex flex-col price-card-bullet gap-3.5 pt-7.5 pb-7.5">
+                    <div className="flex items-center gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Up to 7 Sections</p>
+                    </div>
+                    <div className="flex items-center gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Interactive Elements</p>
+                    </div>
+                    <div className="flex items-center opacity-60 gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Clickable Prototype</p>
+                    </div>
+                    <div className="flex items-center opacity-60 gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">2 Rounds of Revisions</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col text-center">
+                    <Link
+                      href="#"
+                      className="btn btn-xl btn-primary fs-14 font-semibold"
+                    >
+                      Select Plan
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div className="group hover:bg-[#DFE2FF]! card border-radius-20">
+                <div className="flex flex-col gap-10">
+                  <div className="flex flex-col gap-4">
+                    <p className="text-[24px] text-dark">Premium Package</p>
+                    <p className="text-[48px] text-dark leading-[100%]">$600</p>
+                  </div>
+                  <div className="flex flex-col price-card-bullet gap-3.5 pt-7.5 pb-7.5">
+                    <div className="flex items-center gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Up to 10 Sections</p>
+                    </div>
+                    <div className="flex items-center gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Multi-Page Expansion</p>
+                    </div>
+                    <div className="flex items-center opacity-60 gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">Developer-Ready Files</p>
+                    </div>
+                    <div className="flex items-center opacity-60 gap-3.5">
+                      <Image
+                        src={"/img/check_small.png"}
+                        width={30}
+                        height={30}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="fs-20">3 Rounds of Revisions</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col text-center">
+                    <Link
+                      href="#"
+                      className="btn btn-xl btn-lightGray group-hover:bg-[#4A26FF] group-hover:text-[#FFF]! fs-14 font-semibold"
+                    >
+                      Select Plan
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <section className="testimonial-section">
+        <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
+          <div className="flex gap-1.5 mb-2.5">
+            <Image
+              src={"/img/title-dot.png"}
+              width={5}
+              height={5}
+              alt="title-dot"
+              unoptimized={true}
+              className="object-contain"
+            />
+            <p className="text-blue">Testimonial</p>
+          </div>
+          <h2 className="font-montreal text-center uppercase font-light leading-[100%]">
+            Some words from <br />
+            <span className="font-medium text-primary">my clients</span>
+          </h2>
+        </div>
+      </section>
+
+      <footer className="pt-2.5">
+        <div className="footer-wrapper shadow-primary border-radius-20 px-80">
+          <div className="flex flex-col">
+            <div className="text-right">
+              <h2 className="text-black uppercase font-normal leading-[100%]">
+                Transform Your
+                <br />
+                Ideas into
+                <br />
+                Extraordinary
+                <br />
+                Designs.
+              </h2>
+            </div>
+            <div className="mt-[100px]">
+              <h1 className="text-black uppercase leading-[100%]">
+                Reach Out
+                <br />
+                now
+              </h1>
+            </div>
+            <div className="mt-[50px]">
+              <ul className="flex justify-center gap-15">
+                <li>
+                  <Link
+                    href="#"
+                    className="fs-12 font-poppins font-bold"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="fs-12 font-poppins font-normal"
+                  >
+                    Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="fs-12 font-poppins font-normal"
+                  >
+                    Work
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="fs-12 font-poppins font-normal"
+                  >
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="fs-12 font-poppins font-normal"
+                  >
+                    Assets
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     </>
   );
 };
