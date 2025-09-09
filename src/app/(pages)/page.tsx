@@ -370,7 +370,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="services-section">
+      {/* <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-row gap-2.5">
             <div className="flex-row shadow-primary services-collection-box pt-7.5 border-radius-20 w-1/2">
@@ -1222,11 +1222,11 @@ const Page = () => {
             <span className="font-medium text-primary">my clients</span>
           </h2>
         </div>
-      </section>
+      </section> */}
 
-      <Testimonial />
+      {/* <Testimonial /> */}
 
-      <footer className="pt-2.5">
+      {/* <footer className="pt-2.5">
         <div className="footer-wrapper shadow-primary border-radius-20 px-80">
           <div className="flex flex-col">
             <div className="text-right">
@@ -1293,7 +1293,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 };
