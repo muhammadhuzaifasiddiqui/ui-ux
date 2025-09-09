@@ -344,6 +344,7 @@ h4 {
 
 .service-card {
   background-color: #fff;
+  transition: background-color 0.4s ease;
   padding: 30px 0px 20px 30px;
 }
 
@@ -436,13 +437,13 @@ h4 {
   padding-bottom: 30px;
 }
 
-.pricing-section .price-card .card {
+.pricing-section .card {
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: #eff5fd;
   padding: 40px 50px;
 }
 
-.pricing-section .price-card .card.active {
+.pricing-section .card.active {
   border: 1px solid rgba(0, 0, 0, 0.15);
   background: #DFE2FF;
   padding: 60px 60px;
