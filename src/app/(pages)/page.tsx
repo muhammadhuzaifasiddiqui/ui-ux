@@ -1204,7 +1204,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="testimonial-section">
+      <section className="testimonial-section mb-2.5">
         <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
           <div className="flex gap-1.5 mb-2.5">
             <Image

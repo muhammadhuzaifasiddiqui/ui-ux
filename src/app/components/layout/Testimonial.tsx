@@ -27,7 +27,9 @@ const Testimonial = () => {
         modules={[Pagination]}
       >
         <SwiperSlide>
-          
+          <div className="testimonial-card shadow-primary border-radius-20">
+
+          </div>
         </SwiperSlide>
 
         <SwiperSlide></SwiperSlide>
