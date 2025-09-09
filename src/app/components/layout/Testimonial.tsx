@@ -26,7 +26,9 @@ const Testimonial = () => {
         }}
         modules={[Pagination]}
       >
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide>
+          
+        </SwiperSlide>
 
         <SwiperSlide></SwiperSlide>
 

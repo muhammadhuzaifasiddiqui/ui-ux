@@ -465,6 +465,15 @@ h4 {
   background: url('/img/Graphic_Elements.png');
 }
 
+.custom-bullet {
+  background-color: #8a8a8a;
+  width: 100px !important;
+  height: 8px !important;
+  border-radius: 20px !important;
+  transition: all 300ms ease-in-out;
+  display: inline-block;
+}
+
 /* footer-section */
 footer{
   padding-left: 20px;

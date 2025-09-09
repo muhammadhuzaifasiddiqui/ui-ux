@@ -150,7 +150,6 @@ const Page = () => {
   return (
     <>
       <Navbar />
-      <Testimonial />
 
       <section className="hero-section">
         <div className="hero-wrapper shadow-primary border-radius-20 bg-cover bg-center">
@@ -1225,6 +1224,8 @@ const Page = () => {
         </div>
       </section>
 
+      <Testimonial />
+
       <footer className="pt-2.5">
         <div className="footer-wrapper shadow-primary border-radius-20 px-80">
           <div className="flex flex-col">
@@ -1293,7 +1294,6 @@ const Page = () => {
           </div>
         </div>
       </footer>
-      
     </>
   );
 };
