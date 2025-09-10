@@ -231,7 +231,7 @@ const Page = () => {
                     <div className="bg-laptop">
                       <div className="img-wrapper">
                         <Image
-                          src={"/img/hero-laptop.png"}
+                          src={"/img/laptop.png"}
                           width={319}
                           height={316}
                           alt="Laptop"
