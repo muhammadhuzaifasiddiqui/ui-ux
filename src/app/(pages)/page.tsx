@@ -483,7 +483,6 @@ const Page = () => {
 
             <div className="w-1/2">
               <div className="flex flex-col justify-between h-full">
-
                 <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
                   <div className="flex items-center justify-between">
                     <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
@@ -612,7 +611,6 @@ const Page = () => {
                     </p>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -636,8 +634,10 @@ const Page = () => {
                   <p className="text-blue font-normal fs-20">About Me</p>
                 </div>
                 <h2 className="font-light font-montreal uppercase text-white leading-[106%]">
-                  Meet the Mind <br />
-                  <span className="text-pink font-medium">Behind the Work</span>
+                  Meet the Mind
+                </h2>
+                <h2 className="font-montreal uppercase leading-[106%] text-pink font-medium">
+                  Behind the Work
                 </h2>
               </div>
               <div className="figma-icon p-3">
@@ -659,19 +659,20 @@ const Page = () => {
                   height={727}
                   alt="title-dot"
                   unoptimized={true}
-                  className="object-contain absolute top-[-20px]"
+                  className="object-contain absolute top-[-50px]"
                 />
               </div>
               <div className="w-[50%]">
-                <p className="opacity-500 text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-30">
-                  Hi, I’m{" "}
-                  <span className="font-bold  text-white">Taha Khanzada,</span> a
-                  designer who thrives on
-                  <br /> transforming ideas into engaging designs. From
-                  wireframes
-                  <br /> to polished visuals, I focus on blending functionality
-                  with
-                  <br /> aesthetics to deliver exceptional results.
+                <p className="text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-30">
+                  Hi, I’m
+                  <span className="font-bold  text-white">
+                    {" "}
+                    Taha Khanzada,{" "}
+                  </span>
+                  a designer who thrives on transforming ideas into engaging
+                  designs. From wireframes to polished visuals, I focus on
+                  blending functionality with aesthetics to deliver exceptional
+                  results.
                 </p>
                 <div className="flex gap-7.5">
                   <div>
@@ -684,7 +685,7 @@ const Page = () => {
                     <h2 className="text-white font-normal leading-[100%]">
                       160<span className="text-blue text-[64px]">+</span>
                     </h2>
-                    <p className="fs-20 text-[#B2B2B2]">recent clients</p>
+                    <p className="fs-20 text-[#B2B2B2]">Recent Clients</p>
                   </div>
                   <div>
                     <h2 className="text-white font-normal leading-[100%]">
@@ -694,23 +695,41 @@ const Page = () => {
                   </div>
                 </div>
                 <div className="flex flex-wrap mt-12.5 gap-2.5">
-                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
+                  <Link
+                    href="#"
+                    className="btn text-[#B2B2B2] btn-lg btn-black"
+                  >
                     Design
                   </Link>
-                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
+                  <Link
+                    href="#"
+                    className="btn text-[#B2B2B2] btn-lg btn-black"
+                  >
                     User Experience
                   </Link>
-                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
+                  <Link
+                    href="#"
+                    className="btn text-[#B2B2B2] btn-lg btn-black"
+                  >
                     Insights
                   </Link>
-                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
-                    prototypes
+                  <Link
+                    href="#"
+                    className="btn text-[#B2B2B2] btn-lg btn-black"
+                  >
+                    Prototypes
                   </Link>
-                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
-                    intuitive interfaces
+                  <Link
+                    href="#"
+                    className="btn text-[#B2B2B2] btn-lg btn-black"
+                  >
+                    Intuitive Interfaces
                   </Link>
-                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
-                    High-fidelity Design
+                  <Link
+                    href="#"
+                    className="btn text-[#B2B2B2] btn-lg btn-black"
+                  >
+                    High-Fidelity Design
                   </Link>
                 </div>
               </div>
@@ -863,8 +882,9 @@ const Page = () => {
               </div>
               <h2 className="font-light font-montreal uppercase text-center leading-[100%]">
                 Designs That
-                <br />
-                <span className="font-medium text-primary">Solve Problems</span>
+              </h2>
+              <h2 className="font-medium text-primary font-montreal uppercase text-center leading-[100%]">
+                Solve Problems
               </h2>
             </div>
 
@@ -998,17 +1018,18 @@ const Page = () => {
         <div className="idea-wrapper border-radius-20 shadow-primary">
           <div className="container mx-auto">
             <div className="flex flex-col gap-64">
-              <div className="flex items-start">
+              <div className="flex flex-col items-start">
                 <h2 className="font-light text-white font-montreal leading-[100%] uppercase">
-                  Ready to Create Your <br />
-                  <span className="text-pink font-medium">Amazing Ideas</span>
+                  Ready to Create Your
+                </h2>
+                <h2 className="text-pink font-medium font-montreal leading-[100%] uppercase">
+                  Amazing Ideas
                 </h2>
               </div>
-              <div className="flex flex-col items-end">
+              <div className="flex flex-col w-[40%] ml-auto items-end">
                 <p className="mb-6 text-right text-white capitalize">
-                  I’m always excited to discuss new
-                  <br /> opportunities and collaborations.
-                  <br /> Feel free to reach out.
+                  I’m always excited to discuss new opportunities and
+                  collaborations. Feel free to reach out.
                 </p>
                 <Link href="#" className="fs-12 btn  btn-pink">
                   Get in touch
@@ -1036,8 +1057,9 @@ const Page = () => {
               </div>
               <h2 className="font-montreal text-center uppercase font-light leading-[100%]">
                 Concise and
-                <br />
-                <span className="font-medium text-primary">Authoritative</span>
+              </h2>
+              <h2 className="font-medium text-primary font-montreal text-center uppercase leading-[100%]">
+                Authoritative
               </h2>
             </div>
 
@@ -1249,8 +1271,10 @@ const Page = () => {
             <p className="text-blue">Testimonial</p>
           </div>
           <h2 className="font-montreal text-center uppercase font-light leading-[100%]">
-            Some words from <br />
-            <span className="font-medium text-primary">my clients</span>
+            Some words from
+          </h2>
+          <h2 className="font-medium text-primary font-montreal text-center uppercase leading-[100%]">
+            my clients
           </h2>
         </div>
       </section>
@@ -1261,22 +1285,14 @@ const Page = () => {
         <div className="footer-wrapper shadow-primary border-radius-20 px-80">
           <div className="container mx-auto">
             <div className="flex flex-col">
-              <div className="text-right">
+              <div className="text-right w-[40%] ml-auto">
                 <h2 className="text-black uppercase font-normal leading-[100%]">
-                  Transform Your
-                  <br />
-                  Ideas into
-                  <br />
-                  Extraordinary
-                  <br />
-                  Designs.
+                  Transform Your Ideas into Extraordinary Designs.
                 </h2>
               </div>
-              <div className="mt-[100px]">
+              <div className="mt-[100px] w-[40%]">
                 <h1 className="text-black uppercase leading-[100%]">
-                  Reach Out
-                  <br />
-                  now
+                  Reach Out now
                 </h1>
               </div>
               <div className="mt-[50px]">
