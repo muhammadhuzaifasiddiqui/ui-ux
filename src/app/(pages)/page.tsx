@@ -5,6 +5,9 @@ import Testimonial from "../components/layout/Testimonial";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 // Define the interface for a card item
 interface CardItem {
@@ -152,69 +155,79 @@ const Page = () => {
       <Navbar />
 
       <section className="hero-section">
-        <div className="hero-wrapper shadow-primary border-radius-20 bg-cover">
+        <div className="hero-wrapper shadow border-radius-20">
           <div className="container mx-auto">
-            <div className="w-full">
-              <div className="flex flex-row justify-between">
-
-                <div className="w-[30%]">
-                  <p className="text-gray font-normal">
-                    Hi.... <br /> My name is{" "}
-                    <span className="font-bold">Taha Khanzada</span>
-                  </p>
-                  <h1 className="font-bold text-gray leading-[100%] mt-3 mb-6.5">
-                    UI/UX
-                  </h1>
-                  <div className="pl-9">
+            <div className="flex justify-between">
+              <div className="w-[35%]">
+                <p className="text-gray font-normal">
+                  Hi.... <br /> My name is{" "}
+                  <span className="font-bold">Taha Khanzada</span>
+                </p>
+                <h1 className="font-bold text-gray leading-[100%] mt-3 mb-6.5">
+                  UI/UX
+                </h1>
+                <div className="pl-9">
+                  <Link
+                    href="#"
+                    className="text-[14px]! btn btn-md btn-gray btn-border-right"
+                  >
+                    {" "}
+                    Design
+                  </Link>
+                </div>
+                <p className="mt-8 mb-15">
+                  Simplifying complex ideas into clear and engaging interfaces,
+                  ensuring that every interaction is intuitive, efficient, and
+                  visually pleasing.
+                </p>
+                <div className="shadow-down border-radius-30 bg-white">
+                  <div className="charges-box shadow-primary flex justify-between items-center border-radius-30 bg-dark-gray">
+                    <div className="w-[55%]">
+                      <p>
+                        35$
+                        <span className="text-[46.341px]">/</span>
+                        <span className="text-[25.951px] font-semibold">
+                          hr
+                        </span>
+                      </p>
+                    </div>
+                    <div className="w-[45%] flex flex-col gap-3">
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
+                      >
+                        Wireframes
+                      </Link>
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
+                      >
+                        Insights
+                      </Link>
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
+                      >
+                        Testimonials
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex justify-center gap-4 pt-6.5 pb-6.5">
+                    <Link href="#" className="text-[14px]! btn btn-primary">
+                      Get in touch
+                    </Link>
                     <Link
                       href="#"
-                      className="btn btn-md btn-gray btn-border-right"
+                      className="text-[14px]! btn btn-xl btn-offWhite"
                     >
-                      {" "}
-                      Design
+                      Show my work
                     </Link>
                   </div>
-                  <p className="mt-8 mb-15">
-                    Simplifying complex ideas into clear and engaging
-                    interfaces, ensuring that every interaction is intuitive,
-                    efficient, and visually pleasing.
-                  </p>
-                  <div className="shadow-down border-radius-30 bg-white">
-                    <div className="charges-box shadow-primary flex justify-between items-center border-radius-30 bg-dark-gray">
-                      <div className="w-[55%]">
-                        <p>
-                          35$
-                          <span className="text-[46.341px]">/</span>
-                          <span className="text-[25.951px] font-semibold">
-                            hr
-                          </span>
-                        </p>
-                      </div>
-                      <div className="w-[45%] flex flex-col gap-3">
-                        <Link href="#" className="btn btn-sm btn-white text-center w-fit lg:w-full">
-                          Wireframes
-                        </Link>
-                        <Link href="#" className="btn btn-sm btn-white text-center w-fit lg:w-full">
-                          Insights
-                        </Link>
-                        <Link href="#" className="btn btn-sm btn-white text-center w-fit lg:w-full">
-                          Testimonials
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="flex justify-center gap-4 pt-6 pb-6">
-                      <Link href="#" className="btn btn-primary">
-                        Get in touch
-                      </Link>
-                      <Link href="#" className="btn btn-xl btn-offWhite">
-                        Show my work
-                      </Link>
-                    </div>
-                  </div>
                 </div>
-
-                <div className="w-[65%] pt-[113px]">
-                  <div className="flex flex-row items-end gap-23 pb">
+              </div>
+              <div className="w-[60%]">
+                <div className="flex flex-col gap-10">
+                  <div className="flex items-end gap-22.5 pb pl-6">
                     <div className="bg-laptop">
                       <div className="img-wrapper">
                         <Image
@@ -230,14 +243,14 @@ const Page = () => {
                     <div>
                       <Link
                         href="#"
-                        className="btn btn-md btn-gray btn-border-left"
+                        className="text-[14px]! btn btn-md btn-gray btn-border-left"
                       >
                         {" "}
                         Innovation
                       </Link>
                     </div>
                   </div>
-                  <div className="relative pt-11 pb-9 pl-[75px]">
+                  <div className="relative pt-11 pb-9  pl-[123px]">
                     <Image
                       src={"/img/Rectangle 2.png"}
                       width={652}
@@ -246,7 +259,7 @@ const Page = () => {
                       unoptimized={true}
                       className="object-contain"
                     />
-                    <h1 className="font-bold text-blue rotate-[-3deg] absolute top-12 left-26">
+                    <h1 className="font-bold text-blue rotate-[-3deg] absolute top-12 left-38">
                       DESIGNER
                     </h1>
                     <Image
@@ -255,7 +268,7 @@ const Page = () => {
                       height={18}
                       alt="Laptop"
                       unoptimized={true}
-                      className="object-contain absolute top-[62px] left-[57px]"
+                      className="object-contain absolute top-[62px] left-[105px]"
                     />
                     <Image
                       src={"/img/Rectangle 4.png"}
@@ -263,7 +276,7 @@ const Page = () => {
                       height={18}
                       alt="Laptop"
                       unoptimized={true}
-                      className="object-contain absolute top-[196px] left-[734px]"
+                      className="object-contain absolute top-[196px] left-[782px]"
                     />
                     <Image
                       src={"/img/Rectangle 5.png"}
@@ -271,7 +284,7 @@ const Page = () => {
                       height={18}
                       alt="Laptop"
                       unoptimized={true}
-                      className="object-contain absolute top-[230px] left-[65px]"
+                      className="object-contain absolute top-[230px] left-[113px]"
                     />
                     <Image
                       src={"/img/Rectangle 6.png"}
@@ -279,51 +292,52 @@ const Page = () => {
                       height={18}
                       alt="Laptop"
                       unoptimized={true}
-                      className="object-contain absolute top-[26px] left-[726px]"
+                      className="object-contain absolute top-[26px] left-[774px]"
                     />
                   </div>
-                  <div className="flex items-center justify-between gap-20">
-                    <div className="portfolio-box border-radius-30 p-[17px] flex flex-row bg-light-gray gap-2.5">
-                      <div className="flex-col">
-                        <div>
+
+                  <div className="flex items-center justify-between">
+                    <div className="flex flex-row cursor-pointer portfolio-box border-radius-30 bg-light-gray gap-2.5">
+                      <div className="flex flex-col">
+                        <div className="portfolio-image-wraper">
                           <Image
                             src={"/img/portfolio 1.png"}
                             width={158}
                             height={177}
                             alt="Laptop"
                             unoptimized={true}
-                            className="object-contain cursor-pointer"
+                            className="object-contain"
                           />
                         </div>
-                        <div className="pl-4 pt-[33px] leading-[70%]">
-                          <p className="fs-14 font-normal cursor-pointer">
-                            Best Project on <br /> the years
-                          </p>
-                        </div>
+                        <p className="fs-16 pt-[33px] font-normal max-w-[120px] whitespace-normal">
+                          Best Project on the years
+                        </p>
                       </div>
-                      <div className="flex-col">
+                      <div className="portfolio-image-wraper">
                         <Image
                           src={"/img/portfolio 2.png"}
                           width={100}
                           height={100}
                           alt="Laptop"
                           unoptimized={true}
-                          className="object-contain cursor-pointer"
+                          className="object-contain "
                         />
                       </div>
                       <div className="flex flex-col justify-end">
-                        <div className="flex pl-10 items-center gap-2">
-                          <p className="underline fs-14 cursor-pointer font-normal">
+                        <div className="flex pl-15 items-center gap-2">
+                          <p className="underline fs-16 font-normal">
                             View all
                           </p>
-                          <Image
-                            src={"/img/arrow.png"}
-                            width={100}
-                            height={100}
-                            alt="Laptop"
-                            unoptimized={true}
-                            className="object-contain cursor-pointer"
-                          />
+                          <div className="portfolio-image-wraper">
+                            <Image
+                              src={"/img/arrow.png"}
+                              width={100}
+                              height={100}
+                              alt="Laptop"
+                              unoptimized={true}
+                              className="object-contain "
+                            />
+                          </div>
                         </div>
                         <div className="mt-9">
                           <Image
@@ -332,16 +346,15 @@ const Page = () => {
                             height={100}
                             alt="Laptop"
                             unoptimized={true}
-                            className="object-contain cursor-pointer"
+                            className="object-contain "
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="flex-col gap-6">
+                    <div className="flex flex-col gap-6">
                       <div className="flex items-center gap-5">
-                        <p className="fs-14 font-medium text-gray">
-                          Success <br />
-                          project
+                        <p className="fs-20 font-normal capitalize text-gray">
+                          Success project
                         </p>
                         <p className="font-medium text-[36px] text-primary">
                           250<span className="text-blue">+</span>
@@ -351,24 +364,21 @@ const Page = () => {
                         <p className="font-medium text-[36px] text-primary">
                           160<span className="text-blue">+</span>
                         </p>
-                        <p className="fs-14 font-normal text-gray">
-                          Recent <br />
-                          clients
+                        <p className="fs-20 font-normal capitalize text-gray">
+                          Recent clients
                         </p>
                       </div>
                       <div className="flex items-center gap-5">
-                        <p className="fs-14 font-normal text-gray">
-                          Happy
-                          <br /> Clients
+                        <p className="fs-20 font-normal capitalize text-gray">
+                          Happy Clients
                         </p>
                         <p className="font-medium text-[36px] text-primary">
-                          95<span className="text-blue">+</span>
+                          95<span className="text-blue">%</span>
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -378,36 +388,49 @@ const Page = () => {
       <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-row gap-2.5">
-            <div className="flex-row shadow-primary services-collection-box pt-7.5 border-radius-20 w-1/2">
-              <div className="w-full flex justify-between relative">
-                <div>
-                  <Image
-                    src={"/img/UI UX.png"}
-                    width={246}
-                    height={138}
-                    alt="UI UX"
-                    unoptimized={true}
-                    className="object-contain absolute top-[-20px]"
-                  />
+            <div className="flex-row shadow-primary services-collection-box pt-7.5 pl-7.5 border-radius-20 w-1/2">
+              <div className="flex w-full justify-between relative">
+                <div className="w-[30%] overflow-hidden">
+                  <Swiper
+                    spaceBetween={0}
+                    slidesPerView={"auto"}
+                    loop={true}
+                    autoplay={{
+                      delay: 0,
+                      disableOnInteraction: false,
+                    }}
+                    speed={2000}
+                    modules={[Autoplay]}
+                    className="rotate-[-8.46deg] w-[200%]"
+                  >
+                    <SwiperSlide>
+                      <p className="leading-[100%] font-normal font-anton font-anton-slide">
+                        UI UX
+                      </p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <p className="leading-[100%] font-normal font-anton font-anton-slide">
+                        UI UX
+                      </p>
+                    </SwiperSlide>
+                  </Swiper>
                 </div>
-                <div className="flex flex-col items-end pr-7.5 gap-2.5">
-                  <div className="flex items-center gap-1.5">
-                    <Image
-                      src={"/img/title-dot.png"}
-                      width={5}
-                      height={5}
-                      alt="title-dot"
-                      unoptimized={true}
-                      className="object-contain"
-                    />
-                    <p className="text-blue text-right leading-[80%]">
-                      service
-                    </p>
-                  </div>
-                  <div className="flex items-center">
-                    <h2 className="font-montreal text-black font-light text-right leading-[110%]">
+
+                <div className="w-[60%]">
+                  <div className="flex flex-col items-end pr-7.5">
+                    <div className="flex items-center gap-1.5">
+                      <Image
+                        src={"/img/title-dot.png"}
+                        width={5}
+                        height={5}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                      <p className="text-blue text-right">service</p>
+                    </div>
+                    <h2 className="font-montreal text-black font-light text-right mt-2.5 leading-[106%]">
                       EXPLORE MY
-                      <br />
                       <span className="font-medium text-primary">SERVICES</span>
                     </h2>
                   </div>
@@ -459,18 +482,15 @@ const Page = () => {
             </div>
 
             <div className="w-1/2">
-              <div className="flex w-full flex-col gap-2.5">
+              <div className="flex flex-col justify-between h-full">
 
                 <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
-                  <div className="flex justify-between relative">
+                  <div className="flex items-center justify-between">
                     <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
-                      User Research &
-                      <br />
-                      Analysis
+                      User Research & Analysis
                     </h3>
                     <div>
                       <svg
-                        className="absolute top-[-15px] left-[773px]"
                         xmlns="http://www.w3.org/2000/svg"
                         width="72"
                         height="72"
@@ -498,7 +518,7 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex w-[70%] ml-auto mt-10">
+                  <div className="flex ml-auto mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
                       <br />
@@ -507,16 +527,13 @@ const Page = () => {
                   </div>
                 </div>
 
-                <div className="service-card cursor-pointer shadow-primary active flex flex-col border-radius-20 group">
-                  <div className="flex justify-between relative">
+                <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
+                  <div className="flex items-center justify-between">
                     <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
-                      Wireframing &
-                      <br />
-                      Prototyping
+                      User Research & Analysis
                     </h3>
                     <div>
                       <svg
-                        className="absolute top-[-15px] left-[773px]"
                         xmlns="http://www.w3.org/2000/svg"
                         width="72"
                         height="72"
@@ -544,26 +561,22 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex w-[70%] ml-auto mt-10">
+                  <div className="flex ml-auto mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
-                      Creating low-fidelity layouts and interactive prototypes
-                      to
+                      Conducting research to understand user needs, behaviors,
                       <br />
-                      visualize design concepts and user flows.
+                      and pain points for informed design decisions.
                     </p>
                   </div>
                 </div>
 
                 <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
-                  <div className="flex justify-between relative">
+                  <div className="flex items-center justify-between">
                     <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
-                      Visual Design &
-                      <br />
-                      Interaction Design
+                      User Research & Analysis
                     </h3>
                     <div>
                       <svg
-                        className="absolute top-[-15px] left-[773px]"
                         xmlns="http://www.w3.org/2000/svg"
                         width="72"
                         height="72"
@@ -591,12 +604,11 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex w-[70%] group-hover:text-white transition-all duration-400 ml-auto mt-10">
-                    <p className="text-right leading-[100%]">
-                      Crafting aesthetically pleasing and intuitive interfaces
-                      that
+                  <div className="flex ml-auto mt-10">
+                    <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
+                      Conducting research to understand user needs, behaviors,
                       <br />
-                      ensure seamless user experiences.
+                      and pain points for informed design decisions.
                     </p>
                   </div>
                 </div>
@@ -611,7 +623,7 @@ const Page = () => {
         <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-22.5">
           <div className=" container mx-auto ">
             <div className="flex flex-row items-center w-full justify-between">
-              <div>
+              <div className="opacity-130">
                 <div className="flex items-center gap-1.5 mb-2.5">
                   <Image
                     src={"/img/title-dot.png"}
@@ -651,9 +663,9 @@ const Page = () => {
                 />
               </div>
               <div className="w-[50%]">
-                <p className="text-right fs-20 capitalize mt-4 mb-30">
+                <p className="opacity-500 text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-30">
                   Hi, I’m{" "}
-                  <span className="font-bold text-white">Taha Khanzada,</span> a
+                  <span className="font-bold  text-white">Taha Khanzada,</span> a
                   designer who thrives on
                   <br /> transforming ideas into engaging designs. From
                   wireframes
@@ -666,38 +678,38 @@ const Page = () => {
                     <h2 className="text-white font-normal leading-[100%]">
                       250<span className="text-blue text-[64px]">+</span>
                     </h2>
-                    <p className="fs-20">Success Project</p>
+                    <p className="fs-20 text-[#B2B2B2]">Success Project</p>
                   </div>
                   <div>
                     <h2 className="text-white font-normal leading-[100%]">
                       160<span className="text-blue text-[64px]">+</span>
                     </h2>
-                    <p className="fs-20">recent clients</p>
+                    <p className="fs-20 text-[#B2B2B2]">recent clients</p>
                   </div>
                   <div>
                     <h2 className="text-white font-normal leading-[100%]">
                       99<span className="text-blue text-[64px]">%</span>
                     </h2>
-                    <p className="fs-20">Happy Clients</p>
+                    <p className="fs-20 text-[#B2B2B2]">Happy Clients</p>
                   </div>
                 </div>
                 <div className="flex flex-wrap mt-12.5 gap-2.5">
-                  <Link href="#" className="btn btn-lg btn-black">
+                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
                     Design
                   </Link>
-                  <Link href="#" className="btn btn-lg btn-black">
+                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
                     User Experience
                   </Link>
-                  <Link href="#" className="btn btn-lg btn-black">
+                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
                     Insights
                   </Link>
-                  <Link href="#" className="btn btn-lg btn-black">
+                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
                     prototypes
                   </Link>
-                  <Link href="#" className="btn btn-lg btn-black">
+                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
                     intuitive interfaces
                   </Link>
-                  <Link href="#" className="btn btn-lg btn-black">
+                  <Link href="#" className="btn text-[#B2B2B2] btn-lg btn-black">
                     High-fidelity Design
                   </Link>
                 </div>

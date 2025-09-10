@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Poppins, Raleway } from "next/font/google";
+import { Anton, Poppins, Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import "./style/globals.css";
 
-// Google font: Poppins
+// Google font: poppins
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -16,6 +16,14 @@ const raleway = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+// Google font: anton
+const anton = Anton({
+  variable: "--font-anton",
+  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -80,7 +88,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${raleway.variable} ${neueMontreal.variable} antialiased`}
+        className={`${poppins.variable} ${raleway.variable} ${neueMontreal.variable} ${anton.variable} antialiased`}
       >
         {children}
       </body>

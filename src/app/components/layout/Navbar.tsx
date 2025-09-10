@@ -37,16 +37,16 @@ const Navbar = () => {
         <div className="w-full container-fluid nav-container px-80">
           <div className="bg-navbar flex lg:justify-between items-center justify-end">
             <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
-              <Link className="fs-12 nav-link font-poppins font-bold!" href="">
+              <Link className="fs-18 nav-link font-poppins font-bold!" href="">
                 About
               </Link>
-              <Link className="fs-12 nav-link font-poppins" href="">
+              <Link className="fs-18 nav-link font-normal font-poppins" href="">
                 Work
               </Link>
-              <Link className="fs-12 nav-link font-poppins" href="">
+              <Link className="fs-18 nav-link font-normal font-poppins" href="">
                 Service
               </Link>
-              <Link className="fs-12 nav-link font-poppins" href="">
+              <Link className="fs-18 nav-link font-normal font-poppins" href="">
                 Blog
               </Link>
             </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <div className="lg:flex hidden navbar-button gap-2">
               <Link
                 href="#"
-                className="btn btn-primary border-radius-30 font-poppins"
+                className="text-[16px]! btn btn-primary border-radius-30 font-poppins"
               >
                 Get in touch
               </Link>
