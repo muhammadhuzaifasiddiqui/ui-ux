@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar absolute w-full pl-5 pr-5">
-        <div className="w-full container mx-auto nav-container">
+        <div className="w-full nav-container container mx-auto">
           <div className="bg-navbar flex lg:justify-between items-center justify-end">
             <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
               <Link className="fs-18 nav-link font-poppins font-bold!" href="">
