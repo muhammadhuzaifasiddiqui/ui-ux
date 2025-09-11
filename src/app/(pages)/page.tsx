@@ -154,7 +154,7 @@ const Page = () => {
     <>
       <Navbar />
 
-      <section className="hero-section">
+      {/* <section className="hero-section">
         <div className="hero-wrapper border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col gap-10">
@@ -391,7 +391,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="hero-section">
         <div className="hero-wrapper shadow border-radius-20">
