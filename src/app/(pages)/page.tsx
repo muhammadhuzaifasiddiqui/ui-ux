@@ -385,7 +385,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="services-section">
+      {/* <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-row gap-2.5">
             <div className="flex-row shadow-primary services-collection-box pt-7.5 pl-7.5 border-radius-20 w-1/2">
@@ -1327,7 +1327,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 };
