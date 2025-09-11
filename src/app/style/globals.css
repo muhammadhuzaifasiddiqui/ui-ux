@@ -528,13 +528,10 @@ footer {
   background: url('/img/footer_bg.png') #DFE2FF;
 }
 
-@media screen and (min-width: 1535.97px) {
-}
-
 @media screen and (min-width: 1279.97px) {
-  .container {
+  /* .container {
     max-width: 1200px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1279.97px) {

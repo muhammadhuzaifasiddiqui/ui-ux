@@ -35,7 +35,7 @@ const Navbar = () => {
     <>
       <nav className="navbar absolute w-full pl-5 pr-5">
         <div className="w-full nav-container container mx-auto">
-          <div className="bg-navbar flex lg:justify-between items-center justify-end">
+          <div className="bg-navbar flex justify-between items-center">
             <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
               <Link className="fs-18 nav-link font-poppins font-bold!" href="">
                 About
@@ -51,16 +51,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="lg:flex hidden navbar-button gap-2">
-              <Link
-                href="#"
-                className="text-[16px]! btn btn-primary border-radius-30 font-poppins"
-              >
-                Get in touch
-              </Link>
-            </div>
-
-            <div className="lg:hidden flex items-center">
+            <div className="lg:hidden flex items-center left-0">
               <button
                 onClick={toggleMenu}
                 className="nav-toggle-btn rounded-md transition"
@@ -78,6 +69,16 @@ const Navbar = () => {
                 />
               </button>
             </div>
+
+            <div className="flex navbar-button gap-2">
+              <Link
+                href="#"
+                className="text-[16px]! btn btn-primary border-radius-30 font-poppins"
+              >
+                Get in touch
+              </Link>
+            </div>
+
           </div>
         </div>
         <AnimatePresence>
@@ -89,9 +90,9 @@ const Navbar = () => {
                 height: isOpen ? "auto" : 0,
               }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden absolute mt-2 right-0 z-10 overflow-hidden px-3 md:px-3.5 lg:px-5"
+              className="lg:hidden absolute left-20 mt-2  overflow-hidden"
             >
-              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden">
+              <ul className="flex flex-col py-[10px] overflow-hidden">
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={""}

@@ -154,7 +154,7 @@ const Page = () => {
     <>
       <Navbar />
 
-      {/* <section className="hero-section">
+      <section className="hero-section">
         <div className="hero-wrapper border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col gap-10">
@@ -195,7 +195,7 @@ const Page = () => {
               </div>
 
               <div className="flex flex-row flex-wrap items-center">
-                <div className="flex flex-col w-full lg:w-[35%] gap-7.5">
+                <div className="flex flex-col  w-full lg:w-[35%] gap-7.5">
                   <div className="pl-9.5">
                     <Link
                       href="#"
@@ -391,9 +391,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="hero-section">
+      <section className="hero-section">
         <div className="hero-wrapper shadow border-radius-20">
           <div className="container mx-auto">
             <div className="flex justify-between">
@@ -622,9 +622,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="services-section">
+      <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-row gap-2.5">
             <div className="flex-row shadow-primary services-collection-box pt-7.5 pl-7.5 border-radius-20 w-1/2">
@@ -1566,7 +1566,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };
