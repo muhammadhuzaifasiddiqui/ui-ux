@@ -553,7 +553,7 @@ footer {
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 31px;
   }
 
   h4 {
@@ -634,6 +634,11 @@ footer {
     padding: 17px 38px;
     font-size: 20px;
   }
+
+  /* padding: 30px 60px 20px 30px; */
+  .service-card {
+    padding: 26px 50px 18px 26px;
+  }
 }
 
 @media screen and (max-width: 767.97px) {
@@ -650,7 +655,7 @@ footer {
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 28px;
   }
 
   h4 {
@@ -757,6 +762,11 @@ footer {
     padding: 15px 34px;
     font-size: 18px;
   }
+
+  /* padding: 30px 60px 20px 30px; */
+  .service-card {
+    padding: 24px 44px 16px 24px;
+  }
 }
 
 @media screen and (max-width: 575.97px) {
@@ -773,7 +783,7 @@ footer {
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 26px;
   }
 
   h4 {
@@ -907,6 +917,11 @@ footer {
     padding: 6px 12px;
     font-size: 14px;
   }
+
+  /* padding: 30px 60px 20px 30px; */
+  .service-card {
+    padding: 22px 40px 15px 22px;
+  }
 }
 
 @media screen and (max-width: 399.97) {
@@ -923,7 +938,7 @@ footer {
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 325px;
   }
 
   h4 {
@@ -1051,5 +1066,10 @@ footer {
   .btn-xxl {
     padding: 6px 12px;
     font-size: 14px;
+  }
+
+  /* padding: 30px 60px 20px 30px; */
+  .service-card {
+    padding: 20px 36px 14px 20px;
   }
 }

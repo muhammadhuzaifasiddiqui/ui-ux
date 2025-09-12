@@ -756,10 +756,9 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex ml-auto mt-10">
+                  <div className="flex w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
-                      <br />
                       and pain points for informed design decisions.
                     </p>
                   </div>
@@ -799,10 +798,9 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex ml-auto mt-10">
+                  <div className="flex w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
-                      <br />
                       and pain points for informed design decisions.
                     </p>
                   </div>
@@ -842,10 +840,9 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex ml-auto mt-10">
+                  <div className="flex w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
-                      <br />
                       and pain points for informed design decisions.
                     </p>
                   </div>
