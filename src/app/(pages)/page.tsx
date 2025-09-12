@@ -675,10 +675,7 @@ const Page = () => {
                 </div>
               </div>
 
-              <div
-                ref={ref}
-                className="w-full mt-23 overflow-hidden"
-              >
+              <div ref={ref} className="w-full mt-23 overflow-hidden">
                 <div className="flex flex-wrap items-center justify-evenly gap-1">
                   {cards.map((card, index) => (
                     <motion.div
@@ -854,9 +851,9 @@ const Page = () => {
 
       <section className="about-section px-20">
         <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-22.5">
-          <div className=" container mx-auto ">
+          <div className="container mx-auto px-6.5">
             <div className="flex flex-row items-center w-full justify-between">
-              <div className="opacity-130">
+              <div className="opacity-130 w-[70%] lg:w-[50%]">
                 <div className="flex items-center gap-1.5 mb-2.5">
                   <Image
                     src={"/img/title-dot.png"}
@@ -869,10 +866,8 @@ const Page = () => {
                   <p className="text-blue font-normal fs-20">About Me</p>
                 </div>
                 <h2 className="font-light font-montreal uppercase text-white leading-[106%]">
-                  Meet the Mind
-                </h2>
-                <h2 className="font-montreal uppercase leading-[106%] text-pink font-medium">
-                  Behind the Work
+                  Meet the Mind{" "}
+                  <span className="text-pink font-medium">Behind the Work</span>
                 </h2>
               </div>
               <div className="figma-icon p-3">
@@ -886,19 +881,19 @@ const Page = () => {
                 />
               </div>
             </div>
-            <div className="flex">
-              <div className="w-[50%] relative">
+            <div className="flex flex-col lg:flex-row">
+              <div className="w-full lg:w-[50%] relative">
                 <Image
                   src={"/img/Profile Pic Taha.png"}
                   width={727}
                   height={727}
                   alt="title-dot"
                   unoptimized={true}
-                  className="object-contain absolute top-[-50px]"
+                  className="object-contain lg:absolute top-[-50px]"
                 />
               </div>
-              <div className="w-[50%]">
-                <p className="text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-30">
+              <div className="w-full lg:w-[50%]">
+                <p className="text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-7.5 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-30">
                   Hi, I’m
                   <span className="font-bold  text-white">
                     {" "}
@@ -911,25 +906,25 @@ const Page = () => {
                 </p>
                 <div className="flex gap-7.5">
                   <div>
-                    <h2 className="text-white font-normal leading-[100%]">
-                      250<span className="text-blue text-[64px]">+</span>
+                    <h2 className="flex items-center text-white font-normal leading-[100%]">
+                      250<span className="text-blue">+</span>
                     </h2>
                     <p className="fs-20 text-[#B2B2B2]">Success Project</p>
                   </div>
                   <div>
-                    <h2 className="text-white font-normal leading-[100%]">
-                      160<span className="text-blue text-[64px]">+</span>
+                    <h2 className="flex items-center text-white font-normal leading-[100%]">
+                      160<span className="text-blue">+</span>
                     </h2>
                     <p className="fs-20 text-[#B2B2B2]">Recent Clients</p>
                   </div>
                   <div>
-                    <h2 className="text-white font-normal leading-[100%]">
-                      99<span className="text-blue text-[64px]">%</span>
+                    <h2 className="flex items-center text-white font-normal leading-[100%]">
+                      99<span className="text-blue">%</span>
                     </h2>
                     <p className="fs-20 text-[#B2B2B2]">Happy Clients</p>
                   </div>
                 </div>
-                <div className="flex flex-wrap mt-12.5 gap-2.5">
+                <div className="flex flex-wrap mt-6 md:mt-8 lg:mt-10 xl:mt-12.5 gap-2.5">
                   <Link
                     href="#"
                     className="btn text-[#B2B2B2] btn-lg btn-black"
