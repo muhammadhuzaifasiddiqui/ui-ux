@@ -721,7 +721,7 @@ const Page = () => {
             </div>
 
             <div className="w-full lg:w-1/2">
-              <div className="flex flex-col justify-between h-full">
+              <div className="flex flex-col justify-between gap-2 h-full">
                 <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
                   <div className="flex items-center justify-between">
                     <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
@@ -756,7 +756,7 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
+                  <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
                       and pain points for informed design decisions.
@@ -798,7 +798,7 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
+                  <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
                       and pain points for informed design decisions.
@@ -840,7 +840,7 @@ const Page = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="flex w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
+                  <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                     <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
                       Conducting research to understand user needs, behaviors,
                       and pain points for informed design decisions.
