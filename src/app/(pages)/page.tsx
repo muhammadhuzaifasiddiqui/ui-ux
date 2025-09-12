@@ -623,6 +623,7 @@ const Page = () => {
           </div>
         </div>
       </section> */}
+
       <section className="services-section px-20">
         <div className="services-wrapper">
           <div className="flex flex-col xl:flex-row gap-2.5">
@@ -850,7 +851,7 @@ const Page = () => {
       </section>
 
       <section className="about-section px-20">
-        <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-22.5">
+        <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
           <div className="container mx-auto px-6.5">
             <div className="flex flex-row items-center w-full justify-between">
               <div className="opacity-130 w-[70%] lg:w-[50%]">
@@ -968,10 +969,10 @@ const Page = () => {
         </div>
       </section>
 
-      {/* <section className="workflow-section px-20">
+      <section className="workflow-section px-20">
         <div className="workflow-wrapper bg-white shadow-primary border-radius-20">
           <div className="container mx-auto">
-            <div className="flex justify-between p-5 mb-2.5">
+            <div className="flex flex-row  justify-between p-5 mb-2.5">
               <div className="w-[60%]">
                 <Image
                   src={"/img/gesture.png"}
@@ -1011,7 +1012,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-stretch relative lg:flex-nowrap gap-2.5 mb-2.5">
+        {/* <div className="flex flex-wrap items-stretch relative lg:flex-nowrap gap-2.5 mb-2.5">
           <div className="flex-1 w-[33.33%] card border-radius-20 shadow-primary">
             <div className="flex flex-col items-center">
               <Image
@@ -1092,10 +1093,10 @@ const Page = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
-      <section className="portfolio-section px-20">
+      {/* <section className="portfolio-section px-20">
         <div className="portfolio-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col items-center mb-7.5">
