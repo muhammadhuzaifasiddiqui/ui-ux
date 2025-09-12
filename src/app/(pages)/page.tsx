@@ -152,9 +152,9 @@ const Page = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
-      <section className="hero-section">
+      {/* <section className="hero-section">
         <div className="hero-wrapper border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col gap-10">
@@ -391,9 +391,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="hero-section">
+      {/* <section className="hero-section">
         <div className="hero-wrapper shadow border-radius-20">
           <div className="container mx-auto">
             <div className="flex justify-between">
@@ -622,12 +622,11 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
       <section className="services-section">
         <div className="services-wrapper">
-          <div className="flex flex-row gap-2.5">
-            <div className="flex-row shadow-primary services-collection-box pt-7.5 pl-7.5 border-radius-20 w-1/2">
+          <div className="flex flex-col lg:flex-row gap-2.5">
+            <div className="shadow-primary services-collection-box border-radius-20 w-full lg:w-1/2">
               <div className="flex w-full justify-between relative">
                 <div className="w-[30%] overflow-hidden">
                   <Swiper
@@ -638,24 +637,24 @@ const Page = () => {
                       delay: 0,
                       disableOnInteraction: false,
                     }}
-                    speed={2000}
+                    speed={5000}
                     modules={[Autoplay]}
-                    className="rotate-[-8.46deg] w-[200%]"
+                    className="rotate-[-20.46deg] w-[400%] top-[-50px]"
                   >
                     <SwiperSlide>
-                      <p className="leading-[100%] font-normal font-anton font-anton-slide">
-                        UI UX
-                      </p>
+                      <span className="leading-[100%] fs-138 font-normal font-anton font-anton-slide">
+                        UI/UX • UI/UX
+                      </span>
                     </SwiperSlide>
                     <SwiperSlide>
-                      <p className="leading-[100%] font-normal font-anton font-anton-slide">
-                        UI UX
-                      </p>
+                      <span className="leading-[100%] fs-138 font-normal font-anton font-anton-slide">
+                        UI/UX • UI/UX
+                      </span>
                     </SwiperSlide>
                   </Swiper>
                 </div>
 
-                <div className="w-[60%]">
+                <div className="w-[60%] pt-7.5 ">
                   <div className="flex flex-col items-end pr-7.5">
                     <div className="flex items-center gap-1.5">
                       <Image
@@ -675,7 +674,8 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full mt-23">
+
+              <div className="w-full mt-23 pl-7.5">
                 <div ref={ref} className="w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-evenly gap-4">
                     {cards.map((card, index) => (
@@ -720,7 +720,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2">
               <div className="flex flex-col justify-between h-full">
                 <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
                   <div className="flex items-center justify-between">
@@ -856,7 +856,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="about-section">
+      {/* <section className="about-section">
         <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-22.5">
           <div className=" container mx-auto ">
             <div className="flex flex-row items-center w-full justify-between">
@@ -1566,7 +1566,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 };
