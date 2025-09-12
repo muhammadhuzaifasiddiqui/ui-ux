@@ -13,7 +13,7 @@ const Testimonial = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
     <>
-      <div className="testimonial-section">
+      <div className="testimonial-section px-20">
         <Swiper
           spaceBetween={10}
           slidesPerView={3}

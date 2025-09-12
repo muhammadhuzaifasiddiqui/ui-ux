@@ -154,7 +154,7 @@ const Page = () => {
     <>
       {/* <Navbar /> */}
 
-      {/* <section className="hero-section">
+      {/* <section className="hero-section px-20">
         <div className="hero-wrapper border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col gap-10">
@@ -393,7 +393,7 @@ const Page = () => {
         </div>
       </section> */}
 
-      {/* <section className="hero-section">
+      {/* <section className="hero-section px-20">
         <div className="hero-wrapper shadow border-radius-20">
           <div className="container mx-auto">
             <div className="flex justify-between">
@@ -623,11 +623,11 @@ const Page = () => {
           </div>
         </div>
       </section> */}
-      <section className="services-section">
+      <section className="services-section px-20">
         <div className="services-wrapper">
-          <div className="flex flex-col lg:flex-row gap-2.5">
-            <div className="shadow-primary services-collection-box border-radius-20 w-full lg:w-1/2">
-              <div className="flex w-full justify-between relative">
+          <div className="flex flex-col xl:flex-row gap-2.5">
+            <div className="shadow-primary services-collection-box border-radius-20 w-full xl:w-1/2">
+              <div className="flex w-full justify-between">
                 <div className="w-[30%] overflow-hidden">
                   <Swiper
                     spaceBetween={0}
@@ -654,8 +654,8 @@ const Page = () => {
                   </Swiper>
                 </div>
 
-                <div className="w-[60%] pt-7.5 ">
-                  <div className="flex flex-col items-end pr-7.5">
+                <div className="w-[60%] pt-4 sm:pt-5 md:pt-6 lg:pt-7.5 pr-4 sm:pr-5 md:pr-6 lg:pr-7.5">
+                  <div className="flex flex-col items-end">
                     <div className="flex items-center gap-1.5">
                       <Image
                         src={"/img/title-dot.png"}
@@ -675,22 +675,24 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="w-full mt-23">
-                <div ref={ref} className="w-full overflow-hidden">
-                  <div className="flex flex-wrap items-center justify-evenly gap-0 lg:gap-4">
-                    {cards.map((card, index) => (
-                      <motion.div
-                        key={card.id}
-                        variants={cardVariants}
-                        initial="initial"
-                        animate={isInView ? "animate" : "initial"} // Animate only when the section is in view
-                        transition={{
-                          type: "spring", // Use a spring transition for a bouncing effect
-                          damping: 10,
-                          stiffness: 100,
-                          delay: index * 0.05, // Stagger the animation of each card
-                        }}
-                        className={`
+              <div
+                ref={ref}
+                className="w-full mt-23 overflow-hidden"
+              >
+                <div className="flex flex-wrap items-center justify-evenly gap-1">
+                  {cards.map((card, index) => (
+                    <motion.div
+                      key={card.id}
+                      variants={cardVariants}
+                      initial="initial"
+                      animate={isInView ? "animate" : "initial"} // Animate only when the section is in view
+                      transition={{
+                        type: "spring", // Use a spring transition for a bouncing effect
+                        damping: 10,
+                        stiffness: 100,
+                        delay: index * 0.05, // Stagger the animation of each card
+                      }}
+                      className={`
               inline-block
               btn-xxl
               service-bullets-border
@@ -706,146 +708,143 @@ const Page = () => {
               ${card.translateX || ""}
               ${card.color === "bg-white" ? "text-gray-800" : "text-[#3C3C3C]"}
             `}
-                        style={{
-                          transform: `${card.rotation ? card.rotation : ""} ${
-                            card.translateX ? card.translateX : ""
-                          }`,
-                        }}
-                      >
-                        {card.text}
-                      </motion.div>
-                    ))}
-                  </div>
+                      style={{
+                        transform: `${card.rotation ? card.rotation : ""} ${
+                          card.translateX ? card.translateX : ""
+                        }`,
+                      }}
+                    >
+                      {card.text}
+                    </motion.div>
+                  ))}
                 </div>
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2">
-              <div className="flex flex-col justify-between gap-2 h-full">
-                <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
-                      User Research & Analysis
-                    </h3>
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="72"
-                        height="72"
-                        viewBox="0 0 72 72"
-                        fill="none"
-                      >
-                        <path
-                          d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
-                          className="group-hover:stroke-white transition-all duration-400"
-                          stroke="#4A26FF"
-                          strokeWidth="2.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M23.4786 48.5217L48.2715 23.7288"
-                          className="group-hover:stroke-white transition-all duration-400"
-                          stroke="#4A26FF"
-                          strokeWidth="2.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
-                    <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
-                      Conducting research to understand user needs, behaviors,
-                      and pain points for informed design decisions.
-                    </p>
+            <div className="flex flex-col w-full xl:w-1/2 items-stretch gap-2 h-full">
+              <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
+                    User Research & Analysis
+                  </h3>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="72"
+                      height="72"
+                      viewBox="0 0 72 72"
+                      fill="none"
+                    >
+                      <path
+                        d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
+                        className="group-hover:stroke-white transition-all duration-400"
+                        stroke="#4A26FF"
+                        strokeWidth="2.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M23.4786 48.5217L48.2715 23.7288"
+                        className="group-hover:stroke-white transition-all duration-400"
+                        stroke="#4A26FF"
+                        strokeWidth="2.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                 </div>
+                <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
+                  <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
+                    Conducting research to understand user needs, behaviors, and
+                    pain points for informed design decisions.
+                  </p>
+                </div>
+              </div>
 
-                <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
-                      User Research & Analysis
-                    </h3>
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="72"
-                        height="72"
-                        viewBox="0 0 72 72"
-                        fill="none"
-                      >
-                        <path
-                          d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
-                          className="group-hover:stroke-white transition-all duration-400"
-                          stroke="#4A26FF"
-                          strokeWidth="2.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M23.4786 48.5217L48.2715 23.7288"
-                          className="group-hover:stroke-white transition-all duration-400"
-                          stroke="#4A26FF"
-                          strokeWidth="2.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
-                    <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
-                      Conducting research to understand user needs, behaviors,
-                      and pain points for informed design decisions.
-                    </p>
+              <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
+                    User Research & Analysis
+                  </h3>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="72"
+                      height="72"
+                      viewBox="0 0 72 72"
+                      fill="none"
+                    >
+                      <path
+                        d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
+                        className="group-hover:stroke-white transition-all duration-400"
+                        stroke="#4A26FF"
+                        strokeWidth="2.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M23.4786 48.5217L48.2715 23.7288"
+                        className="group-hover:stroke-white transition-all duration-400"
+                        stroke="#4A26FF"
+                        strokeWidth="2.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                 </div>
+                <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
+                  <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
+                    Conducting research to understand user needs, behaviors, and
+                    pain points for informed design decisions.
+                  </p>
+                </div>
+              </div>
 
-                <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
-                      User Research & Analysis
-                    </h3>
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="72"
-                        height="72"
-                        viewBox="0 0 72 72"
-                        fill="none"
-                      >
-                        <path
-                          d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
-                          className="group-hover:stroke-white transition-all duration-400"
-                          stroke="#4A26FF"
-                          strokeWidth="2.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M23.4786 48.5217L48.2715 23.7288"
-                          className="group-hover:stroke-white transition-all duration-400"
-                          stroke="#4A26FF"
-                          strokeWidth="2.5"
-                          strokeMiterlimit="10"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </div>
+              <div className="service-card cursor-pointer shadow-primary flex flex-col border-radius-20 group">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-montreal group-hover:text-white transition-all duration-400 font-normal leading-[110%] uppercase">
+                    User Research & Analysis
+                  </h3>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="72"
+                      height="72"
+                      viewBox="0 0 72 72"
+                      fill="none"
+                    >
+                      <path
+                        d="M48.5219 41.3622L48.5219 23.4783L30.638 23.4783"
+                        className="group-hover:stroke-white transition-all duration-400"
+                        stroke="#4A26FF"
+                        strokeWidth="2.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M23.4786 48.5217L48.2715 23.7288"
+                        className="group-hover:stroke-white transition-all duration-400"
+                        stroke="#4A26FF"
+                        strokeWidth="2.5"
+                        strokeMiterlimit="10"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
-                  <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
-                    <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
-                      Conducting research to understand user needs, behaviors,
-                      and pain points for informed design decisions.
-                    </p>
-                  </div>
+                </div>
+                <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
+                  <p className="text-right group-hover:text-white transition-all duration-400 leading-[100%]">
+                    Conducting research to understand user needs, behaviors, and
+                    pain points for informed design decisions.
+                  </p>
                 </div>
               </div>
             </div>
@@ -853,7 +852,7 @@ const Page = () => {
         </div>
       </section>
 
-      {/* <section className="about-section">
+      <section className="about-section px-20">
         <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-22.5">
           <div className=" container mx-auto ">
             <div className="flex flex-row items-center w-full justify-between">
@@ -974,7 +973,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="workflow-section">
+      {/* <section className="workflow-section px-20">
         <div className="workflow-wrapper bg-white shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex justify-between p-5 mb-2.5">
@@ -1101,7 +1100,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="portfolio-section">
+      <section className="portfolio-section px-20">
         <div className="portfolio-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col items-center mb-7.5">
@@ -1250,7 +1249,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="idea-section mt-2.5 mb-2.5">
+      <section className="idea-section px-20 mt-2.5 mb-2.5">
         <div className="idea-wrapper border-radius-20 shadow-primary">
           <div className="container mx-auto">
             <div className="flex flex-col gap-64">
@@ -1276,7 +1275,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="pricing-section mb-2.5">
+      <section className="pricing-section px-20 mb-2.5">
         <div className="pricing-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className=" flex flex-col items-center">
@@ -1493,7 +1492,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="testimonial-section mb-2.5">
+      <section className="testimonial-section px-20 mb-2.5">
         <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
           <div className="flex gap-1.5 mb-2.5">
             <Image
@@ -1517,7 +1516,7 @@ const Page = () => {
 
       <Testimonial />
 
-      <footer className="pt-2.5">
+      <footer className="pt-2.5 px-20">
         <div className="footer-wrapper shadow-primary border-radius-20 px-80">
           <div className="container mx-auto">
             <div className="flex flex-col">
