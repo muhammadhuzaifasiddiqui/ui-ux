@@ -31,7 +31,7 @@ const initialCards: CardItem[] = [
   },
   {
     id: 2,
-    text: "AGENCY WEBSITE",
+    text: "MOBILE",
     color: "bg-white",
     size: "text-xl",
     rotation: "-rotate-1",
@@ -51,17 +51,16 @@ const initialCards: CardItem[] = [
   },
   {
     id: 5,
-    text: "WIREFRAMING",
+    text: "AGENCY WEBSITE",
     color: "bg-white",
     size: "text-2xl",
     rotation: "rotate-3",
   },
   {
     id: 6,
-    text: "PROTOTYPING",
-    color: "bg-[#4A26FF]" + " text-[#F6FAFF]",
-    size: "text-3xl",
-    rotation: "rotate-3",
+    text: "WIREFRAMING",
+    color: "bg-white",
+    size: "text-xl",
   },
   {
     id: 7,
@@ -71,9 +70,10 @@ const initialCards: CardItem[] = [
   },
   {
     id: 8,
-    text: "MOBILE",
-    color: "bg-white",
-    size: "text-xl",
+    text: "PROTOTYPING",
+    color: "bg-[#4A26FF]" + " text-[#F6FAFF]",
+    size: "text-3xl",
+    rotation: "rotate-3",
   },
   {
     id: 9,
@@ -675,9 +675,9 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="w-full mt-23 pl-7.5">
+              <div className="w-full mt-23">
                 <div ref={ref} className="w-full overflow-hidden">
-                  <div className="flex flex-wrap items-center justify-evenly gap-4">
+                  <div className="flex flex-wrap items-center justify-evenly gap-0 lg:gap-4">
                     {cards.map((card, index) => (
                       <motion.div
                         key={card.id}
