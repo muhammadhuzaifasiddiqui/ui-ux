@@ -624,7 +624,7 @@ const Page = () => {
         </div>
       </section> */}
 
-      <section className="services-section px-20">
+      <section className="services-section px-20 pt-80">
         <div className="services-wrapper">
           <div className="flex flex-col xl:flex-row gap-2.5">
             <div className="shadow-primary services-collection-box border-radius-20 w-full xl:w-1/2">
