@@ -669,7 +669,7 @@ const Page = () => {
                       <p className="text-blue text-right">service</p>
                     </div>
                     <h2 className="font-montreal text-black font-light text-right mt-2.5 leading-[106%]">
-                      EXPLORE MY
+                      EXPLORE MY <br />
                       <span className="font-medium text-primary">SERVICES</span>
                     </h2>
                   </div>
@@ -867,7 +867,8 @@ const Page = () => {
                   <p className="text-blue font-normal fs-20">About Me</p>
                 </div>
                 <h2 className="font-light font-montreal uppercase text-white leading-[106%]">
-                  Meet the Mind{" "}
+                  Meet the Mind
+                  <br />
                   <span className="text-pink font-medium">Behind the Work</span>
                 </h2>
               </div>
@@ -972,16 +973,45 @@ const Page = () => {
       <section className="workflow-section px-20">
         <div className="workflow-wrapper bg-white shadow-primary border-radius-20">
           <div className="container mx-auto">
-            <div className="flex flex-row  justify-between p-5 mb-2.5">
-              <div className="w-[60%]">
-                <Image
-                  src={"/img/gesture.png"}
-                  width={111}
-                  height={111}
-                  alt="Laptop"
-                  unoptimized={true}
-                  className="object-contain"
-                />
+            <div className="flex flex-col py-5 px-6.5 mb-2.5">
+              <div className="flex w-full justify-between">
+                <div className="flex items-start">
+                  <Image
+                    src={"/img/gesture.png"}
+                    width={111}
+                    height={111}
+                    alt="Laptop"
+                    unoptimized={true}
+                    className="object-contain"
+                  />
+                </div>
+                <div className="flex flex-col items-end">
+                  <div className="flex items-center gap-2">
+                    <div>
+                      <Image
+                        src={"/img/title-dot.png"}
+                        width={5}
+                        height={5}
+                        alt="title-dot"
+                        unoptimized={true}
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-blue font-normal fs-20">How I Work</p>
+                    </div>
+                  </div>
+                  <div className="">
+                    <h2 className="font-light text-right uppercase leading-[100%]">
+                      My Excellent <br />
+                      <span className="font-medium font-montreal text-primary">
+                        Approach
+                      </span>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <div className="flex w-full lg:w-[65%] text-justify lg:text-start">
                 <p>
                   I take a user-focused approach, starting with research to
                   understand needs and goals. Through collaboration, wireframes,
@@ -989,31 +1019,12 @@ const Page = () => {
                   visually engaging solutions.
                 </p>
               </div>
-              <div className="flex flex-col items-end w-[30%]">
-                <div className="flex items-center gap-1.5 mb-2.5">
-                  <Image
-                    src={"/img/title-dot.png"}
-                    width={5}
-                    height={5}
-                    alt="title-dot"
-                    unoptimized={true}
-                    className="object-contain"
-                  />
-                  <p className="text-blue font-normal fs-20"> How I Work </p>
-                </div>
-                <h2 className="font-light text-right uppercase leading-[100%]">
-                  My Excellent{" "}
-                  <span className="font-medium font-montreal text-primary">
-                    Approach
-                  </span>
-                </h2>
-              </div>
             </div>
           </div>
         </div>
 
-        {/* <div className="flex flex-wrap items-stretch relative lg:flex-nowrap gap-2.5 mb-2.5">
-          <div className="flex-1 w-[33.33%] card border-radius-20 shadow-primary">
+        <div className="flex flex-col lg:flex-row items-stretch relative gap-2.5 mb-2.5">
+          <div className="flex-1 w-full lg:w-[33.33%] card border-radius-20 shadow-primary">
             <div className="flex flex-col items-center">
               <Image
                 src={"/img/Rectangle.png"}
@@ -1021,7 +1032,7 @@ const Page = () => {
                 height={345}
                 alt="Laptop"
                 unoptimized={true}
-                className="object-contain"
+                className=""
               />
               <h3 className="mb-2.5 font-montreal uppercase leading-[100%] font-normal text-black">
                 Custom, User-Centered Designs
@@ -1032,40 +1043,44 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col flex-1 justify-between w-[33.33%] ">
-            <div className="flex items-center gap-2.5 bg-white pl-5 border-radius-20 shadow-primary">
-              <div className="flex flex-col">
+          <div className="flex flex-col w-full lg:w-[33.33%] justify-between items-stretch">
+            <div className="flex w-full justify-between items-center gap-2.5 bg-white pl-5 border-radius-20 shadow-primary">
+              <div className="flex flex-col pt-8 pb-8 items-start w-[50%] gap-3">
                 <h3 className="font-montreal uppercase leading-[100%] font-normal text-black">
                   Transparent Process
                 </h3>
-                <p className="line-clamp-5 capitalize fs-16">
+                <p className="line-clamp-4 capitalize fs-16">
                   No surprises—just high-quality work delivered on time. just
                   high-quality work delivered on time.
                 </p>
               </div>
-              <Image
-                src={"/img/Rectangle (1).png"}
-                width={236}
-                height={264}
-                alt="Laptop"
-                unoptimized={true}
-                className="object-contain rounded-[20px]"
-              />
+              <div className="">
+                <Image
+                  src={"/img/Rectangle (1).png"}
+                  width={236}
+                  height={264}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="rounded-[20px]"
+                />
+              </div>
             </div>
-            <div className="flex items-center gap-2.5 bg-white pr-5 border-radius-20 shadow-primary">
-              <Image
-                src={"/img/Rectangle (2).png"}
-                width={236}
-                height={264}
-                alt="Laptop"
-                unoptimized={true}
-                className="object-contain rounded-[20px]"
-              />
-              <div className="flex flex-col">
+            <div className="flex flex-row items-center justify-between mt-2 w-full gap-2.5 bg-white pr-5 border-radius-20 shadow-primary">
+              <div className="">
+                <Image
+                  src={"/img/Rectangle (2).png"}
+                  width={236}
+                  height={264}
+                  alt="Laptop"
+                  unoptimized={true}
+                  className="rounded-[20px]"
+                />
+              </div>
+              <div className="flex flex-col pt-8 pb-8 w-[50%] gap-3">
                 <h3 className="font-montreal text-right uppercase leading-[100%] font-normal text-black">
                   Proven Results
                 </h3>
-                <p className="line-clamp-5 capitalize text-right fs-16">
+                <p className="line-clamp-4 capitalize text-right fs-16">
                   Trusted by over{" "}
                   <span className="fs-18 font-semibold text-black">160+</span>,
                   just high-quality work delivered on time. just high-quality
@@ -1074,7 +1089,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 w-[33.33%] card border-radius-20 shadow-primary">
+          <div className="flex-1 w-full lg:w-[33.33%] card border-radius-20 shadow-primary">
             <div className="flex flex-col items-center">
               <Image
                 src={"/img/Rectangle (3).png"}
@@ -1082,7 +1097,7 @@ const Page = () => {
                 height={345}
                 alt="Laptop"
                 unoptimized={true}
-                className="object-contain"
+                className=""
               />
               <h3 className="mb-2.5 text-right font-montreal uppercase leading-[100%] font-normal text-black">
                 Affordable Packages
@@ -1093,11 +1108,11 @@ const Page = () => {
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
 
-      {/* <section className="portfolio-section px-20">
-        <div className="portfolio-wrapper shadow-primary border-radius-20">
+      <section className="portfolio-section px-20">
+        <div className="portfolio-wrapper p-6 shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col items-center mb-7.5">
               <div className="flex gap-1.5 mb-2.5">
@@ -1123,7 +1138,7 @@ const Page = () => {
               <div className="flex flex-col gap-2.5">
                 <div className="portfolio-card border-radius-20 shadow-primary"></div>
                 <div className="flex flex-col gap-6 portfolio-card-footer border-radius-20 shadow-primary">
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-row items-center gap-1">
                     <Link href="#" className="btn btn-xsm btn-lilac">
                       Figma
                     </Link>
@@ -1245,8 +1260,9 @@ const Page = () => {
         </div>
       </section>
 
+
       <section className="idea-section px-20 mt-2.5 mb-2.5">
-        <div className="idea-wrapper border-radius-20 shadow-primary">
+        <div className="idea-wrapper px-6 border-radius-20 shadow-primary">
           <div className="container mx-auto">
             <div className="flex flex-col gap-64">
               <div className="flex flex-col items-start">
@@ -1257,7 +1273,7 @@ const Page = () => {
                   Amazing Ideas
                 </h2>
               </div>
-              <div className="flex flex-col w-[40%] ml-auto items-end">
+              <div className="flex flex-col w-full lg:w-[40%] ml-auto items-end">
                 <p className="mb-6 text-right text-white capitalize">
                   I’m always excited to discuss new opportunities and
                   collaborations. Feel free to reach out.
@@ -1270,6 +1286,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+
 
       <section className="pricing-section px-20 mb-2.5">
         <div className="pricing-wrapper shadow-primary border-radius-20">
@@ -1294,8 +1311,9 @@ const Page = () => {
               </h2>
             </div>
 
-            <div className="flex items-center justify-center gap-5 pt-7.5 pb-7.5">
-              <div className="group hover:bg-[#DFE2FF]! card border-radius-20">
+            <div className="flex flex-col lg:flex-row px-6 items-center justify-center gap-5 pt-7.5 pb-7.5">
+
+              <div className="w-full lg:w-[33.33%] card border-radius-20 group hover:bg-[#DFE2FF]!">
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-4">
                     <p className="text-[24px] text-dark">Starter Package</p>
@@ -1358,7 +1376,7 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="card active border-radius-20">
+              <div className="w-full lg:w-[33.33%] card active border-radius-20">
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-4">
                     <p className="text-[24px] text-dark">Basic Plan</p>
@@ -1421,7 +1439,7 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="group hover:bg-[#DFE2FF]! card border-radius-20">
+              <div className="w-full lg:w-[33.33%] card border-radius-20 group hover:bg-[#DFE2FF]!">
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-4">
                     <p className="text-[24px] text-dark">Premium Package</p>
@@ -1483,10 +1501,12 @@ const Page = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </section>
+
 
       <section className="testimonial-section px-20 mb-2.5">
         <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
@@ -1558,7 +1578,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };
