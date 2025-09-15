@@ -152,7 +152,7 @@ const Page = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
 
       {/* <section className="hero-section px-20">
         <div className="hero-wrapper border-radius-20">
@@ -1286,7 +1286,6 @@ const Page = () => {
         </div>
       </section>
 
-
       <section className="pricing-section px-20 mb-2.5">
         <div className="pricing-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
@@ -1506,7 +1505,6 @@ const Page = () => {
         </div>
       </section>
 
-
       <section className="testimonial-section px-20 mb-2.5">
         <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
           <div className="flex gap-1.5 mb-2.5">
@@ -1531,22 +1529,22 @@ const Page = () => {
 
       <Testimonial />
 
-      {/* <footer className="pt-2.5 px-20">
-        <div className="footer-wrapper shadow-primary border-radius-20 px-80">
+      <footer className="pt-2.5 px-20">
+        <div className="footer-wrapper shadow-primary border-radius-20 px-3.5 lg:px-7.5">
           <div className="container mx-auto">
             <div className="flex flex-col">
-              <div className="text-right w-[40%] ml-auto">
-                <h2 className="text-black uppercase font-normal leading-[100%]">
+              <div className="text-right w-full lg:w-[40%] ml-auto">
+                <h3 className="text-black uppercase font-normal leading-[100%]">
                   Transform Your Ideas into Extraordinary Designs.
-                </h2>
+                </h3>
               </div>
-              <div className="mt-[100px] w-[40%]">
+              <div className="mt-[100px] w-full lg:w-[40%]">
                 <h1 className="text-black uppercase leading-[100%]">
                   Reach Out now
                 </h1>
               </div>
               <div className="mt-[50px]">
-                <ul className="flex justify-center gap-15">
+                <ul className="flex justify-center gap-6 lg:gap-15">
                   <li>
                     <Link href="#" className="fs-12 font-poppins font-bold">
                       About
@@ -1577,7 +1575,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };
