@@ -1260,7 +1260,6 @@ const Page = () => {
         </div>
       </section>
 
-
       <section className="idea-section px-20 mt-2.5 mb-2.5">
         <div className="idea-wrapper px-6 border-radius-20 shadow-primary">
           <div className="container mx-auto">

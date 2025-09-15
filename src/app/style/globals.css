@@ -209,6 +209,7 @@ h4 {
 
 .btn-xl {
   padding: 15px 43px;
+  border-radius: 100px;
 }
 
 .btn-xxl {
@@ -605,9 +606,18 @@ footer {
     border-radius: 18px;
   }
 
+  .btn-xsm {
+    border-radius: 100px;
+  }
+
   .btn-xxl {
     padding: 17px 38px;
     font-size: 20px;
+  }
+
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
   }
 
   .service-card {
@@ -623,12 +633,16 @@ footer {
     padding: 16px 16.241px 7px 17px;
   }
 
-  .btn-xsm {
-    border-radius: 100px;
-  }
-
   .testimonial-card {
     padding: 30px 55px;
+  }
+
+  .portfolio-card {
+    height: 500px;
+  }
+
+  .pricing-section .card {
+    padding: 35px 40px;
   }
 }
 
@@ -761,6 +775,11 @@ footer {
     border-radius: 100px;
   }
 
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
   .service-card {
     padding: 24px 44px 16px 24px;
   }
@@ -776,6 +795,14 @@ footer {
 
   .testimonial-card {
     padding: 30px 45px;
+  }
+
+  .portfolio-card {
+    height: 460px;
+  }
+
+  .pricing-section .card {
+    padding: 30px 30px;
   }
 }
 
@@ -913,6 +940,11 @@ footer {
     font-size: 12px;
   }
 
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
   .btn-circle {
     padding: 12px;
   }
@@ -949,6 +981,10 @@ footer {
 
   .testimonial-card {
     padding: 30px 40px;
+  }
+
+  .portfolio-card {
+    height: 430px;
   }
 }
 
@@ -1098,6 +1134,11 @@ footer {
     font-size: 14px;
   }
 
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
   .btn-xsm {
     border-radius: 100px;
   }
@@ -1117,5 +1158,13 @@ footer {
 
   .testimonial-card {
     padding: 30px 35px;
+  }
+
+  .portfolio-card {
+    height: 400px;
+  }
+
+  .pricing-section .card {
+    padding: 30px 24px;
   }
 }
