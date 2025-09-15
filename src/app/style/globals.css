@@ -626,6 +626,10 @@ footer {
   .btn-xsm {
     border-radius: 100px;
   }
+
+  .testimonial-card {
+    padding: 30px 55px;
+  }
 }
 
 @media screen and (max-width: 767.97px) {
@@ -768,6 +772,10 @@ footer {
 
   .portfolio-card-footer {
     padding: 16px 16.241px 7px 17px;
+  }
+
+  .testimonial-card {
+    padding: 30px 45px;
   }
 }
 
@@ -938,6 +946,10 @@ footer {
   .portfolio-card-footer {
     padding: 16px 16.241px 7px 17px;
   }
+
+  .testimonial-card {
+    padding: 30px 40px;
+  }
 }
 
 @media screen and (max-width: 399.97) {
@@ -1101,5 +1113,9 @@ footer {
 
   .portfolio-card-footer {
     padding: 16px 16.241px 7px 17px;
+  }
+
+  .testimonial-card {
+    padding: 30px 35px;
   }
 }

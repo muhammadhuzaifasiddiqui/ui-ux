@@ -13,11 +13,11 @@ const Testimonial = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
     <>
-      <div className="testimonial-section px-20">
+      <div className="testimonial-section w-full overflow-hidden px-20">
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
-          centeredSlides={false}
+          slidesPerView={1}
+          centeredSlides={true}
           pagination={{
             el: ".custom-pagination",
             clickable: true,
@@ -25,7 +25,11 @@ const Testimonial = () => {
               return `<span class="${className} custom-bullet"></span>`;
             },
           }}
-          modules={[Pagination]}
+          breakpoints={{
+            1024: { slidesPerView: 3, centeredSlides: false },
+            768: { slidesPerView: 2, centeredSlides: true },
+            555: { slidesPerView: 1, centeredSlides: true },
+          }}
         >
           <SwiperSlide>
             <div className="testimonial-card border-radius-20">
@@ -58,41 +62,11 @@ const Testimonial = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="testimonial-card active border-radius-20">
-              <div className="flex flex-col gap-4">
-                <div className="img-testimonial">
-                  <Image
-                    src={"/img/Sukarya Masiony.png"}
-                    width={50}
-                    height={50}
-                    alt="title-dot"
-                    unoptimized={true}
-                    className="object-contain"
-                  />
-                </div>
-                <div>
-                  <p className="line-clamp-4 text-white">
-                    Product designer transformed our vision into reality with
-                    precision and creativity. Highly recommend for top-notch
-                    designs! Product designer transformed our vision into
-                    reality with precision and creativity. Highly recommend for
-                    into reality with precision and creativity. Highly recommend
-                    for top-notch designs!
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[#D8D8D8] text-[15px]">Sarah</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
             <div className="testimonial-card border-radius-20">
               <div className="flex flex-col gap-4">
                 <div className="img-testimonial">
                   <Image
-                    src={"/img/Michael.png"}
+                    src={"/img/Sarah.png"}
                     width={50}
                     height={50}
                     alt="title-dot"
@@ -111,7 +85,127 @@ const Testimonial = () => {
                   </p>
                 </div>
                 <div>
-                  <p className="text-[#79899B] text-[15px]">Michael</p>
+                  <p className="text-[#79899B] text-[15px]">Sukarya Masiony</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="testimonial-card border-radius-20">
+              <div className="flex flex-col gap-4">
+                <div className="img-testimonial">
+                  <Image
+                    src={"/img/Sarah.png"}
+                    width={50}
+                    height={50}
+                    alt="title-dot"
+                    unoptimized={true}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="line-clamp-4">
+                    Product designer transformed our vision into reality with
+                    precision and creativity. Highly recommend for top-notch
+                    designs! Product designer transformed our vision into
+                    reality with precision and creativity. Highly recommend for
+                    into reality with precision and creativity. Highly recommend
+                    for top-notch designs!
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[#79899B] text-[15px]">Sukarya Masiony</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="testimonial-card border-radius-20">
+              <div className="flex flex-col gap-4">
+                <div className="img-testimonial">
+                  <Image
+                    src={"/img/Sarah.png"}
+                    width={50}
+                    height={50}
+                    alt="title-dot"
+                    unoptimized={true}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="line-clamp-4">
+                    Product designer transformed our vision into reality with
+                    precision and creativity. Highly recommend for top-notch
+                    designs! Product designer transformed our vision into
+                    reality with precision and creativity. Highly recommend for
+                    into reality with precision and creativity. Highly recommend
+                    for top-notch designs!
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[#79899B] text-[15px]">Sukarya Masiony</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="testimonial-card border-radius-20">
+              <div className="flex flex-col gap-4">
+                <div className="img-testimonial">
+                  <Image
+                    src={"/img/Sarah.png"}
+                    width={50}
+                    height={50}
+                    alt="title-dot"
+                    unoptimized={true}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="line-clamp-4">
+                    Product designer transformed our vision into reality with
+                    precision and creativity. Highly recommend for top-notch
+                    designs! Product designer transformed our vision into
+                    reality with precision and creativity. Highly recommend for
+                    into reality with precision and creativity. Highly recommend
+                    for top-notch designs!
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[#79899B] text-[15px]">Sukarya Masiony</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="testimonial-card border-radius-20">
+              <div className="flex flex-col gap-4">
+                <div className="img-testimonial">
+                  <Image
+                    src={"/img/Sarah.png"}
+                    width={50}
+                    height={50}
+                    alt="title-dot"
+                    unoptimized={true}
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="line-clamp-4">
+                    Product designer transformed our vision into reality with
+                    precision and creativity. Highly recommend for top-notch
+                    designs! Product designer transformed our vision into
+                    reality with precision and creativity. Highly recommend for
+                    into reality with precision and creativity. Highly recommend
+                    for top-notch designs!
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[#79899B] text-[15px]">Sukarya Masiony</p>
                 </div>
               </div>
             </div>
@@ -123,7 +217,6 @@ const Testimonial = () => {
         <style jsx global>{`
           .custom-bullet {
           }
-
           .swiper-pagination-bullet-active.custom-bullet {
             background-color: #0085ff; /* Burgundy / Primary Color */
             width: 40px !important;
