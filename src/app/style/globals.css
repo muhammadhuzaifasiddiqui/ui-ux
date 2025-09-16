@@ -355,7 +355,7 @@ h4 {
   background: #DFE2FF;
 }
 
-.bg-laptop .img-wrapper{
+.bg-laptop .img-wrapper {
   height: ;
   width: ;
 }
@@ -377,13 +377,9 @@ h4 {
 
 .service-card {
   background-color: #fff;
-  transition: background-color 0.4s ease;
   padding: 30px 60px 20px 30px;
 }
 
-.service-card:hover {
-  background-color: #0085FF;
-}
 
 /* about-section */
 .about-section {
@@ -419,8 +415,12 @@ h4 {
   padding-bottom: 30px;
 }
 
+.portfolio-wrapper {
+  padding: 24px;
+}
+
 .portfolio-card {
-  height: 550px;
+  height: 520px;
   background-color: #fff;
 }
 
@@ -449,15 +449,16 @@ h4 {
   padding-bottom: 30px;
 }
 
+.price-card {
+  padding: 0px 48px;
+}
+
 .pricing-section .card {
   border: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: #eff5fd;
   padding: 40px 50px;
 }
 
 .pricing-section .card.active {
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background: #DFE2FF;
   padding: 60px 60px;
 }
 
@@ -477,14 +478,20 @@ h4 {
   overflow: visible !important;
 }
 
-.testimonial-card {
-  padding: 30px 70px;
-  background-color: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
+.testimonial-section .swiper-slide-active.swiper-slide{
+  background-color: #0085FF;
+  border-radius: 20px;
 }
 
-.testimonial-card.active {
-  background-color: #0085FF;
+.testimonial-section .swiper-slide-active .testimonial-text{
+  color: #fff;
+}
+
+.swiper-slide {
+  padding: 30px 70px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
 }
 
 .img-testimonial {
@@ -516,9 +523,25 @@ footer {
   } */
 }
 
+@media screen and (max-width: 1535.97px) {
+  h1 {
+    font-size: 90px;
+  }
+
+  .workflow-section .card {
+    background-color: #fff;
+    padding: 18px 60px;
+  }
+}
+
 @media screen and (max-width: 1279.97px) {
   h1 {
     font-size: 90px;
+  }
+
+  .workflow-section .card {
+    background-color: #fff;
+    padding: 18px 40px;
   }
 }
 
@@ -640,7 +663,7 @@ footer {
 
   .workflow-section .card {
     background-color: #fff;
-    padding: 18px 60px;
+    padding: 18px 40px;
   }
 
   .portfolio-card-footer {
@@ -652,7 +675,7 @@ footer {
   }
 
   .portfolio-card {
-    height: 500px;
+    height: 460px;
   }
 
   .pricing-section .card {
@@ -808,7 +831,11 @@ footer {
 
   .workflow-section .card {
     background-color: #fff;
-    padding: 16px 50px;
+    padding: 16px 40px;
+  }
+
+  .portfolio-wrapper {
+    padding: 0px 28px;
   }
 
   .portfolio-card-footer {
@@ -820,11 +847,15 @@ footer {
   }
 
   .portfolio-card {
-    height: 460px;
+    height: 430px;
   }
 
   .pricing-section .card {
     padding: 30px 30px;
+  }
+
+  .price-card {
+    padding: 0px 37px;
   }
 
   .nav-container {
@@ -866,7 +897,7 @@ footer {
   }
 
   .fs-20 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .fs-138 {
@@ -1003,7 +1034,11 @@ footer {
 
   .workflow-section .card {
     background-color: #fff;
-    padding: 15px 35px;
+    padding: 15px 25px;
+  }
+
+  .portfolio-wrapper {
+    padding: 0px 37px;
   }
 
   .portfolio-card-footer {
@@ -1015,7 +1050,11 @@ footer {
   }
 
   .portfolio-card {
-    height: 430px;
+    height: 400px;
+  }
+
+  .price-card {
+    padding: 0px 37px;
   }
 
   .nav-container {
@@ -1049,7 +1088,7 @@ footer {
   }
 
   .fs-16 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .fs-18 {
@@ -1192,6 +1231,10 @@ footer {
     padding: 14px 20px;
   }
 
+  .portfolio-wrapper {
+    padding: 0px 24px;
+  }
+
   .portfolio-card-footer {
     padding: 16px 16.241px 7px 17px;
   }
@@ -1201,11 +1244,15 @@ footer {
   }
 
   .portfolio-card {
-    height: 400px;
+    height: 370px;
   }
 
   .pricing-section .card {
     padding: 30px 24px;
+  }
+
+  .price-card {
+    padding: 0px 24px;
   }
 
   .nav-container {
