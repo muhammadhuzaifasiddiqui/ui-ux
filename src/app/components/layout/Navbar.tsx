@@ -34,10 +34,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar absolute w-full pl-5 pr-5">
-        <div className="w-full nav-container container mx-auto">
-          <div className="bg-navbar flex justify-between items-center">
+        <div className="w-full bg-white nav-container lg:bg-transparent border-radius-20 container mx-auto">
+          <div className="bg-navbar flex justify-between items-center px-4 py-2">
             <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
-              <Link className="fs-18 nav-link font-poppins font-bold!" href="">
+              <Link className="fs-18 nav-link bg-white font-poppins font-bold!" href="">
                 About
               </Link>
               <Link className="fs-18 nav-link font-normal font-poppins" href="">
@@ -90,18 +90,10 @@ const Navbar = () => {
                 height: isOpen ? "auto" : 0,
               }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden absolute left-20 mt-2  overflow-hidden"
+              className="lg:hidden absolute left-8 sm:left-11.5 md:left-34 mt-2 overflow-hidden"
             >
+
               <ul className="flex flex-col py-[10px] overflow-hidden">
-                <li className="px-[6px] py-[10px]">
-                  <Link
-                    href={""}
-                    className={""}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Home
-                  </Link>
-                </li>
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={""}
@@ -148,6 +140,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               </ul>
+
             </motion.nav>
           )}
         </AnimatePresence>

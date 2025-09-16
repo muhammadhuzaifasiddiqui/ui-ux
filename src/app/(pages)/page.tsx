@@ -152,15 +152,15 @@ const Page = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
 
-      {/* <section className="hero-section px-20">
-        <div className="hero-wrapper border-radius-20">
+      <section className="hero-section px-20">
+        <div className="hero-wrapper px-3.5 lg:px-6 border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col gap-10">
 
-              <div className="flex flex-row flex-wrap justify-between items-center">
-                <div className="w-full lg:w-[35%]">
+              <div className="flex flex-row justify-between items-center">
+                <div className="lg:w-[35%]">
                   <p className="text-gray font-normal">
                     Hi.... <br /> My name is{" "}
                     <span className="font-bold">Nanolix Digital</span>
@@ -170,7 +170,7 @@ const Page = () => {
                   </h1>
                 </div>
 
-                <div className="flex gap-22.5 w-full lg:w-[60%] pl-6.5">
+                <div className="flex  gap-22.5 lg:w-[60%] pl-6.5">
                   <div className="bg-laptop">
                     <div className="img-wrapper">
                       <Image
@@ -183,7 +183,7 @@ const Page = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex items-end">
+                  <div className="lg:hidden flex items-end">
                     <Link
                       href="#"
                       className="text-[14px]! btn btn-md btn-gray btn-border-left"
@@ -851,7 +851,7 @@ const Page = () => {
       </section>
 
       <section className="about-section px-20">
-        <div className="about-wrapper border-radius-20 shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
+        <div className="about-wrapper border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
           <div className="container mx-auto px-6.5">
             <div className="flex flex-row items-center w-full justify-between">
               <div className="opacity-130 w-[70%] lg:w-[50%]">
@@ -891,7 +891,7 @@ const Page = () => {
                   height={727}
                   alt="title-dot"
                   unoptimized={true}
-                  className="object-contain lg:absolute top-[-50px]"
+                  className="object-contain lg:absolute top-[-65px]"
                 />
               </div>
               <div className="w-full lg:w-[50%]">
@@ -1138,7 +1138,7 @@ const Page = () => {
               <div className="flex flex-col gap-2.5">
                 <div className="portfolio-card border-radius-20 shadow-primary"></div>
                 <div className="flex flex-col gap-6 portfolio-card-footer border-radius-20 shadow-primary">
-                  <div className="flex flex-row items-center gap-1">
+                  <div className="flex flex-wrap flex-row items-center gap-1">
                     <Link href="#" className="btn btn-xsm btn-lilac">
                       Figma
                     </Link>
@@ -1277,7 +1277,7 @@ const Page = () => {
                   I’m always excited to discuss new opportunities and
                   collaborations. Feel free to reach out.
                 </p>
-                <Link href="#" className="fs-12 btn  btn-pink">
+                <Link href="#" className="fs-12 btn btn-pink">
                   Get in touch
                 </Link>
               </div>
@@ -1310,7 +1310,6 @@ const Page = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row px-6 items-center justify-center gap-5 pt-7.5 pb-7.5">
-
               <div className="w-full lg:w-[33.33%] card border-radius-20 group hover:bg-[#DFE2FF]!">
                 <div className="flex flex-col gap-10">
                   <div className="flex flex-col gap-4">
@@ -1499,7 +1498,6 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

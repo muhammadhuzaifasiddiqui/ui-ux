@@ -176,7 +176,7 @@ h4 {
   padding: 15px 20px;
   font-size: 12px !important;
   font-weight: 600;
-  border-radius: 30px;
+  border-radius: 100px;
 }
 
 .btn-border-right {
@@ -355,6 +355,11 @@ h4 {
   background: #DFE2FF;
 }
 
+.bg-laptop .img-wrapper{
+  height: ;
+  width: ;
+}
+
 .portfolio-box {
   padding: 17px;
   border: 1px solid rgba(133, 167, 208, 0.33);
@@ -433,7 +438,7 @@ h4 {
   background-position: cover;
   background-size: cover;
   overflow: hidden;
-  padding-left: ;
+  /* padding-left: ; */
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -511,7 +516,11 @@ footer {
   } */
 }
 
-@media screen and (max-width: 1279.97px) {}
+@media screen and (max-width: 1279.97px) {
+  h1 {
+    font-size: 90px;
+  }
+}
 
 @media screen and (max-width: 1023.97px) {
   body {
@@ -603,7 +612,7 @@ footer {
   }
 
   .border-radius-20 {
-    border-radius: 18px;
+    border-radius: 16px;
   }
 
   .btn-xsm {
@@ -618,6 +627,11 @@ footer {
   .btn-xl {
     padding: 15px 43px;
     border-radius: 100px;
+  }
+
+  .bg-laptop {
+    height: 75px;
+    width: 350px;
   }
 
   .service-card {
@@ -643,6 +657,10 @@ footer {
 
   .pricing-section .card {
     padding: 35px 40px;
+  }
+
+  .nav-container {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
   }
 }
 
@@ -757,13 +775,12 @@ footer {
     padding-right: 14px;
   }
 
-
   .border-radius-30 {
     border-radius: 24px;
   }
 
   .border-radius-20 {
-    border-radius: 17px;
+    border-radius: 14px;
   }
 
   .btn-xxl {
@@ -778,6 +795,11 @@ footer {
   .btn-xl {
     padding: 15px 43px;
     border-radius: 100px;
+  }
+
+  .bg-laptop {
+    height: 70px;
+    width: 320px;
   }
 
   .service-card {
@@ -803,6 +825,10 @@ footer {
 
   .pricing-section .card {
     padding: 30px 30px;
+  }
+
+  .nav-container {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
   }
 }
 
@@ -954,7 +980,7 @@ footer {
   }
 
   .border-radius-20 {
-    border-radius: 16px;
+    border-radius: 12px;
   }
 
   .btn-xxl {
@@ -964,6 +990,11 @@ footer {
 
   .btn-xsm {
     border-radius: 100px;
+  }
+
+  .bg-laptop {
+    height: 65px;
+    width: 280px;
   }
 
   .service-card {
@@ -985,6 +1016,10 @@ footer {
 
   .portfolio-card {
     height: 430px;
+  }
+
+  .nav-container {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
   }
 }
 
@@ -1126,7 +1161,7 @@ footer {
   }
 
   .border-radius-20 {
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   .btn-xxl {
@@ -1141,6 +1176,11 @@ footer {
 
   .btn-xsm {
     border-radius: 100px;
+  }
+
+  .bg-laptop {
+    height: 60px;
+    width: 250px;
   }
 
   .service-card {
@@ -1166,5 +1206,9 @@ footer {
 
   .pricing-section .card {
     padding: 30px 24px;
+  }
+
+  .nav-container {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.10);
   }
 }
