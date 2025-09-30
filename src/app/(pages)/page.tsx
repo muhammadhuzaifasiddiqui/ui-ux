@@ -1508,7 +1508,7 @@ const Page = () => {
       <Testimonial />
 
       <footer className="pt-2.5">
-        <div className="footer-wrapper shadow-primary border-radius-20 px-3.5 lg:px-7.5">
+        <div className="footer-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col">
               <div className="text-right w-full lg:w-[40%] ml-auto">
