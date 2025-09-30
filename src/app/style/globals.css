@@ -410,6 +410,8 @@ h4 {
 }
 
 .about-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
   background: url("/img/About-BG.png");
   background-color: #000;
 }
@@ -424,6 +426,11 @@ h4 {
 }
 
 /* workflow-section */
+.workflow-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .workflow-section .card {
   background-color: #fff;
   padding: 20px 80px;
@@ -433,12 +440,10 @@ h4 {
 .portfolio-wrapper {
   background: url("/img/Noise & Texture.png");
   background-color: #dadcf9;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .portfolio-wrapper {
-  padding: 24px;
+  padding: 30px;
 }
 
 .portfolio-card {
@@ -478,6 +483,8 @@ h4 {
   /* padding-left: ; */
   padding-bottom: 20px;
   padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* pricing-section */
@@ -487,7 +494,7 @@ h4 {
 }
 
 .price-card {
-  padding: 0px 48px;
+  padding: 0px 30px;
 }
 
 .pricing-section .card {
@@ -506,6 +513,8 @@ h4 {
 
 /* testimonial-section */
 .testimonial-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   background: url("/img/Graphic_Elements.png");
@@ -608,6 +617,11 @@ h4 {
     width: 390px;
     border-radius: 60px;
     background: #dfe2ff;
+  }
+
+  .service-card {
+    background-color: #fff;
+    padding: 30px 30px 20px 30px;
   }
 
   .charges-box {
@@ -748,11 +762,6 @@ h4 {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
-  .nav-container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   .hero-section .img-wrapper {
     height: 72px;
     width: 330px;
@@ -760,14 +769,8 @@ h4 {
     background: #dfe2ff;
   }
 
-  .hero-wrapper {
-    padding: 80px 16px 48px;
-    width: 100%;
-    background: url("/img/BG.png");
-  }
-
   .service-card {
-    padding: 26px 50px 18px 26px;
+    padding: 26px 30px 18px 30px;
   }
 
   .workflow-section .card {
@@ -794,10 +797,6 @@ h4 {
 
   .pricing-section .card.active {
     padding: 40px 40px;
-  }
-
-  .portfolio-wrapper {
-    padding: 22px;
   }
 }
 
@@ -942,9 +941,24 @@ h4 {
   }
 
   .hero-wrapper {
-    padding: 80px 16px 34px;
+    padding: 80px 26px 34px;
     width: 100%;
     background: url("/img/BG.png");
+  }
+
+  .about-wrapper {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .workflow-wrapper {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .idea-wrapper {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .nav-wrapper {
@@ -952,12 +966,12 @@ h4 {
   }
 
   .nav-container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .service-card {
-    padding: 24px 44px 16px 24px;
+    padding: 24px 26px 16px 26px;
   }
 
   .workflow-section .card {
@@ -966,11 +980,16 @@ h4 {
   }
 
   .portfolio-wrapper {
-    padding: 20px;
+    padding: 26px;
   }
 
   .portfolio-card-footer {
     padding: 16px 16px;
+  }
+
+  .testimonial-wrapper {
+    padding-left: 26px;
+    padding-right: 26px;
   }
 
   .testimonial-card {
@@ -991,7 +1010,7 @@ h4 {
   }
 
   .price-card {
-    padding: 0px 37px;
+    padding: 0px 26px;
   }
 }
 
@@ -1160,9 +1179,24 @@ h4 {
   }
 
   .hero-wrapper {
-    padding: 80px 16px 24px;
+    padding: 80px 20px 24px;
     width: 100%;
     background: url("/img/BG.png");
+  }
+
+  .about-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .workflow-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .idea-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .nav-wrapper {
@@ -1170,12 +1204,12 @@ h4 {
   }
 
   .nav-container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .service-card {
-    padding: 22px 40px 15px 22px;
+    padding: 22px 20px 15px 20px;
   }
 
   .workflow-section .card {
@@ -1184,11 +1218,16 @@ h4 {
   }
 
   .portfolio-wrapper {
-    padding: 18px;
+    padding: 20px;
   }
 
   .portfolio-card-footer {
     padding: 16px 16px;
+  }
+
+  .testimonial-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .testimonial-card {
@@ -1209,7 +1248,7 @@ h4 {
   }
 
   .price-card {
-    padding: 0px 37px;
+    padding: 0px 20px;
   }
 }
 
@@ -1378,6 +1417,21 @@ h4 {
     background: url("/img/BG.png");
   }
 
+  .about-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .workflow-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .idea-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .nav-wrapper {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
@@ -1388,7 +1442,7 @@ h4 {
   }
 
   .service-card {
-    padding: 20px 36px 14px 20px;
+    padding: 20px 16px 14px 16px;
   }
 
   .workflow-section .card {
@@ -1397,7 +1451,7 @@ h4 {
   }
 
   .portfolio-wrapper {
-    padding: 15px;
+    padding: 16px;
   }
 
   .portfolio-card-footer {
@@ -1406,6 +1460,11 @@ h4 {
 
   .testimonial-card {
     padding: 30px 35px;
+  }
+
+  .testimonial-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .portfolio-card {
@@ -1422,6 +1481,6 @@ h4 {
   }
 
   .price-card {
-    padding: 0px 24px;
+    padding: 0px 16px;
   }
 }

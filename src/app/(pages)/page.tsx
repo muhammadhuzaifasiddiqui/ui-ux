@@ -850,7 +850,7 @@ const Page = () => {
       </section>
 
       <section className="about-section">
-        <div className="about-wrapper border-radius-20 overflow-hidden shadow-primary px-6.5 pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
+        <div className="about-wrapper border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row w-full justify-between">
               <div className="flex flex-col w-full lg:w-1/2">
@@ -1014,7 +1014,7 @@ const Page = () => {
       </section> */}
 
       <section className="workflow-section">
-        <div className="workflow-wrapper py-5 px-6.5 mb-2.5 bg-white shadow-primary border-radius-20">
+        <div className="workflow-wrapper py-5 mb-2.5 bg-white shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col">
               <div className="flex w-full justify-between">
@@ -1261,7 +1261,7 @@ const Page = () => {
       </section>
 
       <section className="idea-section mt-2.5 mb-2.5">
-        <div className="idea-wrapper px-6 border-radius-20 shadow-primary">
+        <div className="idea-wrapper border-radius-20 shadow-primary">
           <div className="container mx-auto">
             <div className="flex flex-col gap-64">
               <div className="flex flex-col items-start">
