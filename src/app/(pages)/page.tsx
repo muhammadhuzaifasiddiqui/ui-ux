@@ -349,7 +349,7 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-row md:flex-col gap-10">
+                  <div className="flex flex-row md:flex-col gap-5 lg:gap-7">
                     <div className="flex flex-col-reverse md:flex-row items-center gap-1 md:gap-3">
                       <div>
                         <p className="fs-14 font-normal capitalize text-gray">
@@ -749,7 +749,7 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
-                    <p className="text-right fs-16 group-hover:text-white! transition-all duration-400 leading-[100%]">
+                    <p className="text-right fs-16 group-hover:text-white! transition-all duration-400">
                       Conducting research to understand user needs, behaviors,
                       and pain points for informed design decisions.
                     </p>
@@ -793,7 +793,7 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
-                    <p className="text-right fs-16 group-hover:text-white! transition-all duration-400 leading-[100%]">
+                    <p className="text-right fs-16 group-hover:text-white! transition-all duration-400">
                       Conducting research to understand user needs, behaviors,
                       and pain points for informed design decisions.
                     </p>
@@ -837,7 +837,7 @@ const Page = () => {
                     </div>
                   </div>
                   <div className="flex w-full sm:w-[85%] md:w-[75%] lg:w-[65%] ml-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10">
-                    <p className="text-right fs-16 group-hover:text-white! transition-all duration-400 leading-[100%]">
+                    <p className="text-right fs-16 group-hover:text-white! transition-all duration-400">
                       Conducting research to understand user needs, behaviors,
                       and pain points for informed design decisions.
                     </p>

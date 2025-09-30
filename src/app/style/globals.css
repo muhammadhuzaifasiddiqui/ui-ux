@@ -221,8 +221,8 @@ h4 {
 }
 
 .btn-xxl {
-  padding: 19px 42px;
-  font-size: 21px;
+  padding: 20px 42px;
+  font-size: 20px;
 }
 
 .btn-primary {
@@ -525,7 +525,6 @@ h4 {
   transition: all 400ms;
 }
 
-
 .testimonial-section .swiper-slide {
   padding: 30px 70px;
   background-color: #fff;
@@ -562,9 +561,9 @@ h4 {
   .container {
     max-width: 1140px;
   }
-} */
+}
 
-/* @media (min-width: 1023.97px) {
+@media (min-width: 1023.97px) {
   .container {
     max-width: 1140px;
   }
@@ -652,7 +651,7 @@ h4 {
   }
 
   h3 {
-    font-size: 31px;
+    font-size: 32px;
   }
 
   h4 {
@@ -736,8 +735,8 @@ h4 {
   }
 
   .btn-xxl {
-    padding: 17px 38px;
-    font-size: 20px;
+    padding: 18px 38px;
+    font-size: 18px;
   }
 
   .btn-xl {
@@ -824,7 +823,7 @@ h4 {
   }
 
   .fs-16 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .fs-18 {
@@ -922,7 +921,7 @@ h4 {
   }
 
   .btn-xxl {
-    padding: 15px 34px;
+    padding: 16px 34px;
     font-size: 18px;
   }
 
@@ -1124,12 +1123,11 @@ h4 {
 
   .btn-sm {
     padding: 8px 20px;
-    border-radius: 8px;
     font-size: 12px;
   }
 
   .btn-xl {
-    padding: 15px 43px;
+    padding: 15px 40px;
     border-radius: 100px;
   }
 
@@ -1146,8 +1144,8 @@ h4 {
   }
 
   .btn-xxl {
-    padding: 8px 14px;
-    font-size: 14px;
+    padding: 14px 30px;
+    font-size: 16px;
   }
 
   .btn-xsm {
@@ -1331,6 +1329,11 @@ h4 {
     padding-right: 10px;
   }
 
+  .btn-xl {
+    padding: 15px 30px;
+    border-radius: 100px;
+  }
+
   .btn-lg {
     padding: 10px 17px;
     border-radius: 30px;
@@ -1338,7 +1341,6 @@ h4 {
 
   .btn-sm {
     padding: 8px 18px;
-    border-radius: 8px;
     font-size: 12px;
   }
 
@@ -1355,13 +1357,8 @@ h4 {
   }
 
   .btn-xxl {
-    padding: 8px 14px;
+    padding: 12px 24px;
     font-size: 14px;
-  }
-
-  .btn-xl {
-    padding: 15px 43px;
-    border-radius: 100px;
   }
 
   .btn-xsm {
