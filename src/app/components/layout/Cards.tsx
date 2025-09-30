@@ -44,7 +44,7 @@ const cardVariants = {
   },
 };
 
-const cards = () => {
+const Cards = () => {
   const [cards] = useState<CardItem[]>(initialCards);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 }); // Detect when the container is 50% in view
@@ -94,4 +94,4 @@ const cards = () => {
   );
 };
 
-export default cards;
+export default Cards;

@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scroll, setScrolled] = useState(false);
+  // const [scroll, setScrolled] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
