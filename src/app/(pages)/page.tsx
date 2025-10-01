@@ -633,11 +633,11 @@ const Page = () => {
                     </span>
                   </h2>
                 </div>
-                <div className="lg:absolute bottom-0 flex w-full lg:w-auto justify-center">
+                <div className="w-full xl:w-[700px] lg:w-[550px] lg:absolute bottom-0 flex justify-center">
                   <Image
                     src={"/img/Profile Pic Taha.png"}
-                    width={727}
-                    height={727}
+                    width={600}
+                    height={600}
                     alt="Profile Pic"
                     unoptimized={true}
                     className=""

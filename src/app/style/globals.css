@@ -425,10 +425,6 @@ h4 {
   border: 1px solid #fff;
 }
 
-.img-about {
-  height: 800px;
-}
-
 /* workflow-section */
 .workflow-wrapper {
   padding-left: 30px;
@@ -582,6 +578,11 @@ h4 {
     background-color: #fff;
     padding: 18px 60px;
   }
+
+  .portfolio-card {
+    height: 450px;
+    background-color: #fff;
+  }
 }
 
 @media screen and (max-width: 1199.97px) {
@@ -608,6 +609,11 @@ h4 {
   .workflow-section .card {
     background-color: #fff;
     padding: 18px 40px;
+  }
+
+  .portfolio-card {
+    height: 430px;
+    background-color: #fff;
   }
 
   .pricing-section .card {
@@ -769,7 +775,7 @@ h4 {
   }
 
   .portfolio-card {
-    height: 460px;
+    height: 410px;
   }
 
   .pricing-section .card {
@@ -984,7 +990,7 @@ h4 {
   }
 
   .portfolio-card {
-    height: 430px;
+    height: 390px;
   }
 
   .pricing-section .card {
@@ -1232,7 +1238,7 @@ h4 {
   }
 
   .portfolio-card {
-    height: 400px;
+    height: 365px;
   }
 
   .pricing-section .card {
@@ -1475,7 +1481,7 @@ h4 {
   }
 
   .portfolio-card {
-    height: 370px;
+    height: 350px;
   }
 
   .pricing-section .card {
