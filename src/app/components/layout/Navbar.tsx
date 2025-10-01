@@ -45,19 +45,19 @@ const Navbar = () => {
                   HOME
                 </Link>
                 <Link
-                  className="fs-14 nav-link font-normal font-poppins"
+                  className="fs-14 nav-link font-poppins font-medium!"
                   href=""
                 >
                   SERVICE
                 </Link>
                 <Link
-                  className="fs-14 nav-link font-normal font-poppins"
+                  className="fs-14 nav-link font-poppins font-medium!"
                   href=""
                 >
                   WORK
                 </Link>
                 <Link
-                  className="fs-14 nav-link font-normal font-poppins"
+                  className="fs-14 nav-link font-poppins font-medium!"
                   href=""
                 >
                   BLOG
@@ -86,7 +86,7 @@ const Navbar = () => {
               <div className="flex navbar-button gap-2">
                 <Link
                   href="#"
-                  className="fs-12 font-normal! btn btn-primary border-radius-30 font-poppins"
+                  className="fs-12 font-semibold! btn btn-primary border-radius-30"
                 >
                   Get in touch
                 </Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
                   <li className="py-[10px]">
                     <Link
                       href={""}
-                      className={"fs-14"}
+                      className={"fs-14 font-medium!"}
                       onClick={() => setIsOpen(false)}
                     >
                       HOME
@@ -120,7 +120,7 @@ const Navbar = () => {
                   <li className="py-[10px]">
                     <Link
                       href={""}
-                      className={"fs-14"}
+                      className={"fs-14 font-medium!"}
                       onClick={() => setIsOpen(false)}
                     >
                       SERVICE
@@ -129,7 +129,7 @@ const Navbar = () => {
                   <li className="py-[10px]">
                     <Link
                       href={""}
-                      className={"fs-14"}
+                      className={"fs-14 font-medium!"}
                       onClick={() => setIsOpen(false)}
                     >
                       WORK
@@ -138,7 +138,7 @@ const Navbar = () => {
                   <li className="py-[10px]">
                     <Link
                       href={""}
-                      className={"fs-14"}
+                      className={"fs-14 font-medium!"}
                       onClick={() => setIsOpen(false)}
                     >
                       BLOG

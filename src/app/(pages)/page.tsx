@@ -288,7 +288,7 @@ const Page = () => {
                     <Link href="#" className="btn btn-primary">
                       Get in touch
                     </Link>
-                    <Link href="#" className="btn btn-xl btn-offWhite">
+                    <Link href="#" className="btn btn-offWhite">
                       Show my work
                     </Link>
                   </div>
