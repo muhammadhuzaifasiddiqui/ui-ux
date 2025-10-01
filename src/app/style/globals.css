@@ -368,6 +368,10 @@ h4 {
   border: 1px solid #fff;
 }
 
+.about-section .project-counter h2 {
+  font-size: 60px !important;
+}
+
 /* workflow-section */
 .workflow-wrapper {
   padding-left: 30px;
@@ -594,6 +598,10 @@ h4 {
     font-size: 20px;
   }
 
+  .hero-wrapper {
+    padding: 120px 30px 48px;
+  }
+
   .workflow-section .card {
     background-color: #fff;
     padding: 18px 60px;
@@ -646,7 +654,7 @@ h4 {
   }
 
   .fs-48 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .fs-138 {
@@ -692,6 +700,10 @@ h4 {
 
   .bullet {
     font-size: 18px;
+  }
+
+  .hero-wrapper {
+    padding: 105px 30px 48px;
   }
 
   .hero-section .img-wrapper {
@@ -741,15 +753,15 @@ h4 {
     font-size: 18px;
   }
   h1 {
-    font-size: 128px;
+    font-size: 80px;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 38px;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 24px;
   }
 
   h4 {
@@ -773,11 +785,11 @@ h4 {
   }
 
   .fs-20 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .fs-48 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .fs-138 {
@@ -821,6 +833,10 @@ h4 {
     font-size: 20px;
   }
 
+  .bullet {
+    font-size: 17px;
+  }
+
   .border-radius-30 {
     border-radius: 26px;
   }
@@ -834,11 +850,19 @@ h4 {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
+  .hero-wrapper {
+    padding: 90px 30px 48px;
+  }
+
   .hero-section .img-wrapper {
     height: 72px;
     width: 330px;
     border-radius: 60px;
     background: #dfe2ff;
+  }
+
+  .about-section .project-counter h2 {
+    font-size: 54px !important;
   }
 
   .service-card {
@@ -877,15 +901,15 @@ h4 {
     font-size: 17px;
   }
   h1 {
-    font-size: 128px;
+    font-size: 55px;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 35px;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   h4 {
@@ -909,11 +933,11 @@ h4 {
   }
 
   .fs-20 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .fs-48 {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .fs-138 {
@@ -981,6 +1005,10 @@ h4 {
   .about-wrapper {
     padding-left: 26px;
     padding-right: 26px;
+  }
+
+  .about-section .project-counter h2 {
+    font-size: 45px !important;
   }
 
   .workflow-wrapper {
@@ -1414,8 +1442,7 @@ h4 {
   }
 }
 
-/* @media (min-width: 1279.97px) {
-  .container {
+/* @media (min-width: 1279.97px) {  .container {
     max-width: 1140px;
   }
 }

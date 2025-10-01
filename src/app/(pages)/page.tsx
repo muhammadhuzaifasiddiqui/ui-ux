@@ -250,7 +250,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 justify-between mt-18">
+            <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 justify-between mt-9 sm:mt-10 md:mt-12 lg:mt-14 xl:mt-18">
               <div className="w-full lg:w-[35%]">
                 <div className="shadow-down border-radius-30 bg-white">
                   <div className="charges-box shadow-primary flex gap-2 justify-between items-center border-radius-30 bg-dark-gray">
@@ -668,7 +668,7 @@ const Page = () => {
                     exceptional results.
                   </p>
                 </div>
-                <div className="flex gap-7.5">
+                <div className="flex project-counter gap-7.5">
                   <div>
                     <h2 className="flex items-center text-white font-normal leading-[100%]">
                       250<span className="text-blue">+</span>
@@ -954,7 +954,7 @@ const Page = () => {
         <div className="idea-wrapper border-radius-20 shadow-primary">
           <div className="container mx-auto">
             <div className="flex flex-col gap-20 sm:gap-32 md:gap-40 lg:gap-48 xl:gap-64">
-              <div className="flex items-start">
+              <div className="flex items-start w-[75%]">
                 <h2 className="font-light font-montreal text-white uppercase leading-[100%]">
                   Ready to Create Your{"  "}
                   <br />
@@ -963,7 +963,7 @@ const Page = () => {
                   </span>
                 </h2>
               </div>
-              <div className="flex flex-col w-full lg:w-[40%] ml-auto items-end">
+              <div className="flex flex-col w-[75%] ml-auto items-end">
                 <p className="mb-6 text-right text-white capitalize">
                   I’m always excited to discuss new opportunities and
                   collaborations. Feel free to reach out.
@@ -998,7 +998,7 @@ const Page = () => {
                 <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9">
                   <div className="flex flex-col gap-4">
                     <p className="text-[23px] text-dark">Starter Package</p>
-                    <p className="text-[48px] text-dark leading-[100%]">$300</p>
+                    <p className="fs-48 text-dark leading-[100%]">$300</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
                     <div className="flex items-center gap-3.5">
@@ -1061,7 +1061,7 @@ const Page = () => {
                 <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9">
                   <div className="flex flex-col gap-4">
                     <p className="text-[23px] text-dark">Basic Plan</p>
-                    <p className="text-[48px] text-dark leading-[100%]">$490</p>
+                    <p className="fs-48 text-dark leading-[100%]">$490</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
                     <div className="flex items-center gap-3.5">
@@ -1124,7 +1124,7 @@ const Page = () => {
                 <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9">
                   <div className="flex flex-col gap-4">
                     <p className="text-[23px] text-dark">Premium Package</p>
-                    <p className="text-[48px] text-dark leading-[100%]">$600</p>
+                    <p className="fs-48 text-dark leading-[100%]">$600</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
                     <div className="flex items-center gap-3.5">
@@ -1210,12 +1210,12 @@ const Page = () => {
         <div className="footer-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex flex-col">
-              <div className="text-right w-full lg:w-[40%] ml-auto">
+              <div className="text-right w-[70%] ml-auto">
                 <h3 className="text-black cursor-pointer uppercase font-normal leading-[100%]">
                   Transform Your Ideas into Extraordinary Designs.
                 </h3>
               </div>
-              <div className="mt-[100px] w-full lg:w-[50%]">
+              <div className="mt-[100px] w-[70%]">
                 <h1 className="text-black font-medium font-montreal cursor-pointer uppercase leading-[85%]">
                   Reach Out now
                 </h1>
