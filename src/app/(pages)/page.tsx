@@ -975,6 +975,8 @@ const Page = () => {
         </div>
       </section>
 
+
+
       <section className="pricing-section mb-2.5">
         <div className="pricing-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
@@ -1181,6 +1183,8 @@ const Page = () => {
           </div>
         </div>
       </section>
+
+
 
       <section className="testimonial-section mb-2.5">
         <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
