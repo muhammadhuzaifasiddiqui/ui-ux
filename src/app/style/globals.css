@@ -112,34 +112,6 @@ h4 {
   font-size: 138px;
 }
 
-.px-80 {
-  padding-right: 80px;
-  padding-left: 80px;
-}
-
-.px-40 {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.px-20 {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.py-30 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.pt-50 {
-  padding-top: 50px;
-}
-
-.pb-40 {
-  padding-bottom: 40px;
-}
-
 .bg-blue {
   background-color: #0085ff;
 }
@@ -187,13 +159,13 @@ h4 {
   border-radius: 100px;
 }
 
-.btn-border-right {
+/* .btn-border-right {
   border-radius: 50px 0 100px 50px;
 }
 
 .btn-border-left {
   border-radius: 0 50px 50px 100px;
-}
+} */
 
 .btn-xsm {
   border-radius: 100px;
@@ -273,17 +245,6 @@ h4 {
   color: #3c3c3c;
 }
 
-.form-control {
-  border-radius: 8px;
-  padding: 13px 15px;
-  background-color: white;
-  font-weight: 300;
-}
-
-/* .form-control::placeholder {
-  color: ;
-} */
-
 .border-radius-50 {
   border-radius: 50px;
 }
@@ -294,11 +255,6 @@ h4 {
 
 .border-radius-20 {
   border-radius: 20px;
-}
-
-.logo-wrapper {
-  height: 50px;
-  width: 120px;
 }
 
 .bullet {
@@ -571,7 +527,84 @@ h4 {
 
 @media screen and (max-width: 1399.97px) {
   h1 {
-    font-size: 90px;
+    font-size: 128px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .fs-12 {
+    font-size: 12px;
+  }
+
+  .fs-14 {
+    font-size: 14px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .fs-20 {
+    font-size: 20px;
+  }
+
+  .fs-48 {
+    font-size: 48px;
+  }
+
+  .fs-138 {
+    font-size: 138px;
+  }
+
+  .btn {
+    padding: 15px 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+    border-radius: 100px;
+  }
+
+  .btn-xsm {
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-weight: 400 !important;
+  }
+
+  .btn-sm {
+    padding: 6px 20px;
+  }
+
+  .btn-md {
+    padding: 9px 22px;
+  }
+
+  .btn-lg {
+    padding: 12px 33px;
+    font-weight: 500 !important;
+    font-size: 16px;
+  }
+
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
+  .btn-xxl {
+    padding: 20px 42px;
+    font-size: 20px;
   }
 
   .workflow-section .card {
@@ -587,7 +620,84 @@ h4 {
 
 @media screen and (max-width: 1199.97px) {
   h1 {
-    font-size: 90px;
+    font-size: 128px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .fs-12 {
+    font-size: 12px;
+  }
+
+  .fs-14 {
+    font-size: 14px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .fs-20 {
+    font-size: 20px;
+  }
+
+  .fs-48 {
+    font-size: 48px;
+  }
+
+  .fs-138 {
+    font-size: 138px;
+  }
+
+  .btn {
+    padding: 15px 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+    border-radius: 100px;
+  }
+
+  .btn-xsm {
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-weight: 400 !important;
+  }
+
+  .btn-sm {
+    padding: 6px 20px;
+  }
+
+  .btn-md {
+    padding: 9px 22px;
+  }
+
+  .btn-lg {
+    padding: 12px 33px;
+    font-weight: 500 !important;
+    font-size: 16px;
+  }
+
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
+  .btn-xxl {
+    padding: 20px 42px;
+    font-size: 20px;
   }
 
   .hero-section .img-wrapper {
@@ -638,85 +748,85 @@ h4 {
   body {
     font-size: 18px;
   }
-
   h1 {
-    font-size: 90px;
+    font-size: 128px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 35px;
   }
 
   h4 {
     font-size: 24px;
   }
 
-  .fs-16 {
+  .fs-12 {
+    font-size: 12px;
+  }
+
+  .fs-14 {
     font-size: 14px;
   }
 
-  .fs-18 {
+  .fs-16 {
     font-size: 16px;
   }
 
+  .fs-18 {
+    font-size: 18px;
+  }
+
   .fs-20 {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .fs-48 {
-    font-size: 40px;
+    font-size: 48px;
   }
 
   .fs-138 {
-    font-size: 110px;
+    font-size: 138px;
   }
 
-  .py-30 {
-    padding-top: 26px;
-    padding-bottom: 26px;
+  .btn {
+    padding: 15px 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+    border-radius: 100px;
   }
 
-  .pt-50 {
-    padding-top: 44px;
+  .btn-xsm {
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-weight: 400 !important;
   }
 
-  .pb-40 {
-    padding-bottom: 34px;
+  .btn-sm {
+    padding: 6px 20px;
   }
 
-  .pt-20 {
-    padding-top: 18px;
+  .btn-md {
+    padding: 9px 22px;
   }
 
-  .p-20 {
-    padding: 18px;
+  .btn-lg {
+    padding: 12px 33px;
+    font-weight: 500 !important;
+    font-size: 16px;
   }
 
-  .pt-40 {
-    padding-top: 36px;
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
   }
 
-  .pt-50 {
-    padding-top: 45px;
-  }
-
-  .px-80 {
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-
-  .px-40 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .px-20 {
-    padding-left: 16px;
-    padding-right: 16px;
+  .btn-xxl {
+    padding: 20px 42px;
+    font-size: 20px;
   }
 
   .border-radius-30 {
@@ -725,24 +835,6 @@ h4 {
 
   .border-radius-20 {
     border-radius: 16px;
-  }
-
-  .btn {
-    padding: 15px 18px;
-  }
-
-  .btn-xsm {
-    border-radius: 100px;
-  }
-
-  .btn-xxl {
-    padding: 18px 38px;
-    font-size: 18px;
-  }
-
-  .btn-xl {
-    padding: 15px 43px;
-    border-radius: 100px;
   }
 
   .nav-wrapper {
@@ -792,111 +884,85 @@ h4 {
   body {
     font-size: 17px;
   }
-
   h1 {
-    font-size: 75px;
+    font-size: 128px;
   }
 
   h2 {
-    font-size: 44px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 35px;
   }
 
   h4 {
     font-size: 24px;
   }
 
+  .fs-12 {
+    font-size: 12px;
+  }
+
+  .fs-14 {
+    font-size: 14px;
+  }
+
   .fs-16 {
-    font-size: 14px;
-  }
-
-  .fs-18 {
-    font-size: 14px;
-  }
-
-  .fs-20 {
     font-size: 16px;
   }
 
+  .fs-18 {
+    font-size: 18px;
+  }
+
+  .fs-20 {
+    font-size: 20px;
+  }
+
   .fs-48 {
-    font-size: 38px;
-  }
-
-  .fs-35 {
-    font-size: 28px;
-  }
-
-  .fs-38 {
-    font-size: 31px;
-  }
-
-  .fs-80 {
-    font-size: 60px;
+    font-size: 48px;
   }
 
   .fs-138 {
-    font-size: 100px;
+    font-size: 138px;
   }
 
-  .py-30 {
-    padding-top: 23px;
-    padding-bottom: 23px;
+  .btn {
+    padding: 15px 20px;
+    font-size: 12px !important;
+    font-weight: 600;
+    border-radius: 100px;
   }
 
-  .pt-50 {
-    padding-top: 40px;
+  .btn-xsm {
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-weight: 400 !important;
   }
 
-  .pb-40 {
-    padding-bottom: 30px;
+  .btn-sm {
+    padding: 6px 20px;
   }
 
-  /* 
-  .pt-20 {
-    padding-top: 16px;
+  .btn-md {
+    padding: 9px 22px;
   }
 
-  .p-20 {
-    padding: 16px;
+  .btn-lg {
+    padding: 12px 33px;
+    font-weight: 500 !important;
+    font-size: 16px;
   }
 
-  .pt-40 {
-    padding-top: 33px;
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
   }
 
-  .pt-50 {
-    padding-top: 41px;
-  }
-
-  .mt-40 {
-    margin-top: 26px;
-  }
-
-  .my-35 {
-    margin-top: 28px;
-    margin-bottom: 28px;
-  } */
-
-  .px-80 {
-    padding-right: 62px;
-    padding-left: 62px;
-  }
-
-  /* .pt-80 {
-    padding-top: 62px;
-  } */
-
-  .px-40 {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
-
-  .px-20 {
-    padding-left: 14px;
-    padding-right: 14px;
+  .btn-xxl {
+    padding: 20px 42px;
+    font-size: 20px;
   }
 
   .border-radius-30 {
@@ -905,24 +971,6 @@ h4 {
 
   .border-radius-20 {
     border-radius: 14px;
-  }
-
-  .btn {
-    padding: 15px 17px;
-  }
-
-  .btn-xxl {
-    padding: 16px 34px;
-    font-size: 18px;
-  }
-
-  .btn-xsm {
-    border-radius: 100px;
-  }
-
-  .btn-xl {
-    padding: 15px 43px;
-    border-radius: 100px;
   }
 
   .hero-section .img-wrapper {
@@ -1018,142 +1066,84 @@ h4 {
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 128px;
   }
 
   h2 {
-    font-size: 38px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 35px;
   }
 
   h4 {
     font-size: 24px;
   }
 
+  .fs-12 {
+    font-size: 12px;
+  }
+
   .fs-14 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .fs-16 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .fs-18 {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .fs-20 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .fs-48 {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   .fs-138 {
-    font-size: 90px;
-  }
-
-  /* 
-  .fs-35 {
-    font-size: 26px;
-  }
-
-  .fs-38 {
-    font-size: 29px;
-  }
-
-  .fs-80 {
-    font-size: 55px;
-  }
-
-  .py-30 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  } */
-
-  .pt-50 {
-    padding-top: 36px;
-  }
-
-  .pb-40 {
-    padding-bottom: 27px;
-  }
-
-  /* 
-  .pt-20 {
-    padding-top: 14px;
-  }
-
-  .p-20 {
-    padding: 14px;
-  }
-
-  .pt-40 {
-    padding-top: 30px;
-  }
-
-  .pt-50 {
-    padding-top: 38px;
-  }
-
-  .mt-50 {
-    margin-top: 28;
-  }
-
-  .mt-40 {
-    margin-top: 24px;
-  }
-
-  .my-35 {
-    margin-top: 26px;
-    margin-bottom: 26px;
-  } */
-
-  .px-80 {
-    padding-right: 56px;
-    padding-left: 56px;
-  }
-
-  /* .py-80 {
-    padding-top: 56px;
-    padding-bottom: 56px;
-  } */
-
-  .px-40 {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .px-20 {
-    padding-left: 12px;
-    padding-right: 12px;
+    font-size: 138px;
   }
 
   .btn {
-    padding: 15px 16px;
-  }
-
-  .btn-lg {
-    padding: 11px 18px;
-    border-radius: 30px;
-  }
-
-  .btn-sm {
-    padding: 8px 20px;
-    font-size: 12px;
-  }
-
-  .btn-xl {
-    padding: 15px 40px;
+    padding: 15px 20px;
+    font-size: 12px !important;
+    font-weight: 600;
     border-radius: 100px;
   }
 
-  .btn-circle {
-    padding: 12px;
+  .btn-xsm {
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-weight: 400 !important;
+  }
+
+  .btn-sm {
+    padding: 6px 20px;
+  }
+
+  .btn-md {
+    padding: 9px 22px;
+  }
+
+  .btn-lg {
+    padding: 12px 33px;
+    font-weight: 500 !important;
+    font-size: 16px;
+  }
+
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
+  .btn-xxl {
+    padding: 20px 42px;
+    font-size: 20px;
   }
 
   .border-radius-30 {
@@ -1162,15 +1152,6 @@ h4 {
 
   .border-radius-20 {
     border-radius: 12px;
-  }
-
-  .btn-xxl {
-    padding: 14px 30px;
-    font-size: 16px;
-  }
-
-  .btn-xsm {
-    border-radius: 100px;
   }
 
   .hero-section .img-wrapper {
@@ -1266,137 +1247,84 @@ h4 {
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 128px;
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   h4 {
     font-size: 24px;
   }
 
+  .fs-12 {
+    font-size: 12px;
+  }
+
   .fs-14 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .fs-16 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .fs-18 {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .fs-20 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .fs-48 {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   .fs-138 {
-    font-size: 80px;
-  }
-
-  /* .fs-35 {
-    font-size: 25px;
-  }
-
-  .fs-38 {
-    font-size: 28px;
-  }
-
-  .fs-80 {
-    font-size: 40px;
-  }
-
-  .py-30 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  } */
-
-  .pt-50 {
-    padding-top: 32px;
-  }
-
-  .pb-40 {
-    padding-bottom: 25px;
-  }
-
-  /* 
-  .pt-20 {
-    padding-top: 12px;
-  }
-
-  .p-20 {
-    padding: 12px;
-  }
-
-  .pt-40 {
-    padding-top: 27px;
-  }
-
-  .pt-50 {
-    padding-top: 35px;
-  }
-
-  .mt-40 {
-    margin-top: 20px;
-  }
-
-  .my-35 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  } */
-
-  .px-80 {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  /* .py-80 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  } */
-
-  .px-40 {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .px-20 {
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 138px;
   }
 
   .btn {
-    padding: 15px 15px;
-  }
-
-  .btn-xl {
-    padding: 15px 25px;
+    padding: 15px 20px;
+    font-size: 12px !important;
+    font-weight: 600;
     border-radius: 100px;
   }
 
-  .btn-lg {
-    padding: 10px 17px;
-    border-radius: 30px;
+  .btn-xsm {
+    border-radius: 100px;
+    padding: 8px 12px;
+    font-weight: 400 !important;
   }
 
   .btn-sm {
-    padding: 8px 18px;
-    font-size: 12px;
+    padding: 6px 20px;
   }
 
-  .btn-circle {
-    padding: 11px;
+  .btn-md {
+    padding: 9px 22px;
+  }
+
+  .btn-lg {
+    padding: 12px 33px;
+    font-weight: 500 !important;
+    font-size: 16px;
+  }
+
+  .btn-xl {
+    padding: 15px 43px;
+    border-radius: 100px;
+  }
+
+  .btn-xxl {
+    padding: 20px 42px;
+    font-size: 20px;
   }
 
   .border-radius-30 {
@@ -1405,15 +1333,6 @@ h4 {
 
   .border-radius-20 {
     border-radius: 10px;
-  }
-
-  .btn-xxl {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-
-  .btn-xsm {
-    border-radius: 100px;
   }
 
   .hero-section .img-wrapper {

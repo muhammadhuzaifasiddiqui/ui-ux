@@ -953,8 +953,8 @@ const Page = () => {
       <section className="idea-section mt-2.5 mb-2.5">
         <div className="idea-wrapper border-radius-20 shadow-primary">
           <div className="container mx-auto">
-            <div className="flex flex-col gap-64">
-              <div className="flex flex-col items-start"> 
+            <div className="flex flex-col gap-20 sm:gap-32 md:gap-40 lg:gap-48 xl:gap-64">
+              <div className="flex items-start"> 
                 <h2 className="font-light font-montreal text-white uppercase leading-[100%]">
                   Ready to Create Your{"  "}
                   <br/>
