@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Bullets = ({ bulletname = "null", className = "" }) => {
   return (
-    <div className={`flex items-center gap-1.5`}>
+    <div className={`flex items-center mb-2.5 gap-1.5`}>
       <Image
         src={"/img/title-dot.png"}
         width={5}

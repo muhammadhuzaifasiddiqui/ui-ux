@@ -491,6 +491,7 @@ h4 {
 .pricing-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff !important;
 }
 
 .price-card {
