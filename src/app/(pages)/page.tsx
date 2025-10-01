@@ -835,11 +835,11 @@ const Page = () => {
         <div className="portfolio-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
             <div className="flex w-full justify-center">
-              <div className="flex flex-col w-[100%] lg:w-[50%] items-center mb-6 lg:mb-7.5">
+              <div className="flex flex-col w-[100%] lg:w-[70%] items-center mb-6 lg:mb-7.5">
                 <Bullets bulletname="My Portfolio" className="bullet" />
                 <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
                   Designs That{"  "}
-                  <br/>
+                  <br />
                   <span className="text-primary font-medium font-montreal text-center uppercase leading-[100%]">
                     Solve Problems
                   </span>
@@ -954,10 +954,10 @@ const Page = () => {
         <div className="idea-wrapper border-radius-20 shadow-primary">
           <div className="container mx-auto">
             <div className="flex flex-col gap-20 sm:gap-32 md:gap-40 lg:gap-48 xl:gap-64">
-              <div className="flex items-start"> 
+              <div className="flex items-start">
                 <h2 className="font-light font-montreal text-white uppercase leading-[100%]">
                   Ready to Create Your{"  "}
-                  <br/>
+                  <br />
                   <span className="text-pink font-medium font-montreal uppercase leading-[100%]">
                     Amazing Ideas
                   </span>
@@ -980,15 +980,17 @@ const Page = () => {
       <section className="pricing-section mb-2.5">
         <div className="pricing-wrapper shadow-primary border-radius-20">
           <div className="container mx-auto">
-            <div className=" flex flex-col items-center mb-6 lg:mb-7.5">
-              <Bullets bulletname="Pricing" className="bullet" />
-              <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
-                Concise and{"  "}
-                <br/>
-                <span className="text-primary font-medium font-montreal text-center uppercase leading-[100%]">
-                  Authoritative
-                </span>
-              </h2>
+            <div className="flex w-full justify-center">
+              <div className="flex flex-col w-[100%] lg:w-[70%] items-center mb-6 lg:mb-7.5">
+                <Bullets bulletname="Pricing" className="bullet" />
+                <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
+                  Concise and{"  "}
+                  <br />
+                  <span className="text-primary font-medium font-montreal text-center uppercase leading-[100%]">
+                    Authoritative
+                  </span>
+                </h2>
+              </div>
             </div>
 
             <div className="flex flex-col lg:flex-row price-card items-center justify-center gap-5">
@@ -1187,14 +1189,18 @@ const Page = () => {
 
       <section className="testimonial-section mb-2.5">
         <div className="testimonial-wrapper shadow-primary flex flex-col items-center border-radius-20">
-          <Bullets bulletname="Testimonials" className="bullet" />
-          <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
-            Some words from{"  "}
-            <br/>
-            <span className="text-primary font-medium font-montreal text-center uppercase leading-[100%]">
-              my clients
-            </span>
-          </h2>
+          <div className="flex w-full justify-center">
+            <div className="flex flex-col w-[100%] lg:w-[70%] items-center mb-6 lg:mb-7.5">
+              <Bullets bulletname="Testimonials" className="bullet" />
+              <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
+                Some words from{"  "}
+                <br />
+                <span className="text-primary font-medium font-montreal text-center uppercase leading-[100%]">
+                  my clients
+                </span>
+              </h2>
+            </div>
+          </div>
         </div>
       </section>
 
