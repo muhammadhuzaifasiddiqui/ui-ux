@@ -394,237 +394,6 @@ const Page = () => {
         </div>
       </section>
 
-      {/* <section className="hero-section px-20">
-        <div className="hero-wrapper shadow border-radius-20">
-          <div className="container mx-auto">
-            <div className="flex justify-between">
-              <div className="w-[35%]">
-                <p className="text-gray font-normal">
-                  Hi.... <br /> My name is{" "}
-                  <span className="font-bold">Taha Khanzada</span>
-                </p>
-                <h1 className="font-bold text-gray leading-[100%] mt-3 mb-6.5">
-                  UI/UX
-                </h1>
-                <div className="pl-9">
-                  <Link
-                    href="#"
-                    className="text-[14px]! btn btn-md btn-gray btn-border-right"
-                  >
-                    {" "}
-                    Design
-                  </Link>
-                </div>
-                <p className="mt-8 mb-15">
-                  Simplifying complex ideas into clear and engaging interfaces,
-                  ensuring that every interaction is intuitive, efficient, and
-                  visually pleasing.
-                </p>
-                <div className="shadow-down border-radius-30 bg-white">
-                  <div className="charges-box shadow-primary flex justify-between items-center border-radius-30 bg-dark-gray">
-                    <div className="w-[55%]">
-                      <p>
-                        35$
-                        <span className="text-[46.341px]">/</span>
-                        <span className="text-[25.951px] font-semibold">
-                          hr
-                        </span>
-                      </p>
-                    </div>
-                    <div className="w-[45%] flex flex-col gap-3">
-                      <Link
-                        href="#"
-                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
-                      >
-                        Wireframes
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
-                      >
-                        Insights
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
-                      >
-                        Testimonials
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex justify-center gap-4 pt-6.5 pb-6.5">
-                    <Link href="#" className="text-[14px]! btn btn-primary">
-                      Get in touch
-                    </Link>
-                    <Link
-                      href="#"
-                      className="text-[14px]! btn btn-xl btn-offWhite"
-                    >
-                      Show my work
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="w-[60%]">
-                <div className="flex flex-col gap-10">
-                  <div className="flex items-end gap-22.5 pb pl-6">
-                    <div className="bg-laptop">
-                      <div className="img-wrapper">
-                        <Image
-                          src={"/img/laptop.png"}
-                          width={319}
-                          height={316}
-                          alt="Laptop"
-                          unoptimized={true}
-                          className="object-contain"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <Link
-                        href="#"
-                        className="text-[14px]! btn btn-md btn-gray btn-border-left"
-                      >
-                        {" "}
-                        Innovation
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="relative pt-11 pb-9  pl-[123px]">
-                    <Image
-                      src={"/img/Rectangle 2.png"}
-                      width={652}
-                      height={153}
-                      alt="Laptop"
-                      unoptimized={true}
-                      className="object-contain"
-                    />
-                    <h1 className="font-bold text-blue rotate-[-3deg] absolute top-12 left-38">
-                      DESIGNER
-                    </h1>
-                    <Image
-                      src={"/img/Rectangle 3.png"}
-                      width={18}
-                      height={18}
-                      alt="Laptop"
-                      unoptimized={true}
-                      className="object-contain absolute top-[62px] left-[105px]"
-                    />
-                    <Image
-                      src={"/img/Rectangle 4.png"}
-                      width={18}
-                      height={18}
-                      alt="Laptop"
-                      unoptimized={true}
-                      className="object-contain absolute top-[196px] left-[782px]"
-                    />
-                    <Image
-                      src={"/img/Rectangle 5.png"}
-                      width={18}
-                      height={18}
-                      alt="Laptop"
-                      unoptimized={true}
-                      className="object-contain absolute top-[230px] left-[113px]"
-                    />
-                    <Image
-                      src={"/img/Rectangle 6.png"}
-                      width={18}
-                      height={18}
-                      alt="Laptop"
-                      unoptimized={true}
-                      className="object-contain absolute top-[26px] left-[774px]"
-                    />
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex flex-row cursor-pointer portfolio-box border-radius-30 bg-light-gray gap-2.5">
-                      <div className="flex flex-col">
-                        <div className="portfolio-image-wraper">
-                          <Image
-                            src={"/img/portfolio 1.png"}
-                            width={158}
-                            height={177}
-                            alt="Laptop"
-                            unoptimized={true}
-                            className="object-contain"
-                          />
-                        </div>
-                        <p className="fs-16 pt-[33px] font-normal max-w-[120px] whitespace-normal">
-                          Best Project on the years
-                        </p>
-                      </div>
-                      <div className="portfolio-image-wraper">
-                        <Image
-                          src={"/img/portfolio 2.png"}
-                          width={100}
-                          height={100}
-                          alt="Laptop"
-                          unoptimized={true}
-                          className="object-contain "
-                        />
-                      </div>
-                      <div className="flex flex-col justify-end">
-                        <div className="flex pl-15 items-center gap-2">
-                          <p className="underline fs-16 font-normal">
-                            View all
-                          </p>
-                          <div className="portfolio-image-wraper">
-                            <Image
-                              src={"/img/arrow.png"}
-                              width={100}
-                              height={100}
-                              alt="Laptop"
-                              unoptimized={true}
-                              className="object-contain "
-                            />
-                          </div>
-                        </div>
-                        <div className="mt-9">
-                          <Image
-                            src={"/img/portfolio 3.png"}
-                            width={100}
-                            height={100}
-                            alt="Laptop"
-                            unoptimized={true}
-                            className="object-contain "
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-6">
-                      <div className="flex items-center gap-5">
-                        <p className="fs-20 font-normal capitalize text-gray">
-                          Success project
-                        </p>
-                        <p className="font-medium text-[36px] text-primary">
-                          250<span className="text-blue">+</span>
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-5">
-                        <p className="font-medium text-[36px] text-primary">
-                          160<span className="text-blue">+</span>
-                        </p>
-                        <p className="fs-20 font-normal capitalize text-gray">
-                          Recent clients
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-5">
-                        <p className="fs-20 font-normal capitalize text-gray">
-                          Happy Clients
-                        </p>
-                        <p className="font-medium text-[36px] text-primary">
-                          95<span className="text-blue">%</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <section className="services-section">
         <div className="services-wrapper">
           <div className="flex flex-col xl:flex-row gap-2.5">
@@ -932,86 +701,6 @@ const Page = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="about-section">
-        <div className="about-wrapper border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
-          <div className="container mx-auto px-6.5">
-            <div className="flex flex-row items-center w-full justify-between">
-              <div className="opacity-130 w-[70%] lg:w-[50%]">
-                <Bullets bulletname="About Me" className="bullet" />
-                <h2 className="font-light font-montreal uppercase text-white leading-[106%]">
-                  Meet the Mind
-                  <br />
-                  <span className="text-pink font-medium">Behind the Work</span>
-                </h2>
-              </div>
-              <div className="figma-icon p-3">
-                <Image
-                  src={"/img/figma-icon.png"}
-                  width={61}
-                  height={61}
-                  alt="Figma"
-                  unoptimized={true}
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row">
-              <div className="w-full lg:w-[50%] relative">
-                <Image
-                  src={"/img/Profile Pic Taha.png"}
-                  width={727}
-                  height={727}
-                  alt="title-dot"
-                  unoptimized={true}
-                  className="lg:absolute top-[20px] lg:top-[150px] xl:top-[70px] 2xl:top-[-55px]"
-                />
-              </div>
-              <div className="w-full lg:w-[50%]">
-                <p className="text-justify line-clamp-3 lg:text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-7.5 sm:mb-10 md:mb-14 lg:mb-15 xl:mb-30">
-                  Hi, I’m
-                  <span className="font-bold  text-white">
-                    {" "}
-                    Taha Khanzada,{" "}
-                  </span>
-                  a designer who thrives on transforming ideas into engaging
-                  designs. From wireframes to polished visuals, I focus on
-                  blending functionality with aesthetics to deliver exceptional
-                  results.
-                </p>
-                <div className="flex gap-7.5">
-                  <div>
-                    <h2 className="flex items-center text-white font-normal leading-[100%]">
-                      250<span className="text-blue">+</span>
-                    </h2>
-                    <p className="fs-20 text-[#B2B2B2]">Success Project</p>
-                  </div>
-                  <div>
-                    <h2 className="flex items-center text-white font-normal leading-[100%]">
-                      160<span className="text-blue">+</span>
-                    </h2>
-                    <p className="fs-20 text-[#B2B2B2]">Recent Clients</p>
-                  </div>
-                  <div>
-                    <h2 className="flex items-center text-white font-normal leading-[100%]">
-                      99<span className="text-blue">%</span>
-                    </h2>
-                    <p className="fs-20 text-[#B2B2B2]">Happy Clients</p>
-                  </div>
-                </div>
-                <div className="flex flex-wrap mt-6 md:mt-8 lg:mt-10 xl:mt-12.5 gap-2.5">
-                  <Tags tagname="Design" className="about-tags" />
-                  <Tags tagname="User Experience" className="about-tags" />
-                  <Tags tagname="Insights" className="about-tags" />
-                  <Tags tagname="Prototypes" className="about-tags" />
-                  <Tags tagname="Intuitive Interfaces" className="about-tags" />
-                  <Tags tagname="High-Fidelity Design" className="about-tags" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="workflow-section">
         <div className="workflow-wrapper py-5 mb-2.5 bg-white shadow-primary border-radius-20">
@@ -1554,6 +1243,317 @@ const Page = () => {
           </div>
         </div>
       </footer>
+
+      {/* <section className="hero-section px-20">
+        <div className="hero-wrapper shadow border-radius-20">
+          <div className="container mx-auto">
+            <div className="flex justify-between">
+              <div className="w-[35%]">
+                <p className="text-gray font-normal">
+                  Hi.... <br /> My name is{" "}
+                  <span className="font-bold">Taha Khanzada</span>
+                </p>
+                <h1 className="font-bold text-gray leading-[100%] mt-3 mb-6.5">
+                  UI/UX
+                </h1>
+                <div className="pl-9">
+                  <Link
+                    href="#"
+                    className="text-[14px]! btn btn-md btn-gray btn-border-right"
+                  >
+                    {" "}
+                    Design
+                  </Link>
+                </div>
+                <p className="mt-8 mb-15">
+                  Simplifying complex ideas into clear and engaging interfaces,
+                  ensuring that every interaction is intuitive, efficient, and
+                  visually pleasing.
+                </p>
+                <div className="shadow-down border-radius-30 bg-white">
+                  <div className="charges-box shadow-primary flex justify-between items-center border-radius-30 bg-dark-gray">
+                    <div className="w-[55%]">
+                      <p>
+                        35$
+                        <span className="text-[46.341px]">/</span>
+                        <span className="text-[25.951px] font-semibold">
+                          hr
+                        </span>
+                      </p>
+                    </div>
+                    <div className="w-[45%] flex flex-col gap-3">
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
+                      >
+                        Wireframes
+                      </Link>
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
+                      >
+                        Insights
+                      </Link>
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-sm btn-white text-center w-fit lg:w-full"
+                      >
+                        Testimonials
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex justify-center gap-4 pt-6.5 pb-6.5">
+                    <Link href="#" className="text-[14px]! btn btn-primary">
+                      Get in touch
+                    </Link>
+                    <Link
+                      href="#"
+                      className="text-[14px]! btn btn-xl btn-offWhite"
+                    >
+                      Show my work
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[60%]">
+                <div className="flex flex-col gap-10">
+                  <div className="flex items-end gap-22.5 pb pl-6">
+                    <div className="bg-laptop">
+                      <div className="img-wrapper">
+                        <Image
+                          src={"/img/laptop.png"}
+                          width={319}
+                          height={316}
+                          alt="Laptop"
+                          unoptimized={true}
+                          className="object-contain"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <Link
+                        href="#"
+                        className="text-[14px]! btn btn-md btn-gray btn-border-left"
+                      >
+                        {" "}
+                        Innovation
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="relative pt-11 pb-9  pl-[123px]">
+                    <Image
+                      src={"/img/Rectangle 2.png"}
+                      width={652}
+                      height={153}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain"
+                    />
+                    <h1 className="font-bold text-blue rotate-[-3deg] absolute top-12 left-38">
+                      DESIGNER
+                    </h1>
+                    <Image
+                      src={"/img/Rectangle 3.png"}
+                      width={18}
+                      height={18}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain absolute top-[62px] left-[105px]"
+                    />
+                    <Image
+                      src={"/img/Rectangle 4.png"}
+                      width={18}
+                      height={18}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain absolute top-[196px] left-[782px]"
+                    />
+                    <Image
+                      src={"/img/Rectangle 5.png"}
+                      width={18}
+                      height={18}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain absolute top-[230px] left-[113px]"
+                    />
+                    <Image
+                      src={"/img/Rectangle 6.png"}
+                      width={18}
+                      height={18}
+                      alt="Laptop"
+                      unoptimized={true}
+                      className="object-contain absolute top-[26px] left-[774px]"
+                    />
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                    <div className="flex flex-row cursor-pointer portfolio-box border-radius-30 bg-light-gray gap-2.5">
+                      <div className="flex flex-col">
+                        <div className="portfolio-image-wraper">
+                          <Image
+                            src={"/img/portfolio 1.png"}
+                            width={158}
+                            height={177}
+                            alt="Laptop"
+                            unoptimized={true}
+                            className="object-contain"
+                          />
+                        </div>
+                        <p className="fs-16 pt-[33px] font-normal max-w-[120px] whitespace-normal">
+                          Best Project on the years
+                        </p>
+                      </div>
+                      <div className="portfolio-image-wraper">
+                        <Image
+                          src={"/img/portfolio 2.png"}
+                          width={100}
+                          height={100}
+                          alt="Laptop"
+                          unoptimized={true}
+                          className="object-contain "
+                        />
+                      </div>
+                      <div className="flex flex-col justify-end">
+                        <div className="flex pl-15 items-center gap-2">
+                          <p className="underline fs-16 font-normal">
+                            View all
+                          </p>
+                          <div className="portfolio-image-wraper">
+                            <Image
+                              src={"/img/arrow.png"}
+                              width={100}
+                              height={100}
+                              alt="Laptop"
+                              unoptimized={true}
+                              className="object-contain "
+                            />
+                          </div>
+                        </div>
+                        <div className="mt-9">
+                          <Image
+                            src={"/img/portfolio 3.png"}
+                            width={100}
+                            height={100}
+                            alt="Laptop"
+                            unoptimized={true}
+                            className="object-contain "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-6">
+                      <div className="flex items-center gap-5">
+                        <p className="fs-20 font-normal capitalize text-gray">
+                          Success project
+                        </p>
+                        <p className="font-medium text-[36px] text-primary">
+                          250<span className="text-blue">+</span>
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-5">
+                        <p className="font-medium text-[36px] text-primary">
+                          160<span className="text-blue">+</span>
+                        </p>
+                        <p className="fs-20 font-normal capitalize text-gray">
+                          Recent clients
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-5">
+                        <p className="fs-20 font-normal capitalize text-gray">
+                          Happy Clients
+                        </p>
+                        <p className="font-medium text-[36px] text-primary">
+                          95<span className="text-blue">%</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* <section className="about-section">
+        <div className="about-wrapper border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
+          <div className="container mx-auto px-6.5">
+            <div className="flex flex-row items-center w-full justify-between">
+              <div className="opacity-130 w-[70%] lg:w-[50%]">
+                <Bullets bulletname="About Me" className="bullet" />
+                <h2 className="font-light font-montreal uppercase text-white leading-[106%]">
+                  Meet the Mind
+                  <br />
+                  <span className="text-pink font-medium">Behind the Work</span>
+                </h2>
+              </div>
+              <div className="figma-icon p-3">
+                <Image
+                  src={"/img/figma-icon.png"}
+                  width={61}
+                  height={61}
+                  alt="Figma"
+                  unoptimized={true}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col lg:flex-row">
+              <div className="w-full lg:w-[50%] relative">
+                <Image
+                  src={"/img/Profile Pic Taha.png"}
+                  width={727}
+                  height={727}
+                  alt="title-dot"
+                  unoptimized={true}
+                  className="lg:absolute top-[20px] lg:top-[150px] xl:top-[70px] 2xl:top-[-55px]"
+                />
+              </div>
+              <div className="w-full lg:w-[50%]">
+                <p className="text-justify line-clamp-3 lg:text-right fs-20 text-[#B2B2B2] capitalize mt-4 mb-7.5 sm:mb-10 md:mb-14 lg:mb-15 xl:mb-30">
+                  Hi, I’m
+                  <span className="font-bold  text-white">
+                    {" "}
+                    Taha Khanzada,{" "}
+                  </span>
+                  a designer who thrives on transforming ideas into engaging
+                  designs. From wireframes to polished visuals, I focus on
+                  blending functionality with aesthetics to deliver exceptional
+                  results.
+                </p>
+                <div className="flex gap-7.5">
+                  <div>
+                    <h2 className="flex items-center text-white font-normal leading-[100%]">
+                      250<span className="text-blue">+</span>
+                    </h2>
+                    <p className="fs-20 text-[#B2B2B2]">Success Project</p>
+                  </div>
+                  <div>
+                    <h2 className="flex items-center text-white font-normal leading-[100%]">
+                      160<span className="text-blue">+</span>
+                    </h2>
+                    <p className="fs-20 text-[#B2B2B2]">Recent Clients</p>
+                  </div>
+                  <div>
+                    <h2 className="flex items-center text-white font-normal leading-[100%]">
+                      99<span className="text-blue">%</span>
+                    </h2>
+                    <p className="fs-20 text-[#B2B2B2]">Happy Clients</p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap mt-6 md:mt-8 lg:mt-10 xl:mt-12.5 gap-2.5">
+                  <Tags tagname="Design" className="about-tags" />
+                  <Tags tagname="User Experience" className="about-tags" />
+                  <Tags tagname="Insights" className="about-tags" />
+                  <Tags tagname="Prototypes" className="about-tags" />
+                  <Tags tagname="Intuitive Interfaces" className="about-tags" />
+                  <Tags tagname="High-Fidelity Design" className="about-tags" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}      
     </>
   );
 };
