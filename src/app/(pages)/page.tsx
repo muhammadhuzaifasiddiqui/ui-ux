@@ -619,7 +619,7 @@ const Page = () => {
       </section>
 
       <section className="about-section">
-        <div className="about-wrapper border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
+        <div className="about-wrapper relative border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row w-full justify-between">
               <div className="flex flex-col w-full lg:w-1/2">
@@ -633,14 +633,14 @@ const Page = () => {
                     </span>
                   </h2>
                 </div>
-                <div className="relative flex w-full justify-center">
+                <div className="lg:absolute bottom-0 flex w-full lg:w-auto justify-center">
                   <Image
                     src={"/img/Profile Pic Taha.png"}
                     width={727}
                     height={727}
                     alt="Profile Pic"
                     unoptimized={true}
-                    className="lg:absolute"
+                    className=""
                   />
                 </div>
               </div>

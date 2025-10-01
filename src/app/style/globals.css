@@ -318,6 +318,10 @@ h4 {
   right: 0;
 }
 
+.nav-wrapper {
+  margin: 0 20px;
+}
+
 .nav-container {
   padding-left: 30px;
   padding-right: 30px;
@@ -717,6 +721,10 @@ h4 {
     border-radius: 16px;
   }
 
+  .btn {
+    padding: 15px 18px;
+  }
+
   .btn-xsm {
     border-radius: 100px;
   }
@@ -732,6 +740,7 @@ h4 {
   }
 
   .nav-wrapper {
+    margin: 0px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -892,6 +901,10 @@ h4 {
     border-radius: 14px;
   }
 
+  .btn {
+    padding: 15px 17px;
+  }
+
   .btn-xxl {
     padding: 16px 34px;
     font-size: 18px;
@@ -935,6 +948,7 @@ h4 {
   }
 
   .nav-wrapper {
+    margin: 0px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -1113,6 +1127,10 @@ h4 {
     padding-right: 12px;
   }
 
+  .btn {
+    padding: 15px 16px;
+  }
+
   .btn-lg {
     padding: 11px 18px;
     border-radius: 30px;
@@ -1178,6 +1196,7 @@ h4 {
   }
 
   .nav-wrapper {
+    margin: 0px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -1351,8 +1370,12 @@ h4 {
     padding-right: 10px;
   }
 
+  .btn {
+    padding: 15px 15px;
+  }
+
   .btn-xl {
-    padding: 15px 30px;
+    padding: 15px 25px;
     border-radius: 100px;
   }
 
@@ -1416,6 +1439,7 @@ h4 {
   }
 
   .nav-wrapper {
+    margin: 0px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -1478,25 +1502,21 @@ h4 {
     max-width: 1140px;
   }
 }
-
 @media (min-width: 1023.97px) {
   .container {
     max-width: 1140px;
   }
 }
-
 @media (min-width: 767.97px) {
   .container {
     max-width: 1140px;
   }
 }
-
 @media (min-width: 575.97px) {
   .container {
     max-width: 1140px;
   }
 }
-
 @media (min-width: 399.97px) {
   .container {
     max-width: 1140px;
