@@ -156,10 +156,10 @@ const Page = () => {
     <>
       <Navbar />
 
-      <section className="hero-section top-[60px] border-radius-20 shadow-primary mb-2.5">
-        <div className="container mx-auto hero-wrapper">
+      <section className="flex w-full justify-center hero-section border-radius-20 shadow-primary mb-2.5">
+        <div className="container hero-wrapper">
           <div className="flex flex-col">
-            <div className="flex flex-col-reverse sm:flex-row gap-4 md:gap-6 lg:gap-8 xl:gap-12 items-stretch sm:items-center mb-3 xl:mb-4">
+            <div className="flex flex-col-reverse sm:flex-row gap-4 md:gap-6 lg:gap-8 xl:gap-12 items-stretch sm:items-center mb-3 lg:mb-6">
               <div className="ml-0!">
                 <p className="text-gray font-normal">
                   Hi.... <br /> My name is{" "}
@@ -250,7 +250,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 justify-between mt-9 sm:mt-10 md:mt-12 lg:mt-14 xl:mt-18">
+            <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 justify-between mt-9 sm:mt-10 md:mt-12 lg:mt-24">
               <div className="w-full lg:w-[35%]">
                 <div className="shadow-down border-radius-30 bg-white">
                   <div className="charges-box shadow-primary flex gap-2 justify-between items-center border-radius-30 bg-dark-gray">
@@ -299,41 +299,41 @@ const Page = () => {
                 <div className="flex flex-col md:flex-row items-center sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
                   <div className="flex flex-row cursor-pointer portfolio-box border-radius-30 bg-light-gray gap-2.5">
                     <div className="flex flex-col">
-                      <div className="portfolio-image-wraper">
+                      <div className="portfolio-image-wrapper">
                         <Image
                           src={"/img/portfolio 1.png"}
                           width={158}
                           height={177}
                           alt="Laptop"
                           unoptimized={true}
-                          className="object-contain"
+                          className="w-full! h-full!"
                         />
                       </div>
                       <p className="fs-14 pt-[33px] font-normal max-w-[120px] whitespace-normal">
                         Best Project on the years
                       </p>
                     </div>
-                    <div className="portfolio-image-wraper">
+                    <div className="portfolio-image-wrapper">
                       <Image
                         src={"/img/portfolio 2.png"}
                         width={100}
                         height={100}
                         alt="Laptop"
                         unoptimized={true}
-                        className="h-full!"
+                        className="w-full! h-full!"
                       />
                     </div>
                     <div className="flex flex-col">
-                      <div className="flex justify-end items-center gap-2">
+                      <div className="flex justify-end items-center gap-1 lg:gap-2">
                         <p className="underline fs-14 font-normal">View all</p>
-                        <div className="portfolio-image-wraper">
+                        <div className="portfolio-image-wrapper">
                           <Image
                             src={"/img/arrow.png"}
                             width={100}
                             height={100}
                             alt="Laptop"
                             unoptimized={true}
-                            className="h-full"
+                            className="w-full! h-full!"
                           />
                         </div>
                       </div>
@@ -344,7 +344,7 @@ const Page = () => {
                           height={100}
                           alt="Laptop"
                           unoptimized={true}
-                          className="object-contain "
+                          className=""
                         />
                       </div>
                     </div>
@@ -619,8 +619,8 @@ const Page = () => {
       </section>
 
       <section className="about-section">
-        <div className="about-wrapper relative border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
-          <div className="container mx-auto">
+        <div className="about-wrapper flex justify-center relative border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
+          <div className="container">
             <div className="flex flex-col lg:flex-row w-full justify-between">
               <div className="flex flex-col w-full lg:w-1/2">
                 <div className="opacity-130">
@@ -703,8 +703,8 @@ const Page = () => {
       </section>
 
       <section className="workflow-section">
-        <div className="workflow-wrapper py-5 mb-2.5 bg-white shadow-primary border-radius-20">
-          <div className="container mx-auto">
+        <div className="workflow-wrapper flex justify-center py-5 mb-2.5 bg-white shadow-primary border-radius-20">
+          <div className="container">
             <div className="flex flex-col">
               <div className="flex w-full justify-between">
                 <div className="flex items-start">
@@ -832,8 +832,8 @@ const Page = () => {
       </section>
 
       <section className="portfolio-section">
-        <div className="portfolio-wrapper shadow-primary border-radius-20">
-          <div className="container mx-auto">
+        <div className="portfolio-wrapper flex justify-center shadow-primary border-radius-20">
+          <div className="container">
             <div className="flex w-full justify-center">
               <div className="flex flex-col w-[100%] lg:w-[70%] items-center mb-6 lg:mb-7.5">
                 <Bullets bulletname="My Portfolio" className="bullet" />
@@ -951,10 +951,10 @@ const Page = () => {
       </section>
 
       <section className="idea-section mt-2.5 mb-2.5">
-        <div className="idea-wrapper border-radius-20 shadow-primary">
-          <div className="container mx-auto">
+        <div className="idea-wrapper flex justify-center border-radius-20 shadow-primary">
+          <div className="container">
             <div className="flex flex-col gap-20 sm:gap-32 md:gap-40 lg:gap-48 xl:gap-64">
-              <div className="flex items-start w-[75%]">
+              <div className="flex items-start w-[80%]">
                 <h2 className="font-light font-montreal text-white uppercase leading-[100%]">
                   Ready to Create Your{"  "}
                   <br />
@@ -963,7 +963,7 @@ const Page = () => {
                   </span>
                 </h2>
               </div>
-              <div className="flex flex-col w-[75%] ml-auto items-end">
+              <div className="flex flex-col w-[80%] ml-auto items-end">
                 <p className="mb-6 text-right text-white capitalize">
                   I’m always excited to discuss new opportunities and
                   collaborations. Feel free to reach out.
@@ -978,9 +978,9 @@ const Page = () => {
       </section>
 
       <section className="pricing-section mb-2.5">
-        <div className="pricing-wrapper shadow-primary border-radius-20">
-          <div className="container mx-auto">
-            <div className="flex w-full justify-center">
+        <div className="pricing-wrapper flex w-full justify-center shadow-primary border-radius-20">
+          <div className="container">
+            <div className="">
               <div className="flex flex-col w-[100%] lg:w-[70%] items-center mb-6 lg:mb-7.5">
                 <Bullets bulletname="Pricing" className="bullet" />
                 <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
@@ -997,7 +997,7 @@ const Page = () => {
               <div className="w-full lg:w-[33.33%] cursor-pointer card border-radius-20 group hover:bg-[#DFE2FF]!">
                 <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9">
                   <div className="flex flex-col gap-4">
-                    <p className="text-[23px] text-dark">Starter Package</p>
+                    <h4 className="text-dark">Starter Package</h4>
                     <p className="fs-48 text-dark leading-[100%]">$300</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
@@ -1060,7 +1060,7 @@ const Page = () => {
               <div className="w-full lg:w-[33.33%] cursor-pointer card active bg-[#DFE2FF]! border-radius-20">
                 <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9">
                   <div className="flex flex-col gap-4">
-                    <p className="text-[23px] text-dark">Basic Plan</p>
+                    <h4 className="text-dark">Basic Plan</h4>
                     <p className="fs-48 text-dark leading-[100%]">$490</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
@@ -1123,7 +1123,7 @@ const Page = () => {
               <div className="w-full lg:w-[33.33%] cursor-pointer card border-radius-20 group hover:bg-[#DFE2FF]!">
                 <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-9">
                   <div className="flex flex-col gap-4">
-                    <p className="text-[23px] text-dark">Premium Package</p>
+                    <h4 className="text-dark">Premium Package</h4>
                     <p className="fs-48 text-dark leading-[100%]">$600</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
@@ -1207,44 +1207,52 @@ const Page = () => {
       <Testimonial />
 
       <footer className="pt-2.5">
-        <div className="footer-wrapper shadow-primary border-radius-20">
-          <div className="container mx-auto">
+        <div className="footer-wrapper flex justify-center shadow-primary border-radius-20">
+          <div className="container">
             <div className="flex flex-col">
-              <div className="text-right w-[70%] ml-auto">
-                <h3 className="text-black cursor-pointer uppercase font-normal leading-[100%]">
+              <div className="text-right w-[75%] ml-auto">
+                <h3 className="text-black font-montreal cursor-pointer uppercase font-normal leading-[110%]">
                   Transform Your Ideas into Extraordinary Designs.
                 </h3>
               </div>
-              <div className="mt-[100px] w-[70%]">
-                <h1 className="text-black font-medium font-montreal cursor-pointer uppercase leading-[85%]">
+              <div className="mt-[100px] w-[75%]">
+                <h1 className="text-black font-medium font-montreal cursor-pointer uppercase leading-[110%]">
                   Reach Out now
                 </h1>
               </div>
+
               <div className="mt-[50px]">
-                <ul className="flex justify-center gap-6 lg:gap-15">
+                <ul className="flex justify-center gap-10 md:gap-12 lg:gap-15">
                   <li>
-                    <Link href="#" className="fs-16 font-poppins font-bold">
-                      About
+                    <Link
+                      href="#"
+                      className="fs-14 uppercase font-poppins font-bold"
+                    >
+                      Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="fs-16 font-poppins font-normal">
+                    <Link
+                      href="#"
+                      className="fs-14 uppercase font-poppins font-normal"
+                    >
                       Service
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="fs-16 font-poppins font-normal">
+                    <Link
+                      href="#"
+                      className="fs-14 uppercase font-poppins font-normal"
+                    >
                       Work
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="fs-16 font-poppins font-normal">
+                    <Link
+                      href="#"
+                      className="fs-14 uppercase font-poppins font-normal"
+                    >
                       Blog
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="fs-16 font-poppins font-normal">
-                      Assets
                     </Link>
                   </li>
                 </ul>

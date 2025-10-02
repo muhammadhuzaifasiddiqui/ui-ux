@@ -33,10 +33,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar lg:absolute w-auto mb-2.5">
-        <div className="bg-white nav-wrapper lg:bg-transparent border-radius-20">
-          <div className="container nav-container mx-auto">
-            <div className="bg-navbar flex justify-between items-center py-2">
+      <nav className="navbar absolute w-auto z-10">
+        <div className="bg-white flex justify-center nav-wrapper lg:bg-transparent border-radius-20">
+          <div className="container nav-container">
+            <div className="flex justify-between items-center py-2">
               <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
                 <Link
                   className="fs-14 nav-link bg-white font-poppins font-bold!"
@@ -104,9 +104,9 @@ const Navbar = () => {
                 height: isOpen ? "auto" : 0,
               }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden w-auto bg-white absolute left-[20px] right-[20px] mt-2.5 border-radius-20 overflow-hidden z-10"
+              className="lg:hidden flex w-full justify-center shadow-primary bg-white left-[20px] right-[20px] mt-2.5 border-radius-20 overflow-hidden z-10"
             >
-              <div className="container mx-auto nav-container">
+              <div className="container nav-container">
                 <ul className="flex flex-col">
                   <li className="py-[10px]">
                     <Link
