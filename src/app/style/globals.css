@@ -1313,6 +1313,8 @@ h4 {
   .testimonial-wrapper {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .testimonial-card {
@@ -1332,9 +1334,16 @@ h4 {
     padding: 0px 16px !important;
   }
 
+  .pricing-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .footer-wrapper {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -1502,6 +1511,8 @@ h4 {
   .testimonial-wrapper {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .portfolio-card {
@@ -1520,6 +1531,8 @@ h4 {
   .footer-wrapper {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 

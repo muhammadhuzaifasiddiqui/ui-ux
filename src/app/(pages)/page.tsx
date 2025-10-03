@@ -1210,12 +1210,12 @@ const Page = () => {
         <div className="footer-wrapper flex justify-center shadow-primary border-radius-20">
           <div className="container">
             <div className="flex flex-col">
-              <div className="text-right w-[40%] ml-auto">
+              <div className="text-right w-[70%] md:w-[40%] ml-auto">
                 <h3 className="text-black font-montreal cursor-pointer uppercase font-normal leading-[100%]">
                   Transform Your Ideas into Extraordinary Designs.
                 </h3>
               </div>
-              <div className="mt-[40px] md:mt-[60px] lg:mt-[100px] w-[65%]">
+              <div className="mt-[40px] md:mt-[60px] lg:mt-[100px] w-[75%] md:w-[65%]">
                 <h1 className="text-black font-medium font-montreal cursor-pointer uppercase leading-[90%]">
                   Reach Out now
                 </h1>
