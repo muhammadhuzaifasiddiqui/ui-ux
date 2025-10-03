@@ -86,7 +86,7 @@ const Navbar = () => {
               <div className="flex navbar-button gap-2">
                 <Link
                   href="#"
-                  className="fs-12 font-semibold! btn btn-primary border-radius-30"
+                  className="fs-12 btn btn-primary border-radius-30"
                 >
                   Get in touch
                 </Link>

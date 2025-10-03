@@ -4,7 +4,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   font-family: var(--font-raleway);
-  padding: 20px;
+  padding: 20px 20px;
   color: #3c3c3c;
   background: #f6faff;
   background-size: cover;
@@ -155,7 +155,7 @@ h4 {
 .btn {
   padding: 15px 20px;
   font-size: 12px !important;
-  font-weight: 600;
+  font-weight: 600 !important;
   border-radius: 100px;
 }
 
@@ -592,7 +592,6 @@ h4 {
   .btn {
     padding: 15px 20px;
     font-size: 14px;
-    font-weight: 600;
     border-radius: 100px;
   }
 
@@ -702,7 +701,6 @@ h4 {
   .btn {
     padding: 14px 16px;
     font-size: 12px !important;
-    font-weight: 600;
     border-radius: 100px;
   }
 
@@ -941,10 +939,6 @@ h4 {
     padding: 20px 40px 18px 30px;
   }
 
-  .workflow-wrapper {
-    padding: 30px 30px;
-  }
-
   .workflow-section .card {
     background-color: #fff;
     padding: 18px 40px;
@@ -1159,6 +1153,7 @@ h4 {
 @media screen and (max-width: 575.97px) {
   body {
     font-size: 14px;
+    padding: 20px 10px;
   }
 
   h1 {
@@ -1178,11 +1173,11 @@ h4 {
   }
 
   .fs-12 {
-    font-size: 12px;
+    font-size: 11px !important;
   }
 
   .fs-14 {
-    font-size: 12px;
+    font-size: 13px !important;
   }
 
   .fs-16 {
@@ -1235,8 +1230,8 @@ h4 {
   }
 
   .btn-xxl {
-    padding: 20px 42px;
-    font-size: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
   }
 
   .border-radius-30 {
@@ -1248,8 +1243,8 @@ h4 {
   }
 
   .navbar {
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     top: 20px;
   }
 
@@ -1261,14 +1256,14 @@ h4 {
   }
 
   .hero-wrapper {
-    padding: 80px 20px 24px;
+    padding: 80px 16px 24px;
     width: 100%;
     background: url("/img/BG.png");
   }
 
   .about-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .about-section .project-counter h2 {
@@ -1281,13 +1276,12 @@ h4 {
   }
 
   .workflow-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 16px 16px;
   }
 
   .idea-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .nav-wrapper {
@@ -1295,21 +1289,21 @@ h4 {
   }
 
   .nav-container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .service-card {
-    padding: 22px 20px 15px 20px;
+    padding: 30px 28px 20px 30px;
   }
 
   .workflow-section .card {
     background-color: #fff;
-    padding: 15px 25px;
+    padding: 16px 16px;
   }
 
   .portfolio-wrapper {
-    padding: 20px;
+    padding: 16px 16px;
   }
 
   .portfolio-card-footer {
@@ -1317,12 +1311,17 @@ h4 {
   }
 
   .testimonial-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .testimonial-card {
     padding: 30px 40px;
+  }
+
+  .idea-wrapper {
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
 
   .portfolio-card {
@@ -1330,12 +1329,12 @@ h4 {
   }
 
   .price-card {
-    padding: 0px 20px;
+    padding: 0px 16px !important;
   }
 
   .footer-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1391,7 +1390,6 @@ h4 {
   .btn {
     padding: 15px 20px;
     font-size: 12px !important;
-    font-weight: 600;
     border-radius: 100px;
   }
 
@@ -1434,8 +1432,8 @@ h4 {
   }
 
   .navbar {
-    left: 20px;
-    right: 20px;
+    left: 16px;
+    right: 16px;
     top: 20px;
   }
 
@@ -1463,8 +1461,7 @@ h4 {
   }
 
   .workflow-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px 16px;
   }
 
   .idea-wrapper {
@@ -1512,7 +1509,12 @@ h4 {
   }
 
   .price-card {
-    padding: 0px 16px;
+    padding: 0px 16px !important;
+  }
+
+  .idea-wrapper {
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
 
   .footer-wrapper {

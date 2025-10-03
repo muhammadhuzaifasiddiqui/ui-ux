@@ -165,7 +165,7 @@ const Page = () => {
                   Hi.... <br /> My name is{" "}
                   <span className="font-bold">Nanolix Digital</span>
                 </p>
-                <h1 className="font-bold text-gray leading-[100%] mt-3 mb-6.5">
+                <h1 className="font-bold text-gray leading-[100%] mt-1 md:mt-1.5 lg:mt-2 xl:mt-3 mb-1 md:mb-2.5 lg:mb-5 xl:mb-6.5">
                   UI/UX
                 </h1>
               </div>
@@ -210,7 +210,7 @@ const Page = () => {
               </div>
 
               <div className="relative">
-                <div className="p-2.5 designer-text-box -rotate-2 opacity-100">
+                <div className="p-1 lg:p-1.5 xl:p-2 designer-text-box -rotate-2 opacity-100">
                   <Image
                     src={"/img/Rectangle 1.png"}
                     width={18}
@@ -250,7 +250,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-9 justify-between items-stretch mt-9 sm:mt-14 lg:mt-18 xl:mt-24">
+            <div className="flex flex-col lg:flex-row gap-9 justify-between items-stretch mt-6 sm:mt-14 lg:mt-18 xl:mt-24">
               <div className="w-full lg:w-[35%]">
                 <div className="shadow-down border-radius-30 bg-white">
                   <div className="charges-box shadow-primary flex gap-2 justify-between items-center border-radius-30 bg-dark-gray">
@@ -430,7 +430,7 @@ const Page = () => {
                     <div className="">
                       <Bullets bulletname="Service" className="bullet" />
                     </div>
-                    <h2 className="font-montreal text-black font-light text-right mt-2.5 leading-[106%]">
+                    <h2 className="font-montreal text-black font-light text-right mt-0 sm:mt-2.5 leading-[106%]">
                       EXPLORE MY <br />
                       <span className="font-medium text-primary">SERVICES</span>
                     </h2>
@@ -619,7 +619,7 @@ const Page = () => {
       </section>
 
       <section className="about-section">
-        <div className="about-wrapper flex justify-center relative border-radius-20 overflow-hidden shadow-primary pt-7.5 pb-7.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
+        <div className="about-wrapper flex justify-center relative border-radius-20 overflow-hidden shadow-primary pt-4 sm:pt-7.5 pb-5.5 sm:pb-10 md:pb-14 lg:pb-18 xl:pb-22.5">
           <div className="container">
             <div className="flex flex-col lg:flex-row w-full justify-between">
               <div className="flex flex-col w-full lg:w-1/2">
@@ -762,7 +762,7 @@ const Page = () => {
             </div>
           </div>
           <div className="flex flex-col w-full lg:w-[33.33%] justify-between items-stretch">
-            <div className="flex w-full justify-between items-center gap-2.5 bg-white pt-3 lg:pt-5 xl:pt-8 pb-3 lg:pb-5 xl:pb-8 pl-5 border-radius-20 shadow-primary">
+            <div className="flex w-full justify-between items-center gap-2.5 bg-white pt-4 lg:pt-5 xl:pt-8 pb-4 lg:pb-5 xl:pb-8 pl-4 lg:pl-5 border-radius-20 shadow-primary">
               <div className="flex flex-col items-start w-[50%] gap-3">
                 <h3 className="font-montreal uppercase leading-[100%] font-normal text-black">
                   Transparent Process
@@ -783,7 +783,7 @@ const Page = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-row items-center justify-between mt-2 w-full gap-2.5 bg-white pr-5 pt-3 lg:pt-5 xl:pt-8 pb-3 lg:pb-5 xl:pb-8 border-radius-20 shadow-primary">
+            <div className="flex flex-row items-center justify-between mt-2 w-full gap-2.5 bg-white pr-4 lg:pr-5 pt-4 lg:pt-5 xl:pt-8 pl-4 lg:pl-5 xl:pb-8 border-radius-20 shadow-primary">
               <div className="">
                 <Image
                   src={"/img/Rectangle (2).png"}
@@ -847,7 +847,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               <div className="flex flex-col gap-2.5">
                 <div className="portfolio-card border-radius-20 shadow-primary"></div>
                 <div className="flex flex-col gap-6 portfolio-card-footer cursor-pointer border-radius-20 shadow-primary">
