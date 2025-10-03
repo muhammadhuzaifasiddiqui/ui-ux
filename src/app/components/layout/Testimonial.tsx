@@ -28,7 +28,7 @@ const Testimonial = () => {
           breakpoints={{
             1024: { slidesPerView: 3, centeredSlides: true },
             768: { slidesPerView: 2, centeredSlides: true },
-            555: { slidesPerView: 1, centeredSlides: true },
+            576: { slidesPerView: 1, centeredSlides: true },
           }}
         >
           <SwiperSlide>

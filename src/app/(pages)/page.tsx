@@ -250,7 +250,7 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row gap-4 sm:gap-5 justify-between mt-9 sm:mt-10 md:mt-12 lg:mt-24">
+            <div className="flex flex-col lg:flex-row gap-9 justify-between items-stretch mt-9 sm:mt-14 lg:mt-18 xl:mt-24">
               <div className="w-full lg:w-[35%]">
                 <div className="shadow-down border-radius-30 bg-white">
                   <div className="charges-box shadow-primary flex gap-2 justify-between items-center border-radius-30 bg-dark-gray">
@@ -263,28 +263,28 @@ const Page = () => {
                         </span>
                       </p>
                     </div>
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-2">
                       <Link
                         href="#"
-                        className="fs-14 btn btn-sm btn-white text-center w-fit"
+                        className="fs-12 btn btn-sm btn-white text-center w-fit"
                       >
                         Wireframes
                       </Link>
                       <Link
                         href="#"
-                        className="fs-14 btn btn-sm btn-white text-center w-fit"
+                        className="fs-12 btn btn-sm btn-white text-center w-fit"
                       >
                         Insights
                       </Link>
                       <Link
                         href="#"
-                        className="fs-14 btn btn-sm btn-white text-center w-fit"
+                        className="fs-12 btn btn-sm btn-white text-center w-fit"
                       >
                         Testimonials
                       </Link>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 pl-7.5 pt-6.5 pb-6.5">
+                  <div className="flex items-center gap-2 lg:gap-3 xl:gap-4 pl-7.5 pt-6.5 pb-6.5">
                     <Link href="#" className="btn btn-primary">
                       Get in touch
                     </Link>
@@ -296,7 +296,7 @@ const Page = () => {
               </div>
 
               <div className="w-full lg:w-[60%]">
-                <div className="flex flex-col md:flex-row items-center sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
+                <div className="flex flex-col md:flex-row items-center gap-6 md:gap-6 lg:gap-8 xl:gap-10">
                   <div className="flex flex-row cursor-pointer portfolio-box border-radius-30 bg-light-gray gap-2.5">
                     <div className="flex flex-col">
                       <div className="portfolio-image-wrapper">
@@ -349,7 +349,7 @@ const Page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-row md:flex-col gap-5 lg:gap-7">
+                  <div className="flex flex-row md:flex-col gap-3 lg:gap-4">
                     <div className="flex flex-col-reverse md:flex-row items-center gap-1 md:gap-3">
                       <div>
                         <p className="fs-14 font-normal capitalize text-gray">
@@ -655,7 +655,7 @@ const Page = () => {
                     className="object-contain figma-icon p-3"
                   />
                 </div>
-                <div className="flex lg:ml-auto mt-10 lg:mt-15.5 mb-6.5 sm:mb-8 md:mb-10 lg:mb-15 xl:mb-30">
+                <div className="flex lg:ml-auto mt-6 lg:mt-10 xl:mt-15.5 mb-6.5 sm:mb-6 md:mb-10 lg:mb-15 xl:mb-30">
                   <p className="text-justify line-clamp-3 lg:text-right fs-20 text-[#B2B2B2] capitalize">
                     Hi, I’m
                     <span className="font-bold  text-white">
@@ -703,7 +703,7 @@ const Page = () => {
       </section>
 
       <section className="workflow-section">
-        <div className="workflow-wrapper flex justify-center py-5 mb-2.5 bg-white shadow-primary border-radius-20">
+        <div className="workflow-wrapper flex justify-center mb-2.5 bg-white shadow-primary border-radius-20">
           <div className="container">
             <div className="flex flex-col">
               <div className="flex w-full justify-between">
@@ -762,7 +762,7 @@ const Page = () => {
             </div>
           </div>
           <div className="flex flex-col w-full lg:w-[33.33%] justify-between items-stretch">
-            <div className="flex w-full justify-between items-center gap-2.5 bg-white pt-8 pb-8 pl-5 border-radius-20 shadow-primary">
+            <div className="flex w-full justify-between items-center gap-2.5 bg-white pt-3 lg:pt-5 xl:pt-8 pb-3 lg:pb-5 xl:pb-8 pl-5 border-radius-20 shadow-primary">
               <div className="flex flex-col items-start w-[50%] gap-3">
                 <h3 className="font-montreal uppercase leading-[100%] font-normal text-black">
                   Transparent Process
@@ -783,7 +783,7 @@ const Page = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-row items-center justify-between mt-2 w-full gap-2.5 bg-white pr-5 pt-8 pb-8 border-radius-20 shadow-primary">
+            <div className="flex flex-row items-center justify-between mt-2 w-full gap-2.5 bg-white pr-5 pt-3 lg:pt-5 xl:pt-8 pb-3 lg:pb-5 xl:pb-8 border-radius-20 shadow-primary">
               <div className="">
                 <Image
                   src={"/img/Rectangle (2).png"}
@@ -863,7 +863,7 @@ const Page = () => {
                       <p className="fs-16 font-bold">6 Weeks</p>
                     </div>
                     <div className="flex gap-1.5">
-                      <p className="fs-14 text-gray">Visit Website</p>
+                      <p className="fs-16 text-gray">Visit Website</p>
                       <div>
                         <Image
                           src={"/img/Frame.png"}
@@ -894,7 +894,7 @@ const Page = () => {
                       <p className="fs-16 font-bold">6 Weeks</p>
                     </div>
                     <div className="flex gap-1.5">
-                      <p className="fs-14 text-gray">Visit Website</p>
+                      <p className="fs-16 text-gray">Visit Website</p>
                       <div>
                         <Image
                           src={"/img/Frame.png"}
@@ -924,7 +924,7 @@ const Page = () => {
                       <p className="fs-16 font-bold">6 Weeks</p>
                     </div>
                     <div className="flex gap-1.5">
-                      <p className="fs-14 text-gray">Visit Website</p>
+                      <p className="fs-16 text-gray">Visit Website</p>
                       <div>
                         <Image
                           src={"/img/Frame.png"}
@@ -963,7 +963,7 @@ const Page = () => {
                   </span>
                 </h2>
               </div>
-              <div className="flex flex-col w-[80%] ml-auto items-end">
+              <div className="flex flex-col md:w-[45%] lg:w-[40%] xl:w-[35%] ml-auto items-end">
                 <p className="mb-6 text-right text-white capitalize">
                   I’m always excited to discuss new opportunities and
                   collaborations. Feel free to reach out.
@@ -981,7 +981,7 @@ const Page = () => {
         <div className="pricing-wrapper flex w-full justify-center shadow-primary border-radius-20">
           <div className="container">
             <div className="">
-              <div className="flex flex-col w-[100%] lg:w-[70%] items-center mb-6 lg:mb-7.5">
+              <div className="flex flex-col items-center mb-6 lg:mb-7.5">
                 <Bullets bulletname="Pricing" className="bullet" />
                 <h2 className="font-light font-montreal text-center uppercase leading-[100%]">
                   Concise and{"  "}
@@ -1001,7 +1001,7 @@ const Page = () => {
                     <p className="fs-48 text-dark leading-[100%]">$300</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
-                    <div className="flex items-center gap-3.5">
+                    <div className="flex items-center gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1012,7 +1012,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Up to 5 Sections</p>
                     </div>
-                    <div className="flex items-center gap-3.5">
+                    <div className="flex items-center gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1023,7 +1023,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Responsive Design</p>
                     </div>
-                    <div className="flex items-center opacity-60 gap-3.5">
+                    <div className="flex items-center opacity-60 gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1034,7 +1034,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Basic Interaction Design</p>
                     </div>
-                    <div className="flex items-center opacity-60 gap-3.5">
+                    <div className="flex items-center opacity-60 gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1064,7 +1064,7 @@ const Page = () => {
                     <p className="fs-48 text-dark leading-[100%]">$490</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
-                    <div className="flex items-center gap-3.5">
+                    <div className="flex items-center gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1075,7 +1075,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Up to 7 Sections</p>
                     </div>
-                    <div className="flex items-center gap-3.5">
+                    <div className="flex items-center gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1086,7 +1086,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Interactive Elements</p>
                     </div>
-                    <div className="flex items-center opacity-60 gap-3.5">
+                    <div className="flex items-center opacity-60 gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1097,7 +1097,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Clickable Prototypes</p>
                     </div>
-                    <div className="flex items-center opacity-60 gap-3.5">
+                    <div className="flex items-center opacity-60 gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1127,7 +1127,7 @@ const Page = () => {
                     <p className="fs-48 text-dark leading-[100%]">$600</p>
                   </div>
                   <div className="flex flex-col price-card-bullet gap-2 sm:gap-2.5 md:gap-3 lg:gap-3.5 pt-7.5 pb-7.5">
-                    <div className="flex items-center gap-3.5">
+                    <div className="flex items-center gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1138,7 +1138,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Up to 10 Sections</p>
                     </div>
-                    <div className="flex items-center gap-3.5">
+                    <div className="flex items-center gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1149,7 +1149,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Multiple Expansion</p>
                     </div>
-                    <div className="flex items-center opacity-60 gap-3.5">
+                    <div className="flex items-center opacity-60 gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1160,7 +1160,7 @@ const Page = () => {
                       />
                       <p className="fs-20">Developer-Ready Files</p>
                     </div>
-                    <div className="flex items-center opacity-60 gap-3.5">
+                    <div className="flex items-center opacity-60 gap-1.5 lg:gap-2">
                       <Image
                         src={"/img/check_small.png"}
                         width={30}
@@ -1210,18 +1210,18 @@ const Page = () => {
         <div className="footer-wrapper flex justify-center shadow-primary border-radius-20">
           <div className="container">
             <div className="flex flex-col">
-              <div className="text-right w-[75%] ml-auto">
-                <h3 className="text-black font-montreal cursor-pointer uppercase font-normal leading-[110%]">
+              <div className="text-right w-[40%] ml-auto">
+                <h3 className="text-black font-montreal cursor-pointer uppercase font-normal leading-[100%]">
                   Transform Your Ideas into Extraordinary Designs.
                 </h3>
               </div>
-              <div className="mt-[100px] w-[75%]">
-                <h1 className="text-black font-medium font-montreal cursor-pointer uppercase leading-[110%]">
+              <div className="mt-[40px] md:mt-[60px] lg:mt-[100px] w-[65%]">
+                <h1 className="text-black font-medium font-montreal cursor-pointer uppercase leading-[90%]">
                   Reach Out now
                 </h1>
               </div>
 
-              <div className="mt-[50px]">
+              <div className="mt-4 md:mt-6 lg:mt-10 xl:mt-12.5">
                 <ul className="flex justify-center gap-10 md:gap-12 lg:gap-15">
                   <li>
                     <Link
