@@ -33,7 +33,7 @@ const Testimonial = () => {
         >
           <SwiperSlide>
             <div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2 sm:gap-2.5 md:gap-3 lg:gap-4">
                 <div className="img-testimonial">
                   <Image
                     src={"/img/Sarah.png"}
@@ -241,7 +241,6 @@ const Testimonial = () => {
             </div>
           </SwiperSlide>                             
         </Swiper>
-
         <div className="custom-pagination flex justify-center gap-3 mt-0 sm:mt-2"></div>
 
         <style jsx global>{`

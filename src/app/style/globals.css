@@ -1132,6 +1132,10 @@ h4 {
     padding: 8px 12px;
   }
 
+  .testimonial-section .swiper-slide {
+    padding: 25px 30px;
+  }
+
   .footer-wrapper {
     padding-left: 26px;
     padding-right: 26px;
@@ -1321,6 +1325,10 @@ h4 {
   .pricing-wrapper {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .testimonial-section .swiper-slide {
+    padding: 22px 26px;
   }
 
   .footer-wrapper {
@@ -1514,6 +1522,10 @@ h4 {
   .pricing-wrapper {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .testimonial-section .swiper-slide {
+    padding: 18px 22px;
   }
 
   .footer-wrapper {
