@@ -1333,57 +1333,52 @@ h4 {
 
 @media screen and (max-width: 399.97px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
+    padding: 20px 10px;
   }
 
   h1 {
-    font-size: 128px;
+    font-size: 50px;
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 35px;
+    font-size: 22px;
   }
 
   h4 {
-    font-size: 24px;
-  }
-
-  .fs-12 {
-    font-size: 12px;
-  }
-
-  .fs-14 {
-    font-size: 14px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
-  }
-
-  .fs-18 {
     font-size: 18px;
   }
 
+  .fs-12 {
+    font-size: 11px !important;
+  }
+
+  .fs-14 {
+    font-size: 13px !important;
+  }
+
+  .fs-16 {
+    font-size: 14px;
+  }
+
+  .fs-18 {
+    font-size: 16px;
+  }
+
   .fs-20 {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .fs-48 {
-    font-size: 48px;
-  }
-
-  .fs-138 {
-    font-size: 54px;
+    font-size: 30px;
   }
 
   .btn {
-    padding: 15px 20px;
-    font-size: 12px !important;
-    border-radius: 100px;
+    padding: 8px 14px;
   }
 
   .btn-xsm {
@@ -1412,33 +1407,33 @@ h4 {
   }
 
   .btn-xxl {
-    padding: 20px 42px;
-    font-size: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
   }
 
   .border-radius-30 {
-    border-radius: 22px;
+    border-radius: 23px;
   }
 
   .border-radius-20 {
-    border-radius: 10px;
+    border-radius: 12px;
   }
 
   .navbar {
-    left: 16px;
-    right: 16px;
+    left: 10px;
+    right: 10px;
     top: 20px;
   }
 
   .hero-section .img-wrapper {
     height: 60px;
-    width: 230px;
+    width: 250px;
     border-radius: 60px;
     background: #dfe2ff;
   }
 
   .hero-wrapper {
-    padding: 80px 16px 18px;
+    padding: 80px 16px 24px;
     width: 100%;
     background: url("/img/BG.png");
   }
@@ -1446,6 +1441,10 @@ h4 {
   .about-wrapper {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .about-section .project-counter h2 {
+    font-size: 40px !important;
   }
 
   .about-tags {
@@ -1472,24 +1471,20 @@ h4 {
   }
 
   .service-card {
-    padding: 20px 16px 14px 16px;
+    padding: 30px 24px 20px 26px;
   }
 
   .workflow-section .card {
     background-color: #fff;
-    padding: 14px 20px;
+    padding: 16px 16px;
   }
 
   .portfolio-wrapper {
-    padding: 16px;
+    padding: 16px 16px;
   }
 
   .portfolio-card-footer {
     padding: 16px 16px;
-  }
-
-  .testimonial-card {
-    padding: 30px 35px;
   }
 
   .testimonial-wrapper {
@@ -1499,17 +1494,26 @@ h4 {
     padding-bottom: 15px;
   }
 
+  .testimonial-card {
+    padding: 26px 34px;
+  }
+
+  .idea-wrapper {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
   .portfolio-card {
-    height: 350px;
+    height: 335px;
   }
 
   .price-card {
     padding: 0px 16px !important;
   }
 
-  .idea-wrapper {
-    padding-bottom: 16px;
-    padding-top: 16px;
+  .pricing-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .footer-wrapper {
