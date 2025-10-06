@@ -1236,6 +1236,10 @@ h4 {
     top: 20px;
   }
 
+  .hero-section {
+    margin-top: 58px;
+  }
+
   .hero-section .img-wrapper {
     height: 60px;
     width: 250px;
@@ -1433,9 +1437,13 @@ h4 {
     top: 20px;
   }
 
+  .hero-section {
+    margin-top: 58px;
+  }
+
   .hero-section .img-wrapper {
-    height: 60px;
-    width: 250px;
+    height: 50px;
+    width: 215px;
     border-radius: 60px;
     background: #dfe2ff;
   }

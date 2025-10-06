@@ -36,7 +36,7 @@ const Navbar = () => {
       <nav className="navbar absolute w-auto z-10">
         <div className="bg-white flex justify-center nav-wrapper lg:bg-transparent border-radius-20">
           <div className="container nav-container">
-            <div className="flex justify-between items-center py-2">
+            <div className="flex justify-between items-center py-1 sm:py-1.5 md:py-2">
               <div className="lg:flex hidden items-center gap-4 md:gap-8 lg:gap-10 xl:gap-14">
                 <Link
                   className="fs-14 nav-link bg-white font-poppins font-bold!"
